@@ -2,7 +2,7 @@
 
 Esse repositório tem a finalidade de abrigar todos os exercícios feitos na Master-Class de linha de comando.
 
-## Prerequisites
+## Pré-requisitos
 
 * Discord
 * Docker instalado
@@ -10,10 +10,10 @@ Esse repositório tem a finalidade de abrigar todos os exercícios feitos na Mas
 
 Caso tenha dúvidas sobre como utilizar o discord, recomendo [esse](https://www.youtube.com/watch?v=kQE9bn2aJkQ) tutorial feito para SCTI.
 
-Eu escrevi um passo a psso de como instalar o Doker e rodar uma instância do Ubuntu 20.10.
+Eu escrevi um passo a passo de como instalar o Doker e rodar uma instância do Ubuntu 20.10.
 Apenas siga [esse](https://www.notion.so/Docker-dd5f07be481c4680b82035ec2c78c268) link.
 
-## Syllabus
+## Programa de Estudos
 
 Eu irei apresentar esses tópicos:
 
