@@ -1,24 +1,24 @@
 # CLI's intro
 
-This repo was created to expose all activities and exercices made on the CLI class that I teached.
+Esse repositório tem a finalidade de abrigar todos os exercícios feitos na Master-Class de linha de comando.
 
 ## Prerequisites
 
-* Docker installled
-* Any Unix OS
+* Docker instalado
+* Qualquer Unix OS
 
-I also made a step-by-step to how install Docker and run an instance of Ubuntu,
-just follow [this](https://www.notion.so/Docker-dd5f07be481c4680b82035ec2c78c268) link.
+Eu escrevi um passo a psso de como instalar o Doker e rodar uma instância do Ubuntu 20.10.
+Apenas siga [esse](https://www.notion.so/Docker-dd5f07be481c4680b82035ec2c78c268) link.
 
 ## Syllabus
 
-I'll cover all this topics:
+Eu irei apresentar esses tópicos:
 
 1. Bash - Bourne-Again Shell
-2. What's a shell
+2. O que é um shell?
 3. Git
-4. Text Editors
-5. Package managers
+4. Editores de texto
+5. Gerenciadores de pacotes
 6. WSL
 
-You can also see all sub-topics on [this](https://www.notion.so/CLI-Introduction-f9353bd78569407d8a5b655e5d33c827) link.
+Você tambem pode seguir todos os sub-tópicos [nesse](https://www.notion.so/CLI-Introduction-f9353bd78569407d8a5b655e5d33c827) link.
