@@ -2,6 +2,10 @@
 
 Esse repositório tem a finalidade de abrigar todos os exercícios feitos na Master-Class de linha de comando.
 
+## Notas de aula
+
+Você pode acessar todo o material da aula seguindo [este](https://www.notion.so/Introdu-o-a-linha-de-comando-7829115a77e04e2aa0a7f133c5af2438) link.
+
 ## Pré-requisitos
 
 * Discord
