@@ -17,6 +17,10 @@ Caso tenha dúvidas sobre como utilizar o discord, recomendo [esse](https://www.
 Eu escrevi um passo a passo de como instalar o Doker e rodar uma instância do Ubuntu 20.10.
 Apenas siga [esse](https://www.notion.so/Docker-dd5f07be481c4680b82035ec2c78c268) link.
 
+## Servidor
+
+Entre no servidor do discord: https://discord.gg/zqWqv8W
+
 ## Programa de Estudos
 
 Eu irei apresentar esses tópicos:
