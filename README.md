@@ -1,4 +1,4 @@
-# CLI's intro
+# Introdução a linha de comando
 
 Esse repositório tem a finalidade de abrigar todos os exercícios feitos na Master-Class de linha de comando.
 
@@ -21,8 +21,8 @@ Apenas siga [esse](https://www.notion.so/Docker-dd5f07be481c4680b82035ec2c78c268
 
 Eu irei apresentar esses tópicos:
 
-1. Bash - Bourne-Again Shell
-2. O que é um shell?
+1. O que é um shell?
+2. Bash - Bourne-Again Shell
 3. Git
 4. Editores de texto
 5. Gerenciadores de pacotes
