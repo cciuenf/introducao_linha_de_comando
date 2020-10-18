@@ -1,6 +1,6 @@
 # Introdução a linha de comando
 
-Esse repositório tem a finalidade de abrigar todos os exercícios feitos na Master-Class de linha de comando.
+Esse repositório tem a finalidade de abrigar todos os exercícios feitos na aula sobre linha de comando.
 
 ## Notas de aula
 
