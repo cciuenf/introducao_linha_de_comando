@@ -4,10 +4,16 @@ RUN apt-get update && apt-get -y upgrade
 
 RUN apt-get install -y sudo
 
-RUN useradd docker && usermod -aG sudo docker
+RUN useradd ccuenf && usermod -aG sudo ccuenf
 
-RUN mkdir -p /home/docker && chown -R docker:docker /home/docker
+RUN mkdir -p /home/ccuenf && chown -R ccuenf:ccuenf /home/ccuenf
 
-RUN cd /home/docker
+RUN cd /home/ccuenf
+
+RUN echo 'ccuenf:ccuenf' | chpasswd
+
+USER ccuenf
+
+WORKDIR /home/ccuenf
 
 CMD /bin/bash
