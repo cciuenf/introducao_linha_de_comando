@@ -1,0 +1,187 @@
+*AARE -- LINHA DE COMANDO (ELETIVA - INF0XXXX)*
+
+*Guia de disciplina*
+
+Curso de Ciência da Computação - UENF
+
+Profa. Dra. Annabell D.R. Tamariz
+([[mailto:annabell_pos@pq.uenf.br][_annabell_pos@pq.uenf.br_]])
+
+*Objetivo:* A AARE-LINHA DE COMANDO está sendo proposta para ser
+relacionada a uma disciplina eletiva nova com uma carga horária de 51
+horas "/+Linha de Comando - INF01212+/" e tem o objetivo principal de
+capacitar ao aluno a compreender e apresentar os fundamentos
+teórico-práticos do ferramental básico e fundamental utilizados em
+ambientes de desenvolvimento e configuração de servidores, bem como
+desenvolver no aluno o senso crítico com relação à importância desta
+disciplina dentro da Ciência da Computação. Ao final da AARE, os alunos
+devem ser capazes de se sentirem confortáveis em utilizar sistemas
+operacionais baseados no UNIX, contruir e configurar um ambiente de
+desenvolvimento que seja replicável, além de saberem como organizar e
+gerenciar repositórios locais e remotos a partir de um sistema de
+versionamento de código.
+
+*Método de estudo*
+
+Será montada uma sala virtual no /Classroom/ intitulada "*/AARE-LINHA DE
+COMANDO/*" com todo o planejamento organizacional da AARE. O aluno
+deverá organizar um plano de estudo individual onde poderá contar com
+diversas ferramentas disponíveis na plataforma Classroom como: textos
+conceituais, listas de exercícios programados, testes de conhecimento
+rápido e vídeos explicativos. Além destes recursos na plataforma
+/Classroom/, o aluno terá encontros /on-line/ síncronos, via Meet do
+Google ou Discord, com a professora da AARE, para esclarecimento de
+dúvidas e resolução de exercícios práticos.
+
+O discente inscrito na turma "*/AARE-LINHA DE COMANDO/*", com e-mail
+institucional ([[http://@pq.uenf.br][_@pq.uenf.br_]]), terá acesso ao
+material disponibilizado: artigos com estudos de caso, aulas que
+apresentem conceitos relevantes, vídeos e exercícios para fixação. Além
+disso deve participar nos encontros síncronos, pois é importante para o
+enriquecimento da aprendizagem e esclarecimento de dúvidas sobre a
+resolução das listas de exercícios. O material já está disponível no
+/Classroom/, no entanto, serão acrescentados outros na medida que as
+atividades evoluam, para ir adequando ao que acontece no dia a dia da
+AARE.
+
+*Tópicos Recomendados*:
+
+1. Configurando o ambiente para estudo!
+
+   1. Instalando o Docker
+   2. Contruindo uma imagem a partir de um Dockerfile
+   3. Rodando um contâiner a partir de uma imagem
+
+2. Linux em: "Vamos adotar um pinguim!"
+
+   1. Estrutura dos diretórios
+   2. Usuários
+   3. Grupos
+   4. Permissões
+   5. STDIO
+   6. Ambientes Gráficos
+   7. Processos
+   8. Distros
+
+3. Shell, que Pokémon é esse?
+
+   1. sh
+   2. bash
+   3. zsh
+   4. fish
+
+4. Comandos Shell ou: "Como se perder no terminal?"
+
+   1. Onde eu consigo um help?
+   2. Como me movimento?
+   3. Navegação básica e "Onde eu estou?"
+   4. Criando, deletando e movendo arquivos e pastas
+   5. Manipulando conteúdo de arquivos pelo terminal
+   6. Execução de comandos sob condicionais lógicas
+   7. Pipes, pipes em todos os lugares
+
+5. Você provavelmente vai usar o VSCode, mas: Editores de texto, feat.
+   "Como sair do vim?"
+
+   1. nano
+   2. vim e edição modal
+   3. emacs, o faz tudo
+
+6. Como nunca mais perder aquele arquivo/projeto?
+
+   1. Instalando o git
+   2. Repositório?
+   3. O que é "staging"
+   4. Commitar: Commits e histórico
+   5. Dá um push pô!
+   6. Sincronizar um repositório local
+   7. Branches, tipo uma árvore?
+   8. Github
+
+Para participar desta AARE, é recomendado que o estudante tenha
+participado da AARE-Lógica ou tenha feito/realizado com aprovação a
+disciplina "Lógica Matemática" da grade curricular do curso de
+Bacharelado em Ciência da Computação. Queremos preferencialmente a
+participação de alunos com matrícula maior o igual a 2017 e
+disponibilizaremos 40 vagas ao total.
+
+*Método de avaliação // Avaliação de participação*
+
+A avaliação na "*/AARE-/* */LINHA DE COMANDO/*" será semanal e realizada
+conforme explicação a seguir:
+
+*Avaliações teórico-práticas:* 4 (quatro) avaliações teórico-práticas
+com notas de 0 (zero) a 10 (dez) cada uma sendo: 2 (duas) implementações
+computacionais (IC1, IC2) e 2 (dois) testes on-line (T1, T2). Ainda
+teremos 4 listas de exercícios ou projetos individuais como estudo
+individual que poderão ser anexadas à avaliação final.
+
+| Datas    | Enc. | Encontros Síncronos no MEET                                       |    |
+|----------+------+-------------------------------------------------------------------+----|
+| 08/02/21 |      | Informações Gerais e configuração do ambiente                     | S1 |
+| 11/02/21 | 1    | Introdução teórica ao Linux, parte I                              |    |
+| 15/02/21 | 2    | Introdução teórica ao Linux, parte II                             | S2 |
+| 18/02/20 | 3    | Conhecendo os diferentes Shells                                   |    |
+| 22/02/21 | 4    | Comandos Shell, parte I                                           | S3 |
+| 25/03/21 | 5    | Comandos Shell, parte II (IC1)                                    |    |
+| 01/03/21 | 6    | Entendendo outros editores de texto                               | S4 |
+| 04/03/21 | 7    | Introdução ao git e primeiros comandos (IC2, parte I)             |    |
+| 08/03/21 | 8    | Compreendendo melhor o git-flow e outros comandos (IC2, parte II) | S5 |
+
+As *Implementações computacionais* serão desenvolvidas pelos discentes
+de forma individual, compartilhando o progresso na plataforma como
+*Atividade* compartilhada, e na data marcada será feita a apresentação
+de forma on-line.
+
+Os *Testes* poderão ser realizados através de um questionário a ser
+respondido pelo discente de forma /on-line/ na data determinada ou por
+meio da utilização do repositório da AARE
+(https://github.com/cciuenf/command_line_intro) e sempre acontecerá
+antes do encontro síncrono com o professor.
+
+Para ser considerado satisfatório (S) na "*/AARE-LINHA DE COMANDO/*" o
+aluno deve atingir no mínimo *6,0* pontos como média final, após ter
+realizado as avaliações acima mencionadas.
+
+*Critério de Frequência*
+
+Como não estamos no regime presencial que precisa de 75%, a frequência
+na AARE vai ser determinada pelo número de trabalhos entregue durante a
+execução da atividade, por exemplo, caso tenhamos definido 4 avaliações
+(Implementação e Testes) com entregas:
+
+- Entregou uma Avaliação = 25 % de frequência
+
+- Entregou duas Avaliações = 50 % de frequência
+
+- Entregou três Avaliações = 75 % de frequência
+
+Ou seja, você só pode deixar de entregar 1 Avaliação, Combinado!!!
+
+*Bibliografia*:
+
+- João Eriberto Mota Filho - Descobrindo o Linux: Entenda o Sistema
+  Operacional GNU/Linux, 2012
+
+- Bruno Gonçalves Araujo e Tales Araujo Mendonça - Shell Linux - do
+  Aprendiz ao Administrador, 2015
+
+- Daniel Romero - Containers com Docker: Do desenvolvimento à produção,
+  2015
+
+- Wellington Figueira da Silva - Aprendendo Docker: Do básico à
+  orquestração de contêineres, 2018
+
+- Drew Neil - Practical Vim: Edit Text at the Speed of Thought, 2015
+
+- Cássio Botaro - Livro em PT-BR ensinando a usar o vim
+  (https://vimbook.gitbook.io/vimbook/), 2019
+
+- Documentação oficial vim - https://www.vim.org/docs.php
+
+- Documentação oficial emacs -
+  https://www.gnu.org/software/emacs/manual/
+
+- Tutorial git - https://github.com/rg3915/git-tutorial
+
+- Alexandre Aquiles - Controlando Versões com Git e GitHub, 2014
