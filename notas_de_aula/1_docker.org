@@ -1,0 +1,140 @@
+#+title: Docker
+#+author: Matheus de Souza Pessanha
+#+email: mdsp@boosting.tech
+
+* O que é  Docker‽
+** O que significa "Contêiner"‽
+   [[../assets/virtualization_vs_containers.png]]
+   
+   - Tecnologia comum no mundo Linux
+   - Conjunto de um ou mais processos
+   - Processos organizados isoladamente
+   - Dependências fornecidas por uma ou mais imagens
+
+** Docker
+   [[../assets/docker_logo.png]]
+
+   - Baseado no LXC
+   - Tecnologia usada para criar contêineres
+   - Fácil criação e contrução dos contêineres
+
+*** Vantagens do Docker 
+    [[../assets/traditional_linux_containers_vs_docker.png]]
+    
+    - Modularidade
+    - Uma imagem Docker é a junção de diversas camadas
+    - Cada comando como "COPY" cria uma camada nova
+    - As camadas são reutilizadas, caso não haja alteração
+    - Camadas são reversíveis
+    - Rápida implantação
+
+* Por que Docker‽
+  - Não precisa instalar máquina virtual
+  - Despensa instalação nativa do SO
+  - Simples de usar
+  - Oferece um ambiente replicável
+  - Não consome tanta memória (depende)
+* Instalação
+** Linux
+*** Debian
+    #+begin_src bash
+      sudo apt -y install docker.io
+    #+end_src
+*** Arch
+    #+begin_src bash
+      sudo pacman -S docker
+    #+end_src
+*** Após instalação
+    #+begin_src  bash
+      # inicia o serviço
+      sudo systemctl start docker
+      # habilita o serviço a iniciar quando você faz login
+      sudo systemctl enable docker
+
+      # cria um novo grupo e adiciona seu usuário nele
+      sudo groupadd docker
+      sudo usermod -aG docker $USER
+
+      docker --version
+    #+end_src
+** Windows
+*** Windows 7, 8.1, 10
+   1. Vá em: [[github:docker/toolbox/releases]]
+   2. Baixe a última versão (DockerToolbox-xx.xx.xx.exe), sendo x a versão
+   3. Duplo clique no executável e siga a instalação
+      - Os seguintes softwares foram instalados:
+        1. Docker Quickstart
+        2. Docker Client for Windows
+        3. Docker Toolbox management tool and ISO
+        4. Oracle VM VirtualBox
+        5. Git MSYS-git UNIX tools
+   4. Execute o "Docker Quickstart", ele vai realizar as configurações iniciais
+   5. Espere aparecer um "$" no terminal
+
+*** Windows 10 Pro
+    1. Verifique se a opção "Virtualization" ou "Virtualização" existe:
+       1. Gerenciador de tarefas -> Performance
+    2. Vá em: [[https://hub.docker.com/editions/community/docker-ce-desktop-windows/]]
+    3. Baixe a versão estável
+    4. Duplo clique no executável e siga a instalação
+    5. Deslogue e logue novamente
+    6. Aceite o pedido para ativar o "Hyper-V and Container features"
+       - Caso apareça um erro dizendo que não foi iniciado corretamente, reinicie o computador
+    7. Você verá um ícone do Docker na barra de tarefas
+** Poś instalação
+   1. Execute no terminal do "Docker Quickstart", CMD, Powershell ou terminal:
+      #+begin_src bash
+        docker run hello-world
+      #+end_src
+
+   2. Caso apareça esta mensagem, tudo ocorreu bem:
+      #+begin_src bash
+        Hello from Docker!
+	This message shows that your installation appears to be working correctly.
+
+	To generate this message, Docker took the following steps:
+	1. The Docker client contacted the Docker daemon.
+	2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+	(amd64)
+	3. The Docker daemon created a new container from that image which runs the
+	executable that produces the output you are currently reading.
+	4. The Docker daemon streamed that output to the Docker client, which sent it
+	to your terminal.
+
+	To try something more ambitious, you can run an Ubuntu container with:
+	$ docker run -it ubuntu bash
+
+	Share images, automate workflows, and more with a free Docker ID:
+	https://hub.docker.com/
+
+	For more examples and ideas, visit:
+	https://docs.docker.com/get-started/
+      #+end_src
+* Preparando o ambiente
+  1. Crie um arquivo "Dockerfile" (escrito exatamente assim, sem extensão)
+  2. Esse é o conteúdo:
+     #+begin_src dockerfile
+       FROM ubuntu:20.10
+
+       RUN apt-get update && apt-get -y upgrade
+
+       RUN apt-get install -y sudo
+
+       RUN useradd ccuenf && usermod -aG sudo ccuenf
+
+       RUN mkdir -p /home/ccuenf && chown -R ccuenf:ccuenf /home/ccuenf
+
+       RUN cd /home/ccuenf
+
+       RUN echo 'ccuenf:ccuenf' | chpasswd
+
+       USER ccuenf
+
+       WORKDIR /home/ccuenf
+
+       CMD /bin/bash
+     #+end_src
+  3. Construa a imagem e execute
+     #+begin_src bash
+       docker build -t <nome> . && docker run --rm -it <nome>
+     #+end_src
