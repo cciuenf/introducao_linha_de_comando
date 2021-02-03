@@ -1,4 +1,4 @@
-#+title: Docker
+#+title: Configurando o ambiente para estudo!
 #+author: Matheus de Souza Pessanha
 #+email: mdsp@boosting.tech
 
