@@ -391,11 +391,11 @@
 
   Vamos resumir assim:
   - Linux é o Kernel; 
-  - composto pelos GNU Shell Utilities (ou utilitários para shell) e/ou
+  - composto pelos GNU Shell Utilities (ou utilitários para shell) - uma CLI - e/ou
     por um por um servidor gráfico (X.Org ou Wayland);
   - Um DE (Desktop Environment) executa um servidor gráfico, o que dá acesso à GUIs;
   - uma distro é um conjunto de programas pré-selecionados e instalados, possuindo um DE ou não.
-    Uma disrto é de fato um Sistema Operacional, baseado no Linux.
+    Uma distro é de fato um Sistema Operacional, baseado no Linux.
 
   Lembre que tudo (ou quase tudo) no mundo Linux é Open Source, ou seja: possui o
   código fonte aberto e geralmente é gratuito para uso.
