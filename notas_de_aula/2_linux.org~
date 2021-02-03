@@ -1,0 +1,13 @@
+#+title: Linux
+#+email: matheus_pessanha2001@outlook.com
+#+author: Matheus de Souza Pessanha
+
+* Afinal, o que é Linux?
+  - Linux é um kernel (núcleo)
+  - TODOS os sistemas operacionais possuem um kernel
+  - Open source (código aberto)
+  - Não faz sentido comparar com Windows ou macOS
+** Kernel?
+   - Meio do caminho entre o hardware e o sistema operacional
+   - Como um tradutor de mensagens entre ações do SO e o hardware
+   - Essas "mensagens" são chamadas de syscalls (system calls)
