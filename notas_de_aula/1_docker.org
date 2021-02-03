@@ -2,8 +2,8 @@
 #+author: Matheus de Souza Pessanha
 #+email: mdsp@boosting.tech
 
-* O que é  Docker‽
-** O que significa "Contêiner"‽
+* O que é  Docker?
+** O que significa "Contêiner"?
    [[../assets/virtualization_vs_containers.png]]
    
    - Tecnologia comum no mundo Linux
@@ -81,13 +81,13 @@
     6. Aceite o pedido para ativar o "Hyper-V and Container features"
        - Caso apareça um erro dizendo que não foi iniciado corretamente, reinicie o computador
     7. Você verá um ícone do Docker na barra de tarefas
-** Poś instalação
+** Pós instalação
    1. Execute no terminal do "Docker Quickstart", CMD, Powershell ou terminal:
       #+begin_src bash
         docker run hello-world
       #+end_src
 
-   2. Caso apareça esta mensagem, tudo ocorreu bem:
+   2. Caso apareça esta mensagem, tudo correu bem:
       #+begin_src bash
         Hello from Docker!
 	This message shows that your installation appears to be working correctly.
