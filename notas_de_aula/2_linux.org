@@ -1,6 +1,6 @@
 #+title: Linux em: “Vamos adotar um pinguim!”
-#+email: matheus_pessanha2001@outlook.com
 #+author: Matheus de Souza Pessanha
+#+email: 00119110328@pq.uenf.br
 
 * Afinal, o que é Linux?
   [[../assets/linux_logo.png]]

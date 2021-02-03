@@ -1,6 +1,6 @@
 #+title: Configurando o ambiente para estudo!
 #+author: Matheus de Souza Pessanha
-#+email: mdsp@boosting.tech
+#+email: 00119110328@pq.uenf.br
 
 * O que é  Docker?
 ** O que significa "Contêiner"?
