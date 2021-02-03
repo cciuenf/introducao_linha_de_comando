@@ -60,8 +60,7 @@ AARE.
    4. Permissões
    5. STDIO
    6. Ambientes Gráficos
-   7. Processos
-   8. Distros
+   7. Distros
 
 3. Shell, que Pokémon é esse?
 
@@ -76,9 +75,10 @@ AARE.
    2. Como me movimento?
    3. Navegação básica e "Onde eu estou?"
    4. Criando, deletando e movendo arquivos e pastas
-   5. Manipulando conteúdo de arquivos pelo terminal
-   6. Execução de comandos sob condicionais lógicas
-   7. Pipes, pipes em todos os lugares
+   5. Diversos comandos
+   6. Manipulando conteúdo de arquivos pelo terminal
+   7. Execução de comandos sob condicionais lógicas
+   8. Pipes, pipes em todos os lugares
 
 5. Você provavelmente vai usar o VSCode, mas: Editores de texto, feat.
    "Como sair do vim?"
@@ -96,7 +96,8 @@ AARE.
    5. Dá um push pô!
    6. Sincronizar um repositório local
    7. Branches, tipo uma árvore?
-   8. Github
+   8. Como reverter as besteiras mais comuns
+   9. Github
 
 Para participar desta AARE, é recomendado que o estudante tenha
 participado da AARE-Lógica ou tenha feito/realizado com aprovação a
