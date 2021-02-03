@@ -318,7 +318,7 @@
     - Médio a alto consumo de memória
     - Não possui formas de realizar atividades mais complexas*
 
-    *: Na verdade, toda aç~ao de um sistema operacional pode ser ter uma GUI, porém
+    *: Na verdade, toda ação de um sistema operacional pode ser ter uma GUI, porém
        existem algumas tarefas que ou não fazem sentido ter uma ou são de fato difíceis de implementar.
 
 ** Exemplos
@@ -382,7 +382,37 @@
 
      - Configurada com a linguagem de programação "Haskell"
 
-*
+* Distros
+  Uma distro ou "distribuição" reúne tudo o que falamos anteriormente e se propõe a ser
+  um sistema operacional completo - agora sim pode comparar com Windows/macOS.
+
+  Vamos resumir assim:
+    -> Linux é o Kernel; 
+    -> composto pelos GNU Shell Utilities (ou utilitários para shell) e/ou
+       por um por um servidor gráfico (X.Org ou Wayland);
+    -> Um DE (Desktop Environment) executa um servidor gráfico, o que dá acesso à GUIs;
+    -> uma distro é um conjunto de programas pré-selecionados e instalados, possuindo um DE ou não.
+       Uma disrto é de fato um Sistema Operacional, baseado no Linux.
+
+  Lembre que tudo (ou quase tudo) no mundo Linux é Open Source, ou seja: possui o
+  código fonte aberto e geralmente é gratuito para uso.
+
+** Exemplos
+*** Ubuntu
+    [[../assets/ubuntu_screenshot.png]]
+
+    - O mais famoso
+    - Utiliza o GNOME como DE mas possui outras versões
+    - Baseado na distro Debian
+    - Tende a ser estável
+
+*** Manjaro
+    [[../assets/manjaro_screenshot.png]]
+
+    - Baseado no Arch Linux
+    - Usa o KDE plasma comom DE mas possui diversas versões com outros DEs
+    - Rolling Release (sempre possui atualizações compatíveis com as versões anteriores)
+
 * Referências
 1. Viva o Linux:  [[https://www.vivaolinux.com.br]]
 2. Canal Diolinux: [[https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA]]
