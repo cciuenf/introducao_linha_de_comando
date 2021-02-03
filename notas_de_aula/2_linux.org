@@ -1,4 +1,4 @@
-#+title: Linux
+#+title: Linux em: “Vamos adotar um pinguim!”
 #+email: matheus_pessanha2001@outlook.com
 #+author: Matheus de Souza Pessanha
 
@@ -191,6 +191,200 @@
    - Guarda arquivos de backup, logs, cache do sistema
 
 * Usuários e Grupos
+  São utilizados pelo GNU/Linux para organizar e controlar os acessos ao sistema operacional.
+
+** Usuário
+   - Qualquer um que usa o computador, geralmente representado pelo nome da pessoa
+   - Usuários comuns possuem permissões distantas e restritas ao sistema
+   - Esses usuários comuns podem acessar programas/arquivos de sistema com os
+     comandos "su" ou "sudo"
+
+*** Root user
+    - Possui acesso completo a todos os arquivos do sistema
+
+** Grupos
+   - Conjunto de permissões
+   - Usuários pertencem à grupos, herdando suas respectivas permissões
+   - O mais comum é p grupo "wheel", que representa quais usuários
+     podem pedir permissões de administrador de forma temporária
+
+  /NO WINDOWS, DÊ REBOOT, NO LINUX, SEJA ROOT/
+
+* Permissões
+  [[../assets/root_ls.png]]
+
+  - Lembrem que tudo no Linux é representado por arquivos!
+  
+  Existem 3 tipos de permissões no Linux:
+  1. Read (Leitura) ou "r"
+  2. Write (Escrita) ou "w"
+  3. Execute (Executar) ou "x"
+
+  Cada arquivo ou pasta possui um usuário owner (dono), group owner (grupo a qual o donon pertence)
+  e as permissões para os outros usuários de outros grupos.
+
+  Na imagem de exemplo, as permissões são representadas por 10 caracteres na primeira
+  coluna do comando "ls". Vamos distrinchar isso:
+
+  Exemplo: ---------
+
+  O primeiro caractere representa o tipo do arquivo:
+  - "d" se for uma pasta
+  - "l" se for um link simbólico
+  - "." se for um arquivo comum
+
+  Após esse primeiro caractere, os 9 seguintes são agrupos de 3 em 3, sendo:
+  - Os 3 primeiros representam as permissões do usuário que criou o arquivo
+  - Os 3 seguintes são as permissões que o grupo o qual o dono do aqruivo pertence
+  - Os 3 últimos mostram as permissões dos demais usuários
+
+  Exemplos:
+  drwxr-xr-x -> Significa que é uma pasta, o dono do arquivo possui todas as permissões;
+    o grupo a qual o dono pertence pode ler e executar o arquivo e demais usuários só podem executá-lo.
+
+  ps: Permissão de executar uma pasta significa que você pode entrar nela!
+
+  .rw-r--r-- -> É um arquivo comum, o dono pode ler e escrever; o grupo do dono e demais usuários
+    só podem ler.
+
+* STDIO
+  - Significa "Standard I/O Stream" (Fluxo de entrada e saída padrões)
+
+  Todos os comandos e programas no Linux funcionam desse jeito:
+  - Recebem ou não uma entrada, ou seja, um valor inicial, ou melhor ainda: um parâmetro
+  - Processam, modificando ou não essa entrada
+  - Devolve, ou melhor: retorna, uma saída
+
+** Entrada (STDIN)
+   - STDIN significa: "Standard Input" (Entrada padrão)
+   - Os programas e comandos possuem vários tipos de entrada para receber dados.
+
+   Exemplo:
+   Existe o comando "cd", o qual recebe como entrada um pasta
+
+** Saída (STDOUT)
+   - STDOUT significa: "Standard Output" (Saída Padrão)
+   - Essa saída pode significar
+     1. Efeitos colaterais no sistema, como deletar, criar ou modificar arquivos
+     2. Produzir um conteúdo em texto
+
+   Além dessa saída padrão, é retornado um código que representa se o comando foi
+   executado corretamente ou ocorreu algum erro.
+
+   O padrão é:
+   1. Retornar 0 caso foi executado corretamente
+   2. Retornar 1 caso tenha tido algum erro
+
+*** Saída de erro (STDERR)
+    Essa é uma saída (output) especial:
+    - Guarda as mensagens de erros geradas pelos programas/comandos
+
+* Ambientes Gráficos
+  Ok, por enquanto vimos tudo no terminal e de forma "baixo nível", porém, para um
+  sistema operacional ser usado por usuários comuns, é inviável que a única forma seja
+  pelo terminal. Por isso, existem os DEs (Desktop Environments, "Ambientes Gráficos").
+
+  Mas antes vamos ver as diferenças entre GUIs e CLIs:
+
+** CLIs (Command Line Interface ou Interface de Linha de Comando)
+   Permite o acesso global ao sistema de forma simples e direta, porém
+   é necessário ter conhecimento dos comandos. Pode ser intuitivo, mas geralmente
+   afasta a maioria das pessoas.
+
+*** Vantagens
+    - Pouco uso de memória RAM
+    - Alto desempenho
+    - Menos flexivel do que uma GUI
+    - Geralmente se usa só o teclado
+    - Perfeita para tarefas complexas do SO
+
+*** Desvantagens
+    - Assustador para leigos
+    - Não possui tanta interativida quanto uma GUI
+    - Multitarefa não são tão simples
+
+** GUIs (Graphic User Interface ou Interface Gráfica de Usuário)
+   Possui restrições de acesso ao sistema; é facilmente aprendida e ensinada;
+   costuma ser direcionadas para usuários finais ou "comuns".
+
+*** Vantagens
+    - Curva de aprendizado quase ínfima
+    - Altamente customizável
+    - Completamente flexivel
+    - Multitarefa costuma ser algo simples
+
+*** Desvantagens
+    - Médio ou baixo desempenho geral
+    - Médio a alto consumo de memória
+    - Não possui formas de realizar atividades mais complexas*
+
+    *: Na verdade, toda aç~ao de um sistema operacional pode ser ter uma GUI, porém
+       existem algumas tarefas que ou não fazem sentido ter uma ou são de fato difíceis de implementar.
+
+** Exemplos
+   Aqui est~ao alguns exemplos de DEs para Linux:
+
+*** GNOME
+    [[../assets/gnome_screenshot.png]]
+
+    - O mais conhecido
+    - Relativamente minimalista
+    - Um workflow diferenciado
+    - DE padrão do Ubuntu
+
+*** XFCE
+    [[../assets/xfce_screenshot.png]]
+
+    - Consumo de memória reduzido
+    - Não é tão flexivel
+
+*** KDE
+    [[../assets/kde_screenshot.png]]
+
+    - O mais "bonito" inicialmente
+    - Alto consumo de memória
+    - Extremamente intuitivo
+
+*** WMs (Window Managers ou Gerenciadores de Janelas)
+    São um tipo especial de GUI: eles organizam as janelas dos programas de
+    forma automática!
+
+    Tendem a ser extremamente customizáveis e programáveis, por isso, não possuem um
+    design incial, você é quem vai montar ele pelas configurações.
+    Existe um termo na internet chamado "ricer", que é denominado a quem gosta de
+    deixar seu desktop com WM o mais elegante e chamativo possível!
+
+    Os screenshots que vou mostrar não vão apresentar tantas diferenças visuais, pois o
+    núcleo das diferenças entre WMs estão nos seus respectivos arquivos de configuração.
+
+**** Vantagens
+     - Consumo de memória extremamente baixo
+     - Completamente customizável
+     - Totalmente modificável
+
+**** Desvantagens
+     - Necessita configuração escrita em algum arquivo
+     - Curva de aprendizado elevada
+
+**** I3
+     [[../assets/i3_screenshot.png]]
+
+     - Porta de entrada para as WMs
+     - Fácil configuraç para leigos e não programadores
+
+**** awesome
+    [[../assets/awesome_screenshot.png]]
+
+    - Utiliza a linguagem de programação "Lua" (linguagem brasileira criada na USP)
+
+**** xmonad 
+     [[../assets/xmonad_screenshot.png]]
+
+     - Configurada com a linguagem de programação "Haskell"
+
+*
 * Referências
 1. Viva o Linux:  [[https://www.vivaolinux.com.br]]
-2. Diolinux: [[https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA]]
+2. Canal Diolinux: [[https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA]]
+3. Blog Diolinux: https://diolinux.com.br/linux/10-dicas-para-novos-usuarios-de-linux.html
+4. Arch wiki: https://wiki.archlinux.org/
