@@ -13,7 +13,6 @@ materiais complementares.
    6. [[./notas_de_aula/6_git_github.org][Git e Github]]
 
 ** Pré-requisitos
-   - Discord
    - Docker instalado*
    - Qualquer Unix OS**
 
@@ -21,10 +20,8 @@ materiais complementares.
    [[https://www.youtube.com/watch?v=kQE9bn2aJkQ][esse]] tutorial feito para SCTI.
 
    *: Caso não tenha, abordarei isso na primeira aula, com um tutorial
-   **: Tamb'em será abordado na primeira aula!
 
-** Servidor
-   Entre no servidor do discord: https://discord.gg/zqWqv8W
+   **: Também será abordado na primeira aula!
 
 ** Plano de Estudos
    O plano de estudos está disponível nesse repositório, [[./Plano_Estudo.org][neste arquivo]]!
