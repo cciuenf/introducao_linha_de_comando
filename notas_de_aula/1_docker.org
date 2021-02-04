@@ -59,7 +59,7 @@
     #+end_src
 ** Windows
 *** Windows 7, 8.1, 10
-   1. Vá em: [[github:docker/toolbox/releases]]
+   1. Vá em: [[https://github.com/docker/toolbox/releases]]
    2. Baixe a última versão (DockerToolbox-xx.xx.xx.exe), sendo x a versão
    3. Duplo clique no executável e siga a instalação
       - Os seguintes softwares foram instalados:
