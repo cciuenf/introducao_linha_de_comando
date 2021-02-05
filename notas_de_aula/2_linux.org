@@ -189,6 +189,16 @@
    - Armazena arquivos que são esperados em aumentar de tamanho
    - Guarda arquivos de backup, logs, cache do sistema
 
+** Caminhos (Paths)
+Os caminhos (pastas) nos sistemas UNIX, são representaos da seguinte forma:
+- Cada pasta é separada por uma "/"
+- A pasta no nível hierárquico acima é representada com ".."
+- O diretório atual é representado por "."
+
+Exemplos:
+- "/" -> pasta root/raiz
+- "/home" -> pasta home
+- "/home/user" -> pasta do usuário "user", dentro de "home"
 * Usuários e Grupos
   São utilizados pelo GNU/Linux para organizar e controlar os acessos ao sistema operacional.
 
