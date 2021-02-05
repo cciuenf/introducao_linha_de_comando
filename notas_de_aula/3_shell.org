@@ -1,0 +1,211 @@
+#+title: Shell, que Pokémon é esse?
+#+author: Matheus de Souza Pessanha
+#+email: 00119110328@pq.uenf.br
+
+* O que é um Shell?
+- Um programa que é renderizado por uma CLI ou GUI
+- Fornece acesso às ferramentas do sistema operacional
+- Interpreta e executa os comandos inseridos via teclado
+- Não é um programa independente, pois sempre está atrelado a uma interface
+
+* Versões de Shell
+Existem diversas linguagens de script para interagir com o shell, exemplos:
+1. sh
+2. bash
+3. zsh
+4. fish
+5. ksh
+6. tcsh
+7. csh
+
+Vamos ver e testar algumas dessas!
+
+** Sh
+Esta foi a primeira linguagem de script de todo sistema Unix!
+
+O sh teve duas versões principais:
+1. Thompson shell (Ken Thompson, criador da linguagem B)
+2. Bourne shell (Stephen Bourne, criou o sh em 1977)
+
+A versão do Bourne se sobressaiu em número de funcionalidades e interativade, logo, n~ao foi díficil se tornar a padrão (:
+
+Dica: Chamamos o primeiro caractere do shell de "prompt". Ele possui 2 formas:*
+1. "$" -> significa que seu usuário não possui privilégios de administrador
+2. "#" -> você está logado como usuário root
+
+*: Esses prompts são válidos para shells baseados no POSIX sh (versão do Thompson), como:
+1. sh
+2. bash
+3. zsh
+4. fish
+
+Como o sh é a "linguagem mãe" dos shells, todas as funcionalidades listadas aqui serão herdadas pelas versões subsequentes,
+sendo adaptadas ou incrementas de alguma maneira.
+
+*** Funcionalidades:
+1. Arquivos de scripts (onde são escritos sequências de comandos), poderiam ser interpretados pelo nome do arquivo
+2. Os scripts são majoritariamente interpretados e não compilados
+3. Variáveis globais ou locais, que podem ser exportardas com o comando "export"
+4. Possibilidade de criar atalhos com o comando "alias"
+   - 'alias l="ls -la"' -> agora o comando "ls -la" pode ser executado apenas como "l"
+5. Poderia ser utilizado de forma interativa ou não
+6. Capacidade de executar comandos síncronos e assíncronos
+7. Suporte a redirecionamento pelo STDIO e suporte a pipelines
+8. Vasto números de comandos nativos
+9. Suporte a estrutura de fluxo e funções
+10. Substituição de comandos usando crases (``)
+11. Estruturas de laços (loops)
+12. "Here Documents", utilizando o perador "<<" para delimitar uma entrda de texto multi linha
+
+*** Como organizar os comandos?
+Os comandos podem ser executados tanto em sequências ou de forma individual.
+
+Para ciar uma sequência, existem algumas possibilidades:
+1. Utilizar um ";" após cada comando.
+   - "ls; pwd" -> executa o comando "ls" e após sua finalização, executa o comando "pwd"
+2. Executar um comando em segundo plano com "&"
+   - "ls & pwd" -> começa a executar o comando "ls" em segundo plano, e ao mesmo tempo executa o comando "pwd".
+     Nesse caso, o comando "ls" fica sendo executado até que o usuário interrompa a execução dele, mesmo que ele já tenha terminado
+
+**** Operadores lógicos
+No shell, existem dois operadores para representar a lógica matmática:
+1. "&&", que representa o E lógico (conjunção)
+   - "ls && pwd" -> sh só executará o comando "pwd" caso o comando "ls" tenha tido sucesso (retornado 0)
+2. "||", que representa o OU lógico (disjunção)
+   - "ls || pwd" -> caso a saída do comando "ls" seja verdadeira (retorno 0), apenas esse comando será executado, caso
+     seja falso (retorno 1), o comando "pwd" será executado
+   - "false || pwd" -> o comando "pwd" será executado automaticamente
+3. "!", que representa o NÃO lógico (negação)
+   - "! ls && pwd" -> apenas o comando "ls" é executado
+   - "! ls || pwd" -> os dois comandos serão executados
+
+*** Redirecionamento de STDIO
+Como dito anteriormente, o sh suporta redirecionamento e entrada e saída, mas o que isso significa?
+
+**** Pipe
+Nós chamamos esse redirecionamento de "pipeline", que é uma segmentação contínua de 2 ou mais comandos,
+que relaciona a saída do primeiro comando com a entrada do segundo e assim opr diante.
+
+Nesse conceito, temos o operador "|", ou "pipe".
+
+Exemplos:
+#+begin_src sh
+ls | grep "sbin"
+
+cat list.txt | sort | uniq
+#+end_src
+
+É importante frizar que o "pipe", redireciona a saída (STDOUT) de um comando e insere como entrada (STDIN) do próximo comando.
+Uma cadeia de pipes, recebe o nome de "pipeline"
+**** Arquivos
+Esse redirecionamento pode ser utilizado para atualizar ou criar novos arquivos!
+
+Existem 2 operadores básicos:
+1. ">" -> redireciona a STDOUT para um arquivo; caso ele exista, será reescrito, caso contrário, será criado
+2. ">>" -> redireciona a STDOUT para um arquivo e adiciona essa saída no final do arquivo, atualizando o arquivo caso ele exista
+
+Exemplos:
+#+begin_src sh
+echo "asdasdasd" > test.txt; ls; cat test.txt
+# test.txt
+# asdasdasd
+
+echo "TESTETESTETEST" >> test.txt; ls; cat test.txt
+# test.txt
+# asdasdasd\nTESTETESTETEST
+#+end_src
+
+Um exemplo interessante é que você pode redirecionar a STDOUT e a STDERR:
+#+begin_src sh
+echo "TESTESTESTETSTE" > test.txt 2>&1
+#+end_src
+*** Shebang
+Essa técnica permite que o sispema operacional entenda qual programa usar para executar o script/arquivo, sem precisar usar explicitamente o comando.
+
+Exemplo:
+Digamos que temos um script sh:
+#+begin_src sh
+ls /
+
+cd /home/user
+
+ls
+#+end_src
+
+Bem, para executar o script acima, existem algumas possibilidades:
+1. Executar um comando por vez no shell
+2. Executar eles em sequências com um operator lógico ou com o ";"
+3. Usar a técnica Shebang
+
+Como dito anteriormente, uma das funcionalidades do sh é a possibilidade de executar arquivos como se fossem comandos, pelo seu nome.
+Para isso, usamos o Shebang, desse jeito:
+
+- Criamos um arquivo;
+- Na primeira linha digitamos "#!" seguido pelo programa que deve ser usado para executar o arquivo;
+  #+begin_src sh
+
+  #!/bin/sh
+  ls /
+
+  cd /home/user
+
+  ls
+
+  #+end_src
+- Damos permissão de execução para esse arquivo: "chmod +x arquivo"
+- Agora podemos executar esse script apenas cp, "./arquivo"
+** Bash (Bourne-Again Shell)
+Aqui entramos na era moderna dos shells. o bash, é uma evolução direta do sh e possui diversas melhorias, como:
+1. O último comando pode ser repetido com o operador "!!"
+2. Suporte a histórico de comandos, podendo ser navegável com as setas de direção
+3. Os comandos, diretórios e arquivos agora podem ser auto completados com a tecla "TAB"
+4. Suporte a globs e wildcards (operadores como "*")
+5. O redirecionamento de STDOUT e STDERR foi simplificado com o operador "&>"
+   #+begin_src bash
+   echo "TESTESTEST" &> test.txt
+   #+end_src
+6. Suporte a expressões regulares
+7. Adição de expansão com chaves
+     #+begin_src bash
+     echo a{p,c,d,b}e
+     # ape ace ade abe
+     #+end_src
+8. Suporte a sequências numéricas
+   #+begin_src bash
+     echo {1..10}
+     # 1 2 3 4 5 6 7 8 9 10
+
+     echo {1..10..3}
+     # 1 4 7 10
+
+     echo {a..e}
+     # a b c d e
+   #+end_src
+9. Substituição de processos com o operador "<()", tendo a execução desses comandos em paralelo
+   #+begin_src bash
+   diff <(sort test1.txt) <(sort test2.txt)
+
+   # SEM ESSE OPERADOR, UMA ALTERNATIVA SERIA:
+   sort test2.txt > /tmp/test2.sorted && sort test1.txt | diff - /tmp/test2.sorted && rm /tmp/test2.sorted
+   #+end_src
+** Fish (Friendly Interactive Shell)
+Este é um dos shell mais recentes! Foi criado em 2005 pelo Axel Liljencrantz!
+
+O fish não é baseado no bash nem no csh, dessa forma, apesar de ter as "mesmas" funcionalidades,
+ele tenta ser idependente e seguir o próprio caminho.
+
+Algumas funcionalidades extras que já vem nativamente:
+1. Sugestão automática de comandos
+2. Syntax highlighting com checagem de erros
+3. Suporte a terminais com 256 cores
+4. Auto complete com TAB avançado
+5. Oferece um comando "help" que abre uma página web com o tutorial dos comandos do fish
+6. Mensagens de erros que tentam explicar ao máximo o que aconteceu e como pode ser resolvido
+7. Todas as funcionalidades já vem ativadas por padrão
+8. Sintaxe simples e intuitiva
+
+Informações importantes:
+- Os operadores lógicos são os mesmo
+- Para a substituição de comandos usamos "(comando)" e não "$(comando)"
+- Existem funções nativas que caracterizam fish ainda mais como uma linguagem de programação
+- Altamente customizável via plugins
