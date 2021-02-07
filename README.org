@@ -16,9 +16,6 @@ materiais complementares.
    - Docker instalado*
    - Qualquer Unix OS**
 
-   Caso tenha dúvidas sobre como utilizar o discord, recomendo
-   [[https://www.youtube.com/watch?v=kQE9bn2aJkQ][esse]] tutorial feito para SCTI.
-
    *: Caso não tenha, abordarei isso na primeira aula, com um tutorial
 
    **: Também será abordado na primeira aula!

@@ -1,0 +1,56 @@
+#+title: Comandos Shell ou: “Como se perder no terminal?”
+#+author: Matheus de Souza Pessanha
+#+email: 00119110328@pq.uenf.br
+
+* Onde eu consigo uma ajuda?
+Todos os comandos (nativos ou não) possuem uma "man page", ou "página de manual", onde fica toda a documentção do comando.
+
+Para abrir o manual de algum comando, apenas digite no terminal:
+
+#+begin_src bash
+
+$ man <comando>
+
+#+end_src
+
+Exemplos:
+~man man~ -> abre o manual do comando ~man~!
+
+Dicas:
+- Caso o manual ultrapasse o tamanho do terminal, é possível navegar sobre ele com as setas de direção ou com ~h/j/k/l~
+- Para sair da documentação, apenas tecle ~q~
+* Como me movimento?
+Existem diversas maneiras de se movimentar pelo terminal e isso também depende de qual emulador de terminal você está usando!
+
+Porém, existe alguns atalhos do teclado que de certa forma são universais! Iremos ver cada um deles:
+
+** Movimentação básica
+[[../assets/basic_moves.gif]]
+
+Vamos tentar algumas movimentações básicas:
+
+- Podemos avançar um caractere com =Ctrl-f= ou =Seta pra direita=
+- Podemos voltar um caractere com =Ctrl-b= ou =Seta pra esquerda=
+- =Alt-f= ou =Ctrl-SetaDireita= para avançar por palavras
+- =Alt-b= ou =Ctrl-SetaEsquerda= para voltar por palavras
+- =Ctrl-a= ou =Home= para ir para o início da linha
+- =Ctrl-e= ou =End= para ir pro final da linha
+
+** Manipulando linhas e caracteres
+Escrevam algumas frases no terminal!
+
+Para apagar a partir do cursor até o final da linha, usamos o =Ctrl-k=
+
+Já para apagar do cursor até o começo da linha, usamos o =Ctrl-u=
+
+Agora você pode colocar o que você acabou de cortar com o =Ctrl-y=
+
+Ok, mas se eu quiser copiar/colar a partir da área de transferência?
+Simples: geralmente o copiar está mapeado para =Ctril+Shift+c= e o colar para =Ctrl+Shift+v=
+
+E se eu quiser apagar uma palavra inteira? =Alt+f= faz isso, porém, com uma ressalva:
+- Ele vai apagar a partir da posição do seu cursor até o final da palavra!
+- Para apgar uma palavra inteira, possicione o cursor na primeira letra e então execute o comando
+
+*** Nossa, minha tela está cheia, o que faço?
+Fácil! Você pode usar =Ctrl+l= ou o executar o comando ~clear~

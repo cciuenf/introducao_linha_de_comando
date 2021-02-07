@@ -48,7 +48,7 @@
 ** root ou "/" (Raiz ou Barra)
    [[../assets/root_ls.png]]
 
-   - Diretório raiz (como se fosse o "C:\" do Windows)
+   - Diretório raiz (como se fosse o ~C:\~ do Windows)
    - Os nomes dos diretórios geralmente são abreviações em ingês
    - Segue o padão FHS (Filesystem Hierarchy Standard), mantido pela Linux Foundation
    - Todos os outros diretórios e subpastas estão localizados aqui
@@ -61,7 +61,7 @@
    - Abriga todos os comandos que podem ser usados no terminal
    - Inclui novos comandos quando um novo software é instalado
    - Pode ser comparada com o "C:\Arquivos\ de\ Programas" do Windows
-   - Apenas os ".exe" ficam aqui
+   - Apenas os ~.exe~ ficam aqui
 
 ** /boot (Inicialização do SO)
    [[../assets/warning_logo.png]]
@@ -82,8 +82,8 @@
      5. Discos (HD ou SSD)
 	- Discos são representados com "sd" e uma letra
 	- Cada partição é representada como um número
-	- Exemplos: "sda", "sda1", "sdb2"
-   - Possui um "buraco negro", ou "/dev/null", que perde toda a informação que recebe
+	- Exemplos: ~sda~, ~sda1~, ~sdb2~
+   - Possui um "buraco negro", ou ~/dev/null~, que perde toda a informação que recebe
      - Pode engolir o sistema inteiro se utilizado de forma errônea
 
 ** /etc ("Et cetera")
@@ -95,11 +95,11 @@
    - Dentro da pasta do respectivo usuário, existe:
      1. Pastas genéricas como "Desktop" ou "Imagens"
      2. Arquivos ocultos:
-	- "/home/user/.cache" -> guarda o cache da sessão (login) atual
+	- ~/home/user/.cache~ -> guarda o cache da sessão (login) atual
         - Arquivos de configuração de softwares específicos
 
 ** /lib, /lib32, /lib64 /libx32 (Library ou Biblioteca)
-   - São links simbólicos (atalhos) para "/usr", ex: "/lib" -> "/usr/lib"
+   - São links simbólicos (atalhos) para ~/usr~, ex: ~/lib~ -> ~/usr/lib~
    - Guarda as bibliotecas necessárias de cada software!
    - Essas "libs" podem ser comparadas com as "DLLs" do Windows
    - O nome das pastas represetam a arquitetura a qual elas guardam os arquivos
@@ -112,30 +112,30 @@
    - Geralmente são montados automaticamente
 
 ** /mnt (Mount ou Ponto de montagem)
-   - Irmão do "/media"
+   - Irmão do ~/media~
    - Você pode montar as unidades onde quiser no sistema, mas essa é uma pasta de sugestão
    - Tem a finalidade de abrigar as montagens de dispositivos feitas manualmente pelo usuário
-   - Leva em consideração o arquivo "/etc/fstab"
+   - Leva em consideração o arquivo ~/etc/fstab~
 
 ** /opt (Optional ou Opicional)
    - Gerealmente fabricantes que fazem computadores com Linux, guardam configurações aqui
    - Também pode abrigar um software proprietário (como o Google Chrome)
-     - Na pasta "/usr/bin" encontramos o binário do "google-chrome-stable", que é um link
-       simbólico para "/opt/google/chrome/google-chrome"
+     - Na pasta ~/usr/bin~ encontramos o binário do ~google-chrome-stable~, que é um link
+       simbólico para ~/opt/google/chrome/google-chrome~
 
 ** /proc (Processes ou Processos)
    [[../assets/warning_logo.png]]
 
    - Diretório virtual, ou seja, ele não é escrito no seu disco rígido
    - Representa cada processo do SO como um arquivo, ex: cada aba do chrome é um processo
-   - Cada processo tem um ID ou PID -> Process Identity, um número que representa ele
+   - Cada processo tem um ~ID~ ou ~PID~ -> Process Identity, um número que representa ele
    - Gerado todas as vezes que seu computador inicia
 
 ** /root (Um "/home" para o administrador)
    [[../assets/warning_logo.png]]
 
-   - Fica separado do "/home" para poder ter permissões especiais
-   - Tendo o "/home" separado, você pode logar como root e restaurar o sistema
+   - Fica separado do ~/home~ para poder ter permissões especiais
+   - Tendo o ~/home~ separado, você pode logar como root e restaurar o sistema
 
 ** /run (Runtime)
    - Outro diretório virtual
@@ -143,7 +143,7 @@
    - Diretório novo no padrões FHS
 
 ** /sbin (System Binaries ou Binários de sistema)
-   - Link simbólico para "/usr/sbin"
+   - Link simbólico para ~/usr/sbin~
    - Guarda os executáveeis dos programas que precisam de permissões de admin para serem executados
 
 ** /snap (Referência aos pacotes SNAP)
@@ -176,14 +176,14 @@
 
 ** /usr (User, Usuário ou "Unix System Resources")
    - Foi modificada ao longo do tempo
-   - Antigamente era onde a "/home" ficava
+   - Antigamente era onde a ~/home~ ficava
    - Guarda arquivos e bibliotecas úteis para os usuários mas que não são vitais para o sistema
 
 *** /usr/local
     - Programas instalados via código fonte guardam suas informações aqui
     - Abriga as fontes do sistema, ícones e outros
 
-    ps: Em "/home" também existe um diretório ".local", que possui a mesma função!
+    ps: Em ~/home/user~ também existe um diretório ~.local~, que possui a mesma função!
    
 ** /var (Variable ou Variável)
    - Armazena arquivos que são esperados em aumentar de tamanho
@@ -191,14 +191,15 @@
 
 ** Caminhos (Paths)
 Os caminhos (pastas) nos sistemas UNIX, são representaos da seguinte forma:
-- Cada pasta é separada por uma "/"
-- A pasta no nível hierárquico acima é representada com ".."
-- O diretório atual é representado por "."
+- Cada pasta é separada por uma ~/~
+- A pasta no nível hierárquico acima é representada com ~..~
+- O diretório atual é representado por ~.~
 
 Exemplos:
-- "/" -> pasta root/raiz
-- "/home" -> pasta home
-- "/home/user" -> pasta do usuário "user", dentro de "home"
+- ~/~ -> pasta root/raiz
+- ~/home~ -> pasta home
+- ~/home/user~ -> pasta do usuário ~user~, dentro de ~home~
+- ~/home/user/..~ -> pasta ~home~, pois no final do caminho voltamos um nível acima
 * Usuários e Grupos
   São utilizados pelo GNU/Linux para organizar e controlar os acessos ao sistema operacional.
 
@@ -206,7 +207,7 @@ Exemplos:
    - Qualquer um que usa o computador, geralmente representado pelo nome da pessoa
    - Usuários comuns possuem permissões distantas e restritas ao sistema
    - Esses usuários comuns podem acessar programas/arquivos de sistema com os
-     comandos "su" ou "sudo"
+     comandos ~su~ ou ~sudo~
 
 *** Root user
     - Possui acesso completo a todos os arquivos do sistema
@@ -214,7 +215,7 @@ Exemplos:
 ** Grupos
    - Conjunto de permissões
    - Usuários pertencem à grupos, herdando suas respectivas permissões
-   - O mais comum é p grupo "wheel", que representa quais usuários
+   - O mais comum é p grupo ~wheel~, que representa quais usuários
      podem pedir permissões de administrador de forma temporária
 
   /NO WINDOWS, DÊ REBOOT, NO LINUX, SEJA ROOT/
@@ -225,22 +226,23 @@ Exemplos:
   - Lembrem que tudo no Linux é representado por arquivos!
   
   Existem 3 tipos de permissões no Linux:
-  1. Read (Leitura) ou "r"
-  2. Write (Escrita) ou "w"
-  3. Execute (Executar) ou "x"
+  1. Read (Leitura) ou ~r~
+  2. Write (Escrita) ou ~w~
+  3. Execute (Executar) ou ~x~
 
   Cada arquivo ou pasta possui um usuário owner (dono), group owner (grupo a qual o dono pertence)
   e as permissões para os outros usuários de outros grupos.
 
   Na imagem de exemplo, as permissões são representadas por 10 caracteres na primeira
-  coluna do comando "ls". Vamos distrinchar isso:
+  coluna do comando ~ls~. Vamos distrinchar isso:
 
-  Exemplo: ---------
+           123456789
+  Exemplo: ~---------~
 
   O primeiro caractere representa o tipo do arquivo:
-  - "d" se for uma pasta
-  - "l" se for um link simbólico
-  - "." se for um arquivo comum
+  - ~d~ se for uma pasta
+  - ~l~ se for um link simbólico
+  - ~.~ se for um arquivo comum
 
   Após esse primeiro caractere, os 9 seguintes são agrupos de 3 em 3, sendo:
   - Os 3 primeiros representando as permissões do usuário que criou o arquivo
@@ -248,13 +250,13 @@ Exemplos:
   - Os 3 últimos mostram as permissões dos demais usuários
 
   Exemplos:
-  drwxr-xr-x 
+  ~drwxr-xr-x~
   - Significa que é uma pasta, o dono do arquivo possui todas as permissões;
   - o grupo a qual o dono pertence pode ler e executar o arquivo e demais usuários só podem executá-lo.
 
   ps: Permissão de executar uma pasta significa que você pode entrar nela!
 
-  .rw-r--r-- 
+  ~.rw-r--r--~
   - É um arquivo comum, o dono pode ler e escrever; o grupo do dono e demais usuários
     só podem ler.
 
@@ -271,7 +273,7 @@ Exemplos:
    - Os programas e comandos possuem vários tipos de entrada para receber dados.
 
    Exemplo:
-   Existe o comando "cd", o qual recebe como entrada uma pasta
+   Existe o comando ~cd~, o qual recebe como entrada uma pasta
 
 ** Saída (STDOUT)
    - STDOUT significa: "Standard Output" (Saída Padrão)
