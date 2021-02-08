@@ -2,7 +2,8 @@
 #+author: Matheus de Souza Pessanha
 #+email: 00119110328@pq.uenf.br
 
-* O que é git?
+* Git
+** O que é git?
 ~git~ é uma ferramenta de DVCS (Distributed Version Control System), ou "sistema de controle de versões distribuido",
 utilizado para versionar (criar versões) diferentes de um arquivo/projeto.
 
@@ -11,21 +12,21 @@ utilizado para versionar (criar versões) diferentes de um arquivo/projeto.
 - Almeja oferecer a maior flexibilidade, segurança e desempenho
 - Relativamente difícil de aprender, pela quantidade de novos conceitos e comandos
 
-** Diferença entre ~git~ e Github
+*** Diferença entre git e Github
 - O ~git~ é de fato o software de VCS
 - Github é uma plataforma de hospedagem de código fonte, que utiliza o ~git~
   - Outros exemplos, são:
     1. Gitlab
     2. BitBucket
 
-* Instalando o git
+** Instalando o git
 - Existe uma versão oficial para windows: https://git-scm.com/download/win
   - Instala em conjunto o "git bash", um emulador de terminal bem limitado com o bash
 - Em distros Linux baseadas no Debian, rode: =sudo apt install git=
   - Geralmente o ~git~ já vem instalado por padrão nas distros
 
-* Conceitos inciais
-** Repositório
+** Conceitos inciais
+*** Repositório
 Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~git~ usa o mesmo conceito.
 
 *** Repositório local
@@ -34,31 +35,31 @@ Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~g
 - Lugar para onde enviamos as mudanças locais e armazenamos todas as mudanças
 - Geralmente usamos uma plataforma, como Github
 
-** Commit
+*** Commit
 - Cria um ponto ("save") no seu repositório
 - Responsável por criar a "linha do tempo" do projeto
 
-** Branch
+*** Branch
 - Imagine seu projeto como uma árvore
 - Cria um novo "ramo" do seu projeto!
 - Todo projeto possui uma branch raiz padrão ~master~ ou ~main~
 
-** Staging
+*** Staging
 - Passo anterior ao ~commit~
 - Armazena as mudanças de forma temporária e facilmente reversível
 
-** Clonar
+*** Clonar
 - É possível clonar repositórios remotos, ou seja, trazer o repositório remoto para um local
 
-** Push
+*** Push
 - Faz o upload dos commits locais para um repositório remoto
 
-** Pull
+*** Pull
 - Faz o download das mudanças de um repositório remoto para um local
 
-** HEAD
+*** HEAD
 - Significa uma referência para o último commit e branch atual
-* Comandos
+** Comandos
 Antes de inciar os comandos, devemos configurar o git localamente, nos identificando:
 #+begin_src bash
 
@@ -101,8 +102,7 @@ remoto na "branch-destino"
   - flag ~-fd~ para diretórios
 - =git reflog= -> um "diário" que guarda as mudanças na do ~HEAD~
 
-
-* Desfazer erros comuns
+** Desfazer erros comuns
 - =git restore <arquivo>= -> descarta todas as mudanças não commitadas de um arquivo até seu último commit
   - Se utilizado num arquivo deletado, restaura o arquivo
   - Se utilizado com a flag ~-p~, oferece a possibilidade de descartar mudanças em partes específicas
