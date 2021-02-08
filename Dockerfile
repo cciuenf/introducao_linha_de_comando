@@ -2,7 +2,8 @@ FROM ubuntu:20.10
 
 RUN apt-get update && apt-get -y upgrade
 
-RUN apt-get install -y sudo less iputils-ping telnet locales locales-all
+RUN apt-get install -y sudo less iputils-ping telnet \
+    locales locales-all software-properties-common gnupg
 
 RUN apt-get install -y zsh fish
 

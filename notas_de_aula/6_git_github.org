@@ -3,7 +3,6 @@
 #+email: 00119110328@pq.uenf.br
 
 * Git
-** O que é git?
 ~git~ é uma ferramenta de DVCS (Distributed Version Control System), ou "sistema de controle de versões distribuido",
 utilizado para versionar (criar versões) diferentes de um arquivo/projeto.
 
@@ -12,7 +11,7 @@ utilizado para versionar (criar versões) diferentes de um arquivo/projeto.
 - Almeja oferecer a maior flexibilidade, segurança e desempenho
 - Relativamente difícil de aprender, pela quantidade de novos conceitos e comandos
 
-*** Diferença entre git e Github
+** Diferença entre git e Github
 - O ~git~ é de fato o software de VCS
 - Github é uma plataforma de hospedagem de código fonte, que utiliza o ~git~
   - Outros exemplos, são:
@@ -119,9 +118,73 @@ remoto na "branch-destino"
   - A flasg ~--hard~ significa que todas as mudanças locais serão descartadas
   - Para persistir as mudanças locais, use =git reset --mixed <commit-hash>=
 
+* Github
+Github é uma plataforma de hospedagem de código fonte, ou seja, onde criamos repositórios remotos.
+
+** Conceitos iniciais
+*** Fork
+- "Bifurca" um repositório existe, bem parecido com o =git clone=, porém te permite realizar mudanças e
+  criar uma pull request com elas no repositório original
+*** Pull Request
+- Implementação visual do comando =git pull=, onde o dono do repositório pode rever as mudanças que outra pessoa fez
+  no fork dela e decidir se deve ser mesclado ou não em alguma branch. Principal maneira de se fazer code review
+  ou contribuir com algum projeto open source
+*** Issue
+- Abrir uma issue significa abrir uma discussão em um repositório sobre algum assunto. Geralmente é usada
+  para descrever bugs de um programa ou sugerir melhorias/mudanças no código fonte
+*** Release
+- Um dos métodos de distribuição de um projeto. Geralmente é aqui onde os desenvolvedores expõem os binários
+  (executáveis) de suas aplicações, junto com um "changelog", indicando as mudanças de cada atualização
+** Como interagir com o Github
+- Existem algumas maneiras de interagir com o Github:
+  1. Pelo site oficial -> https://github.com
+  2. Pelo aplicativo em GUI oficial -> https://desktop.github.com/
+  3. Pela CLI oficial: https://cli.github.com/
+
+Como estamos numa AARE de linha de comando... Vamos de CLI. Porém... irei mostrar como fazer as mesmas ações, só que no site 😊
+
+*** Instalando a github-cli
+No nosso contêiner estamos usando a distro ~ubuntu~, que é baseada no Debian, logo,
+precisamos adicionar o repositório do github e suas chaves para instalar o software:
+
+#+begin_src bash
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
+#+end_src
+
+*** Comandos
+**** gh auth
+***** gh auth login
+- Conecta sua conta do github com o dispositivo atual
+***** gh auth logout
+- Remove sua conta github do diospositivo atual
+**** gh repo
+***** gh repo create <nome>
+- Cria um repositório remoto no github
+  - Caso seja executado dentro de um repositório local (onde foi executado =git init=),
+    apenas cria o repo remoto e adiciona uma nova URL como ~origin~
+  - Se executado fora de um repositório local, perguntará se deseja criar um no diretório atual
+***** gh repo clone <username><repo>
+- Igual o =git clone=, porém menos verboso, sem a necessidade de colocar uma URL
+***** gh repo fork
+- Cria um fork de um repositório no Github
+**** gh pr
+***** gh pr create
+- Cria uma Pull Request no Github da branch que você está para a master/main
+***** gh pr merge <pr>
+- Dado um número, URL ou nome da branch de uma PR, mescla ela com a branch master/main
+***** gh pr diff <pr>
+- Dado uma PR, mostra as mudanças propostas por ela
+***** gh pr close
+- Fecha a Pull Request
+***** gh pr comment <pr>
+- Dado uma PR, cria um novo comentário
 * Referências
 - Site oficial Git: https://git-scm.com/
 - Fonte dos comandos animados: https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1#revert
+- Manual da CLI do Github: https://cli.github.com/manual/
 - 18 comandos git: https://towardsdatascience.com/git-commands-cheat-sheet-software-developer-54f6aedc1c46
 - Aula completa freeCodeCamp sobre git e github: https://www.youtube.com/watch?v=RGOj5yH7evk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=2
 - Aula completa spbre desfazer erros comuns: https://www.youtube.com/watch?v=lX9hsdsAeTk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=3
