@@ -121,7 +121,6 @@ Caso você só tenha um shell rodando, o contêiner atual será desligado.
 Bem, traduzindo de forma direta ~whoami~ significa "quem sou eu?".
 Esse comando serve para imprimir na tela qual o usuário que está logado
 
-[[../assets/whoami.png]]
 ** pwd
 "print working directory", ou "imprima o diretório de trabalho (atual)"
 
