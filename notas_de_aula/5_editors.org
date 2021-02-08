@@ -1,0 +1,139 @@
+#+title: Você provavelmente vai usar o VSCode, mas: Editores de texto, feat. “Como sair do vim?”
+#+author: Matheus de Souza Pessanha
+#+email: 00119110328@pq.uenf.br
+
+* Editores de texto
+Existem infinitos editores de texto:
+- aqueles baseados em CLI
+- aqueles baseados em GUI
+
+Conhecer, mesmo que o básico, dos mais usados, te dá autonomia para usar o que você mais gosta!
+
+** nano
+- "Nano's ANOther editor"
+- simples editor que faz parte da família GNU
+
+Uso: =nano <opções> <arquivo>=
+
+- Seu arquivo de configuração pode ser criado na home: ~/home/user/.nanorc~
+- Para ter syntax highlighting básica, execute: =find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; >> ~/.nanorc=
+- Para iniciar o editor com o número das linhas visível, execute o ~nano~ dessa forma: =nano -l <arquivo>=
+- Movimentação básica parecida com a do shell
+- ~Ctrl-g~ para pedir ajuda
+- ~Ctrl+u~ cola
+- O ~nano~ introduz a ideia de uma "meta key" ou "M", que geralmente é a tecla ~Alt~ ou ~Option~ no macOS
+- ~M-^~ copia
+- ~Ctrl-^~ inicia uma marcação. Caso queria cancelar, apenas execute o atalho novamente
+
+** vim
+- "Vi IMproved"
+- De longe o editor mais diferente
+- Baseado em CLI mas existe versões com GUI, como o ~gvim~
+- Possui três modos:
+  1. ~Normal~ -> onde os comandos são executados e você pode se movimentar
+  2. ~Inserção~ -> onde você de fato escreve o conteúdo
+  3. ~Visual~ -> onde você realiza aç~oes com múltiplos cursores ou linhas
+- O vim segue a filosofia que editamos mais um texto já feito do que de fato escrevemos novos textos
+- Todos os comandos são declarativos, ou seja, eles possuem significado, como se você estivesse conversando com o editor
+- Quase todos os comandos podem ser encadeados
+- Instala em conjunto um programa de tutorial: ~vimtutor~
+- Diversos programas no mundo Linux usam o Vi mode
+- Todos os comandos podem ser precedidos por um número, para realizar repetições
+- Syntax hightlight automático, porém pode ser expandida por plugins
+- Vários gerenciadores de plugins
+- Pode ser configurado para funcionar como uma IDE, porém é preciso diversos plugins
+- Uso de memória quase ínfimo
+- Seu arquivo de configuração fica, ou pode ser criado em: ~/home/user/.vimrc~
+- Utiliza a linguagem ~VimScript~ para ser configurado
+
+*** Movimentação
+No modo normal, você pode navegar por carecteres usando as setas direcionais, ou:
+- ~h~ -> esquerda
+- ~j~ -> baixo
+- ~k~ -> cima
+- ~l~ -> direita
+
+Para se movimentar por palavras:
+- ~w~ -> avança por palavras
+- ~b~ -> volta por palavras
+*** Comandos
+- ~q~ -> sai do arquivo, dá erro se o arquivo não foi salvo
+- ~w~ -> escreve as mudanças no arquivo
+- ~f~ -> procura por um arquivo
+- ~e~ -> edita um novo arquivo ou um existente (abre)
+- ~x~ -> apaga o carectere que está na posição do cursor
+- ~s~ -> o mesmo que ~x~, porém te coloca no modo de inserção
+- ~i~ -> entra no modo de inserção, na posição do cursor
+- ~I~ -> entra no mo do de inserção no começo da linha
+- ~a~ -> entra no modo de inserção em um carectere a frente do cursor
+- ~A~ -> entra no modo de inserção no final da linha
+- ~u~ -> desfaz uma alteração
+- ~Ctrl+r~ -> refaz uma alteração
+- ~ESC~ -> volta para o modo normal
+- ~v~ -> entra no modo visual, por carectere
+- ~V~ -> entra no modo visual, por linha
+- ~Ctrl-v~ -> entra no modo visual, por blocos
+- ~0~ -> vai para o começo da linha
+- ~$~ -> vai para o final da linha
+- ~gg~ -> vai para o começo do arquivo
+- ~G~ -> vai para o final do arquivo
+- ~d~ -> deleta texto
+- ~y~ -> copia texto
+- ~c~ -> deleta texto e entra no modo de inserção
+
+*** Subcomandos
+- ~i~ -> "inner", "interior"
+- ~a~ -> remove o interior e o exterior
+
+** emacs, o faz tudo
+- GNU Emacs
+- Herda todas as movitações do shell e as expande com a "meta key", ~M~, ou ~Alt~
+- ~Ctrl-g~ -> cancela qualquer comando
+- Geralmente os comandos começam com ~Ctrl-x~ ou ~Ctrl-c~
+- Possui gerenciador de pacotes/plugins, nativo
+- Possui diversos repositórios de plugins: ELPA, MELPA, QUELPA
+- É recomendado que se utilize a versão em GUI, mas pode ser usado em um terminal
+- Funciona com "modes", ou modos para edição. Exemplo: caso abra um arquivo ~.el~, o emacs irá ativar o "emacs lisp mode"
+- Existem os "major modes", ou "modos principais" e os "minor modes", ou "modos secundários"
+- É configurado pela linguagem "Emacs Lisp", um dialeto LISP
+- Sua configuração pode ser localizada no arquivo ~/home/user/.emacs~ ou ~/home/user/.emacs.d/init.el~
+- Por padrão, já vem com diversos modos instalados, como o ~ruby-mode~, ~js2-mode~, ~emacs-lisp-mode~
+- Possui um plugin que mostra quais os possíveis atalhos quando uma tecla é usada (whichkey)
+- Pode ser facilmente configurado para funcionar como uma IDE
+- Suporte ao ~org-mode~
+- Pode executar quase todo programa, dentro dele, como navegadores web, abrir imagens e videos (apenas na versão GUI)
+
+*** Movimentação
+- ~Ctrl-f~ -> avança um carectere para direita
+- ~Ctrl-b~ -> volta um carectere para a esquerda
+- ~Ctrl-n~ -> desce uma linha
+- ~Ctrl-p~ -> sobe uma linha
+- ~M-f~ -> avança uma palavra
+- ~M-b~ -> volta uma palavra
+- ~Ctrl-a~ -> começo da linha
+- ~Ctrl-e~ -> final da linha
+- ~M-<~ -> começo do arquivo
+- ~M->~ -> final do arquivo
+*** Comandos
+- ~M-x~ -> abre o executador de comandos
+- ~Ctrl-u~ ou ~M~ + um número N, repete o próximo comando N vezes
+- ~Ctrl-x b~ -> troca para outro buffer (arquivo)
+- ~Ctrl-x k~ -> fecha um buffer (o padrão é o buffer atual)
+- ~Ctrlx 0~ -> deleta a janela atual
+- ~Ctrl-x 1~ -> fecha todas as janelas, apenas deixa a atual aberta
+- ~Ctrl-x 2~ -> cria uma janela na horizontal
+- ~Ctrl-x 3~ -> cria uma janela na vertical
+- ~Ctrl-x Ctrl-w~ -> salva o buffer atual em um novo arquivo
+- ~Ctrl-x Ctrl-s~ -> salva o buffer atual
+- ~Ctrl-x s~ -> salva cada buffer aberto de modo interativo
+- ~Ctrl-x Ctrl-f~ -> abre um arquivo
+- ~Ctrl-x o~ -> troca de janela
+- ~Ctrl-w~ -> corta o texto, dada uma região
+- ~Ctrl-k~ -> corta o texto até o final da linha
+- ~Ctrl-y~ -> cola o texto
+- ~Ctrl-space~ -> marca uma região
+- ~M-w~ -> copia uma região sem deletar
+- ~Ctrl-x Ctrl-c~ -> sai do emacs
+- ~Ctrl-h k~ -> abre ajuda interativa para atalhos
+- ~Ctrl-h P~ -> mostra informações sobre um plugin
+- ~Ctrl-h m~ -> mostra todos os "minor modes" ativados e o "major mode"
