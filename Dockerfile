@@ -2,7 +2,7 @@ FROM ubuntu:20.10
 
 RUN apt-get update && apt-get -y upgrade
 
-RUN apt-get install -y sudo
+RUN apt-get install -y sudo less iputils-ping telnet
 
 RUN apt-get install -y zsh fish
 

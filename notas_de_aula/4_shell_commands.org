@@ -103,6 +103,13 @@ Exemplos:
 Além do comando =man=, também podemos conseguir ajuda para um comando acionando a flag =--help= ou =-h=
 =<comando> --help=
 
+** sudo
+- Comando para conferir permissões de ~root~ temporariamente ao usuário
+- Pode ser lido como "super user, do <comando>"
+
+Usos:
+- =sudo rm /etc/fstab= -> remove o arquivo "fstab" da pasta ~/etc~
+
 ** exit
 Como sair do shell ou interromper o contêiner?
 
@@ -217,25 +224,169 @@ Imprime as últimas partes de um arquivo
 Usos:
 - =tail <arquivo1>= -> imprime as últimas dez linhas do "arquivo1"
 - =tail -n 15 <arquivo1>= -> imprime as últimas quinze linhas do "arquivo1"
+* Comandos intermediários
+** which
+- Imprime o caminho para o executável do programa!
+
+Usos:
+- =which ls= -> mostra o caminho para o binário de ~ls~, nesse caso ~/usr/bin/ls~
+** whereis
+- Parecido com o ~which~, porém mostra todas as ocorrências relacionadas à um programa
+
+Usos:
+- =whereis ls= -> imprime todos os caminhos que possuem arquivos/binários relacionados ao programa ~ls~
 ** top
-Veja quais processos estão sendo executados no sistema operacional
+- Veja quais processos estão sendo executados no sistema operacional
 
 Uso: =top=
 ** ps
-Imprime na tela um resumo dos processos rodando
+- Imprime na tela um resumo dos processos rodando
 
 Uso: =ps=
 ** kill
-"mate"
-
-Para um processo dado um ~PID~
+- "mate"
+- Para um processo dado um ~PID~
 
 Usos:
 - =kill 1343= -> para ou "mata" o processo com número "1343"
 ** killall
-"mate todos"
-
-Dado um programa, o sistema operacional irá parar todos os processos relacionados com esse programa
+- "mate todos"
+- Dado um programa, o sistema operacional irá parar todos os processos relacionados com esse programa
 
 Usos:
 - =killall picom= -> para todos os processos, ou "mata" o programa "picom"
+** ping
+- Comando para testar se existe conexão em um DNS/IP
+
+Usos:
+- =ping 8.8.8.8= -> "pinga", ou testa a conexão com o DNS do Google
+** telnet
+- Comando para interagir com o protocolo de rede "telnet"
+- Pode ser usado para verificar se uma porta está recebendo conexão (está aberta)
+
+Usos:
+- =telnet 8.8.8.8 443= -> verifica se a porta ~443~ no DNS ~8.8.8.8~ está aberta
+** curl
+- "Transfer a URL"
+- Transfere dados para uma URL, dado um protocolo de rede
+
+Usos:
+- =curl https://www.google.com= -> retorna a página ~HTML~ do Google
+- =curl -H <header> <url>= -> faz uma requisição ~GET~ para a URL
+- =curl -X POST -d <body> <url>= -> faz uma requisição ~POST~ com corpo para a url
+** wget
+- Um utilitário não interativo para baixar arquivos
+
+Usos:
+- =wget <url>= -> baixa o arquivo da URL e salva com o nome original
+- =wget <url> > arquivo= -> baixa o arquivo e salva com o nome "arquivo"
+** less
+- Uma evolução do comando ~more~
+
+Assim como o ~cat~ ele redireciona o conteúdo do arquivo para a STDOUT, porém,
+se o arquivo for longo, ele cria um ambiente no qual é possível navegar desde
+do começo do arquivo, usando as setas de direção.
+** passwd
+ - Comando para trocar a senha de um usuário. É executado apenas em modo interativo
+
+Usos:
+- =passwd= -> abre o prompt interativo para a troca de senha do usuário atual
+- =passwd <usuário>= -> abre o prompt interativo para a troca de senha do usuário especificado
+** chpasswd
+- Outro comando para trocar a senha de um usuário, entretanto, não requer mode interativo
+- Pode receber a senha e o usuário a partir da STDIN
+- Boa opção para ser usada em contêineres ou para modificar diversos usuários ao mesmo tempo
+
+Usos:
+- =<usuário>:<senha> | chpasswd= -> troca a senha do "usuário" para "senha"
+** free
+- Mostra o atual consumo de RAM
+
+Usos:
+- =free= -> imprime o uso da memória RAM
+- =free -h= -> mostra de forma human-readable (humanamwente legível) o consumo de RAM
+** grep
+- Procura por padrões em arquivos
+- Aceita expressões regulares como entrada (Perl ou EERs)
+
+Usos:
+- =grep nix <arquivo>= -> procura pela ocorrência da palavra ~nix~ no arquivo
+- =grep -n nix <arquivo>= -> além de realizar a busca, mostra o número da linha na qual exista o padrão
+- =grep -i nix <arquivo>= -> versão "case-insensitive", ou seja, não diferencia letras maiúsculas das minúsculas
+
+Como o grep suport expressões regulares, podemos ustilizar dessa forma:
+- =grep x$ <arquivo>= -> procura por toda a ocorrência de "x" no final de uma palavra no arquivo
+- =grep ^x <arquivo>= -> procura por palavras que começam com "x"
+- =grep ^x.r$ <arquivo>= -> procura por apavras que começam com "x", tenham qualquer carectere na segunda posição e termine com "r"
+** find
+- Comando de busca geral
+- Possui diversas "flags"
+
+Uso geral: =find <diretório> <flags>=
+
+Usos:
+- =find . -name <nome>= -> procura no diretório atual, todos os arquivos/pastas com o nome especificado
+- =find . -type d= -> procura por todos os arquivos no diretório atual que também sejam diretórios
+- =find . -size <size>= -> procura por aquivos que tenham o tamnho especificado
+- =find . -perm 777= -> procura por arquivos que possuam a permissão ~777~
+- =find . -user <usuário>= -> procura por todos os arquivos pertencentes ao "usuário"
+** su
+- "substitute user", ou "substituir usuário"
+- Comando para trocar de usuário pelo terminal
+
+Usos:
+- =su <usuário>= -> loga no usuário especificado
+- =su -= -> atalho para logar na conta ~root~
+** apt
+- Gerenciador de pacotes de distros baseadas na distro Debian
+- Geralmente necessita de privilégios de usuário ~root~
+- "Advanced Package Tool", ou "Ferramenta de pacotes avançada"
+
+Anteas de vermos os comandos:
+1. o que é um repositório?
+   - Um lugar (geralmente na internet), onde informção é guardada
+2. o que é um pacote?
+   - No mundo Linux, chamamos os programas que queremos instalar de "pacotes"
+3. o que são dependências?
+   - São pacotesd essenciais para que um outro pacote funcione corretamente
+
+Exemplos:
+- repositórios do ~github~, para guardar projetos e arquivos com o ~git~
+- repositórios de distros Linux -> onde as comunidades/empresas que mantém a distro podem
+disponibilizar os prgramas a serem instalados
+
+*** atualizar
+- =sudo apt update= -> atualiza a lista de repositórios
+- =sudo apt upgrade= -> atualiza todo o sistema operacional
+- =sudo apt full-upgrade= -> atualiza todo o sistema operacional e remove os pacotes não utilizados
+
+*** informações
+- =apt show <pacote>= -> informações detalhadas sobre o pacote
+*** listagem
+- =apt list= -> lista todos os pacotes instalados
+- =apt list --upgradable= -> lista apenas os pacotes que possuem atualizações
+
+*** pesquisas
+- =apt search <name>= -> procura nos repositórios se o pacote existe
+
+*** instalar
+- =sudo apt install <pacote>= -> instala o pacote de forma interativa
+- =sudo apt install -y <pacote>= -> instala o pacote de forma direta
+*** desinstalar
+- =sudo apt remove <pacote>= -> desinstala o pacote especificado, porém não remove as dependências
+- =sudo apt autoremove= -> remove as dependências e pacotes que não são utilizados
+** apt-cache
+- Extensão do ~apt~
+- Mostra as dependências opcionais e obrigatórias de um pacote
+
+Usos:
+- =apt-cache depends vim= -> mostra as dependências do pacote "vim"
+** dpkg
+- Utilitário para instalar pacotes ~.deb~
+
+*** instalar
+- =sudo dpkg -i <arquivo>.deb= -> instala o pacote ~.deb~ especificado
+*** remover
+- =sudo dpkg -r <pacote>= ->remove um pacote instalado via ~dpkg~
+*** remover dependências
+- =sudo dpkg -p <pacote>= -> remove todas as dependências de um pacote
