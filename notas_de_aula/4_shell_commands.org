@@ -234,6 +234,20 @@ Usos:
 
 Usos:
 - =whereis ls= -> imprime todos os caminhos que possuem arquivos/binários relacionados ao programa ~ls~
+** chmod
+- Modifica as permissões de um arquivo ou diretório
+
+Usos:
+- =chmod +x *.sh= -> concede permissão de execução para todos os arquivos com a extensão ~.sh~, para o criador
+  do arquivo, para o grupo o qual ele pertence e para todos os outros usuários
+- =chmod g+rw *.txt= -> concede permissão de leitura e escrita para o grupo o qual o criador do arquivo pertence
+- =chmod o-rw *.txt= -> remove as permissões de leitura e escrita de todos os demais usuários
+** chown
+- Modifica o detentor (criador) do arquivo e seu grupo
+
+Usos:
+- =chown <usuário>:<grupo> <arquivo>= -> transfere a propriedade do um arquivo para um usuário e um grupo
+- =chown <usuário> -R <diretórios>= -> transfere a propriedade de um diretórios e todos seu conteúdo para um usuário
 ** top
 - Veja quais processos estão sendo executados no sistema operacional
 
@@ -396,3 +410,9 @@ Usos:
 - =sudo dpkg -r <pacote>= ->remove um pacote instalado via ~dpkg~
 *** remover dependências
 - =sudo dpkg -p <pacote>= -> remove todas as dependências de um pacote
+
+* Referências
+- Comandos básicos, Diolinux: https://www.youtube.com/watch?v=JEhVB4VHsTI&list=PLZsjaJhVZaxX9xCXhZDJnhFcIL4ncLjVj&index=6
+- Tutorial básico, CanalTech: https://canaltech.com.br/linux/10-comandos-essenciais-do-linux/
+- 35 comandos Linux, Hostinger: https://www.hostinger.com.br/tutoriais/comandos-linux#Comandos-Linux
+- Comandos importantes, DevMedia: https://www.devmedia.com.br/comandos-importantes-linux/23893
