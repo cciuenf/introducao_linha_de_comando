@@ -29,10 +29,11 @@ Uso: =nano <opções> <arquivo>=
 - "Vi IMproved"
 - De longe o editor mais diferente
 - Baseado em CLI mas existe versões com GUI, como o ~gvim~
-- Possui três modos:
-  1. ~Normal~ -> onde os comandos são executados e você pode se movimentar
+- Possui quatro modos:
+  1. ~Normal~ -> onde os comandos de edição são executados e você pode se movimentar
   2. ~Inserção~ -> onde você de fato escreve o conteúdo
-  3. ~Visual~ -> onde você realiza aç~oes com múltiplos cursores ou linhas
+  3. ~Visual~ -> onde você realiza ações com múltiplos cursores ou linhas
+  4. ~Command~ -> onde você executa os comandos internos do editor
 - O vim segue a filosofia que editamos mais um texto já feito do que de fato escrevemos novos textos
 - Todos os comandos são declarativos, ou seja, eles possuem significado, como se você estivesse conversando com o editor
 - Quase todos os comandos podem ser encadeados
@@ -57,14 +58,17 @@ Para se movimentar por palavras:
 - ~w~ -> avança por palavras
 - ~b~ -> volta por palavras
 *** Comandos
-- ~q~ -> sai do arquivo, dá erro se o arquivo não foi salvo
-- ~w~ -> escreve as mudanças no arquivo
-- ~f~ -> procura por um arquivo
-- ~e~ -> edita um novo arquivo ou um existente (abre)
+Alguns comandos são executados da seguinte forma:
+- ~: <comando>~ -> dois ponto no modo normal e então o comando
+
+- ~:q~ -> sai do arquivo, dá erro se o arquivo não foi salvo
+- ~:w~ -> escreve as mudanças no arquivo
+- ~:f~ -> procura por um arquivo
+- ~:e~ -> edita um novo arquivo ou um existente (abre)
 - ~x~ -> apaga o carectere que está na posição do cursor
 - ~s~ -> o mesmo que ~x~, porém te coloca no modo de inserção
 - ~i~ -> entra no modo de inserção, na posição do cursor
-- ~I~ -> entra no mo do de inserção no começo da linha
+- ~I~ -> entra no modo de inserção no começo da linha
 - ~a~ -> entra no modo de inserção em um carectere a frente do cursor
 - ~A~ -> entra no modo de inserção no final da linha
 - ~u~ -> desfaz uma alteração
@@ -80,6 +84,11 @@ Para se movimentar por palavras:
 - ~d~ -> deleta texto
 - ~y~ -> copia texto
 - ~c~ -> deleta texto e entra no modo de inserção
+- ~p~ -> cola o texto copiada/cortado/deletado
+- ~/~ -> procura por meio de uma expressão regular
+  - ~n~ -> avança para a próxima ocorrência
+  - ~N~ -> volta uma ocorrência
+- ~:%s/regex/substituição/~ -> substitui todas as ocorrências, dada uma expressão regular
 
 *** Subcomandos
 - ~i~ -> "inner", "interior"
@@ -101,7 +110,7 @@ Para se movimentar por palavras:
 - Possui um plugin que mostra quais os possíveis atalhos quando uma tecla é usada (whichkey)
 - Pode ser facilmente configurado para funcionar como uma IDE
 - Suporte ao ~org-mode~
-- Pode executar quase todo programa, dentro dele, como navegadores web, abrir imagens e videos (apenas na versão GUI)
+- Pode executar quase todo programa dentro dele, como navegadores web, abrir imagens e videos (apenas na versão GUI)
 
 *** Movimentação
 - ~Ctrl-f~ -> avança um carectere para direita
@@ -123,7 +132,7 @@ Para se movimentar por palavras:
 - ~Ctrl-x b~ -> troca para outro buffer (arquivo)
 - ~Ctrl-x k~ -> fecha um buffer (o padrão é o buffer atual)
 - ~Ctrlx 0~ -> deleta a janela atual
-- ~Ctrl-x 1~ -> fecha todas as janelas, apenas deixa a atual aberta
+- ~Ctrl-x 1~ -> fecha todas as janelas, deixa apenas a atual aberta
 - ~Ctrl-x 2~ -> cria uma janela na horizontal
 - ~Ctrl-x 3~ -> cria uma janela na vertical
 - ~Ctrl-x Ctrl-w~ -> salva o buffer atual em um novo arquivo
@@ -140,3 +149,14 @@ Para se movimentar por palavras:
 - ~Ctrl-h k~ -> abre ajuda interativa para atalhos
 - ~Ctrl-h P~ -> mostra informações sobre um plugin
 - ~Ctrl-h m~ -> mostra todos os "minor modes" ativados e o "major mode"
+
+* Referências
+- Tutorial nano: https://www.hostinger.com.br/tutoriais/como-instalar-editor-de-texto-nano/
+- Tutorial vim: https://e-tinet.com/linux/editor-texto-vim/
+- Tutorial nativo do emacs traduzido para pt-br: http://web.mit.edu/Emacs/source/emacs-23.1/etc/tutorials/TUTORIAL.pt_BR
+- SpaceVim: https://spacevim.org/
+- SpaceEmacs: https://www.spacemacs.org/
+- DoomEmacs: https://github.com/hlissner/doom-emacs
+- Minha configuração:
+  - Emacs: https://github.com/Mdsp9070/dotfiles/tree/master/.emacs.d
+  - Neovim: https://github.com/Mdsp9070/dotfiles/tree/12e57d78bf23f7a3abb48c79f757bb573a632210/nvim
