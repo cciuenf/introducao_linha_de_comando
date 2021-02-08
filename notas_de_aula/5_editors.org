@@ -116,7 +116,10 @@ Para se movimentar por palavras:
 - ~M->~ -> final do arquivo
 *** Comandos
 - ~M-x~ -> abre o executador de comandos
+- ~M-d~ -> apaga uma palavra
+- ~Ctrl-d~ -> apaga um carectere na posição do cursor
 - ~Ctrl-u~ ou ~M~ + um número N, repete o próximo comando N vezes
+- ~Ctrl-x Ctrl-b~ -> mostra todos os buffers abertos
 - ~Ctrl-x b~ -> troca para outro buffer (arquivo)
 - ~Ctrl-x k~ -> fecha um buffer (o padrão é o buffer atual)
 - ~Ctrlx 0~ -> deleta a janela atual
