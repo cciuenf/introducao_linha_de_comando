@@ -12,10 +12,14 @@ RUN mkdir -p /home/ccuenf && chown -R ccuenf:ccuenf /home/ccuenf
 
 RUN cd /home/ccuenf
 
+RUN echo "y" | unminimize
+
 RUN echo 'ccuenf:ccuenf' | chpasswd
 
 USER ccuenf
 
 WORKDIR /home/ccuenf
+
+RUN mkdir desktop videos pictures downloads documents
 
 CMD /bin/sh
