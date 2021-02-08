@@ -34,6 +34,8 @@ Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~g
 - Lugar para onde enviamos as mudanças locais e armazenamos todas as mudanças
 - Geralmente usamos uma plataforma, como Github
 
+*** Working tree
+- "Árvore de trablaho", ou seja, local onde ficam as mudanças não commitadas
 *** Commit
 - Cria um ponto ("save") no seu repositório
 - Responsável por criar a "linha do tempo" do projeto
@@ -58,6 +60,17 @@ Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~g
 
 *** HEAD
 - Significa uma referência para o último commit e branch atual
+*** Merge
+- "Mesclar"
+- Junta commits de uma branch em outra
+- Não altera o histórico de commits
+- Cria um novo commit para a confirmação da mesclagem
+*** Rebase
+- Reescreve todo o histórico de commits
+- Não cria novos commits, apenas copia eles de uma branch e os coloca em outra,
+  parecendo que a segunda branch nunca foi criada
+- Possui uma versão interativa na qual é possível trocar as mensagens de commits e realizar outras modificações
+  antes de juntar os commits
 ** Comandos
 Antes de inciar os comandos, devemos configurar o git localamente, nos identificando:
 #+begin_src bash
@@ -67,39 +80,64 @@ git config --global user.name "Seu nome"
 
 #+end_src
 
-- =git init= -> cria um reposit local no diretório atual
-- =git clone <repo-remoto> <destino>= -> clona um repositório remoto para sua máquina
+
+*** git init
+- Cria um reposit local no diretório atual
+*** git clone <url-repo-remoto> [destino]
+- Clona um repositório remoto para sua máquina
   - Existem duas formas de clonar um repositório:
     1. SSH
     2. HTTPS
-- =git add <arquivo>= -> adiciona um ou mais arquivos para o staging
-  - =git add .= -> adiciona todo o diretório atual para staging
-- =git status= -> mostra o estado atual do seu repositório local
-- =git log= -> mostra o histórico dos commits
-- =git commit -m <mensagem>= -> cria um commit com os arquivos em staging com uma mensagem
-- =git push <branch-destino> <branch-font>= -> faz o upload dos commits da "branch-fonte" para um repositório
-remoto na "branch-destino"
+*** git add <arquivos>
+- Adiciona um ou mais arquivos para o staging
+- =git add .= -> adiciona todo o diretório atual para staging
+*** git status
+- Mostra o estado atual do seu repositório local
+*** git log
+- Mostra o histórico dos commits
+- =git log --graph= -> cria um "gráfico" com o histórico de commits
+*** git commit -m <mensagem>
+- Cria um commit com os arquivos em staging com uma mensagem
+*** git push <repo-remoto> <branch-fonte>
+- Faz o upload dos commits da "branch-fonte" para um repositório remoto
   - Geralmente chamamos o repositório remoto de "origin"
+- =git push <repo-remoto> --delete <branch>= -> deleta uma branch remota
+- =git push <repo-remoto> :<branch-antiga> <nova-branch>= -> renomeia uma branch remota
+*** git remote
 - =git remote -v= -> mostra todos os repositórios remotos
-- =git fetch <repo-remoto>= -> sincroniza o repositório local e repositório remoto
+- =git remote add <nome> <url>= -> adiciona um novo remositório remoto localmente
+- =git remote remove <nome>= -> remove um repositório remoto localmente
+*** git fetch <repo-remoto>
+- Sincroniza o repositório local e repositório remoto
+*** git checkout
 - =git checkout -b <nome-branch>= -> cria uma nova branch com o nome especificado e muda o ~HEAD~ para ela
 - =git checkout <branch>= -> muda a ~HEAD~ para uma branch existente
-- =git branch=  -> mostra todas as branchs e em qual você está atualmente
-  - =git branch -m <branch-antiga> <branch-nova>= -> renomeia uma branch local
-  - =git branch -d <branch>= -> delete uma branch local
-  - =git push <erpo-remoto> <--delete <branch>= -> deleta uma branch remota
-  - =git push <repo-remoto> :<branch-antiga> <nova-branch>= -> renomeia uma branch remota
-- =git pull <repo-remoto> <branch-destino>= -> faz o download de um repositório remoto para a "branch-destino".
-  Irá automaticamente tentar mesclar as duas branches
-- =git diff= -> mostra todas as mudanças realizadas desde o último commit
-- =git stash= -> salva temporariamente as mudanças não commitadas para serem recuperadas depois, mesmo em outras branches
-  - =git stash pop= -> recupera as últimas mudanças salvas no stash, na branch atual
-- =git merge <nome-branch>= -> mescla a branch especificada com a branch atual
-- =git cherry-pick <commit-hash>= -> possibilita adicionar um commit de uma branch em outra (nem smepre é a melhor prática)
-- =git clean= -> remove arquivos não supervisionados pelo git
-  - flag ~-f~ para arquivos
-  - flag ~-fd~ para diretórios
-- =git reflog= -> um "diário" que guarda as mudanças na do ~HEAD~
+*** git branch
+- =git branch=  -> mostra todas as branches e em qual você está atualmente
+- =git branch <nome>= -> cria uma branch com o nome especificado
+- =git branch -m <branch-antiga> <branch-nova>= -> renomeia uma branch local
+- =git branch -d <branch>= -> deleta uma branch local
+- =git branch -D <branch>= -> deleta uma branch local, descartando todas as mudanças não commitadas
+*** git pull <repo-remoto> <branch-destino>
+- Faz o download de um repositório remoto para a "branch-destino".
+  Irá automaticamente tentar mesclar as duas branches fazendo um "merge"
+- =git pull --rebase <repo-remoto> <branh-destino>= -> mesmo que o =git pull=, porém realiza um ~rebase~
+*** git diff
+- Mostra todas as mudanças realizadas desde o último commit
+- =git diff <arquivo>= -> mostra as mudanças de um arquivo desde o último commit
+*** git stash
+- Salva temporariamente as mudanças não commitadas para serem recuperadas depois, mesmo em outras branches
+- =git stash pop= -> recupera as últimas mudanças salvas no stash, na branch atual
+*** git merge <branch>
+- Mescla a branch especificada com a branch atual
+*** git cherry-pick <commit-hash>
+- Possibilita adicionar um commit de uma branch em outra (nem smepre é a melhor prática)
+*** git clean
+- Remove arquivos não supervisionados pelo git
+- =git clean -f .= -> limpa os arquivos da working tree do diretório atual
+- =git clean -fd .= -> limpa os diretórios da working tree
+*** git reflog
+- Um "diário" que guarda as mudanças na do ~HEAD~
 
 ** Desfazer erros comuns
 - =git restore <arquivo>= -> descarta todas as mudanças não commitadas de um arquivo até seu último commit
