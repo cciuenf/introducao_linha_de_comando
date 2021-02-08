@@ -210,3 +210,9 @@ Informações importantes:
 - Altamente customizável via plugins
 - As sequências via expansão com chaves ~{1..10}~, não existem, no ~fish~ existe o comando ~seq~
 - As substituições de processos não é feito via ~<()~ e sim com ~(comando | psub)~
+* Referências
+- Site oficial fish: https://fishshell.com/docs/current/
+- Manual bash: https://www.gnu.org/software/bash/manual/
+- Manual zsh: http://zsh.sourceforge.net/Doc/
+- Customização da Rocketseat para zsh: https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/
+- Minha configuração fish: https://github.com/Mdsp9070/dotfiles/tree/master/fish
