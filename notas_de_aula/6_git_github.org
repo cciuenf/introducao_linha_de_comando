@@ -1,0 +1,127 @@
+#+title: Como nunca mais perder aquele arquivo/projeto?
+#+author: Matheus de Souza Pessanha
+#+email: 00119110328@pq.uenf.br
+
+* O que é git?
+~git~ é uma ferramenta de DVCS (Distributed Version Control System), ou "sistema de controle de versões distribuido",
+utilizado para versionar (criar versões) diferentes de um arquivo/projeto.
+
+- Criado por Linus Torvalds
+- Não é o único VCS, existem outros como: Subversion e Mercurial
+- Almeja oferecer a maior flexibilidade, segurança e desempenho
+- Relativamente difícil de aprender, pela quantidade de novos conceitos e comandos
+
+** Diferença entre ~git~ e Github
+- O ~git~ é de fato o software de VCS
+- Github é uma plataforma de hospedagem de código fonte, que utiliza o ~git~
+  - Outros exemplos, são:
+    1. Gitlab
+    2. BitBucket
+
+* Instalando o git
+- Existe uma versão oficial para windows: https://git-scm.com/download/win
+  - Instala em conjunto o "git bash", um emulador de terminal bem limitado com o bash
+- Em distros Linux baseadas no Debian, rode: =sudo apt install git=
+  - Geralmente o ~git~ já vem instalado por padrão nas distros
+
+* Conceitos inciais
+** Repositório
+Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~git~ usa o mesmo conceito.
+
+*** Repositório local
+- Lugar onde fica os arquivos na sua máquina, de forma "local"
+*** Repositório remoto
+- Lugar para onde enviamos as mudanças locais e armazenamos todas as mudanças
+- Geralmente usamos uma plataforma, como Github
+
+** Commit
+- Cria um ponto ("save") no seu repositório
+- Responsável por criar a "linha do tempo" do projeto
+
+** Branch
+- Imagine seu projeto como uma árvore
+- Cria um novo "ramo" do seu projeto!
+- Todo projeto possui uma branch raiz padrão ~master~ ou ~main~
+
+** Staging
+- Passo anterior ao ~commit~
+- Armazena as mudanças de forma temporária e facilmente reversível
+
+** Clonar
+- É possível clonar repositórios remotos, ou seja, trazer o repositório remoto para um local
+
+** Push
+- Faz o upload dos commits locais para um repositório remoto
+
+** Pull
+- Faz o download das mudanças de um repositório remoto para um local
+
+** HEAD
+- Significa uma referência para o último commit e branch atual
+* Comandos
+Antes de inciar os comandos, devemos configurar o git localamente, nos identificando:
+#+begin_src bash
+
+git config --global user.email "seu@email.com"
+git config --global user.name "Seu nome"
+
+#+end_src
+
+- =git init= -> cria um reposit local no diretório atual
+- =git clone <repo-remoto> <destino>= -> clona um repositório remoto para sua máquina
+  - Existem duas formas de clonar um repositório:
+    1. SSH
+    2. HTTPS
+- =git add <arquivo>= -> adiciona um ou mais arquivos para o staging
+  - =git add .= -> adiciona todo o diretório atual para staging
+- =git status= -> mostra o estado atual do seu repositório local
+- =git log= -> mostra o histórico dos commits
+- =git commit -m <mensagem>= -> cria um commit com os arquivos em staging com uma mensagem
+- =git push <branch-destino> <branch-font>= -> faz o upload dos commits da "branch-fonte" para um repositório
+remoto na "branch-destino"
+  - Geralmente chamamos o repositório remoto de "origin"
+- =git remote -v= -> mostra todos os repositórios remotos
+- =git fetch <repo-remoto>= -> sincroniza o repositório local e repositório remoto
+- =git checkout -b <nome-branch>= -> cria uma nova branch com o nome especificado e muda o ~HEAD~ para ela
+- =git checkout <branch>= -> muda a ~HEAD~ para uma branch existente
+- =git branch=  -> mostra todas as branchs e em qual você está atualmente
+  - =git branch -m <branch-antiga> <branch-nova>= -> renomeia uma branch local
+  - =git branch -d <branch>= -> delete uma branch local
+  - =git push <erpo-remoto> <--delete <branch>= -> deleta uma branch remota
+  - =git push <repo-remoto> :<branch-antiga> <nova-branch>= -> renomeia uma branch remota
+- =git pull <repo-remoto> <branch-destino>= -> faz o download de um repositório remoto para a "branch-destino".
+  Irá automaticamente tentar mesclar as duas branches
+- =git diff= -> mostra todas as mudanças realizadas desde o último commit
+- =git stash= -> salva temporariamente as mudanças não commitadas para serem recuperadas depois, mesmo em outras branches
+  - =git stash pop= -> recupera as últimas mudanças salvas no stash, na branch atual
+- =git merge <nome-branch>= -> mescla a branch especificada com a branch atual
+- =git cherry-pick <commit-hash>= -> possibilita adicionar um commit de uma branch em outra (nem smepre é a melhor prática)
+- =git clean= -> remove arquivos não supervisionados pelo git
+  - flag ~-f~ para arquivos
+  - flag ~-fd~ para diretórios
+- =git reflog= -> um "diário" que guarda as mudanças na do ~HEAD~
+
+
+* Desfazer erros comuns
+- =git restore <arquivo>= -> descarta todas as mudanças não commitadas de um arquivo até seu último commit
+  - Se utilizado num arquivo deletado, restaura o arquivo
+  - Se utilizado com a flag ~-p~, oferece a possibilidade de descartar mudanças em partes específicas
+  - Se utilizado com a entrada ~.~, descarta todas as mudanças do diretório até o último commit
+  - Pode ser utilizado com a flag ~--source~, dado um commit hash e um arquivo, isso irá restaurar o arquivo para aquele ponto em
+    específico
+- =git commit --amend -m <mensagem>= -> edita a mensagem de commit do último commit
+  - Caso tenha esquecido de adicionar uma mudança, adicione ela ao staging e execute o comando
+  - Esse comando reescreve o histórico de commits (substitui o commit afetado). NÃO UTILIZE CASO JÁ TENHA DADO PUSH NO COMMIT
+- =git revert <commit-hash>= -> cria um novo commit o qual possui as mudanças opostas ao commit especificado!
+  - Para conseguir o commit hash, use =git log=
+  - Forma segura de "refazer um commit antigo"
+- =git reset --hard <commit-hash>= -> retorna para o commit especificado, descartando os commit seguintes
+  - A flasg ~--hard~ significa que todas as mudanças locais serão descartadas
+  - Para persistir as mudanças locais, use =git reset --mixed <commit-hash>=
+
+* Referências
+- Site oficial Git: https://git-scm.com/
+- Fonte dos comandos animados: https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1#revert
+- 18 comandos git: https://towardsdatascience.com/git-commands-cheat-sheet-software-developer-54f6aedc1c46
+- Aula completa freeCodeCamp sobre git e github: https://www.youtube.com/watch?v=RGOj5yH7evk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=2
+- Aula completa spbre desfazer erros comuns: https://www.youtube.com/watch?v=lX9hsdsAeTk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=3
