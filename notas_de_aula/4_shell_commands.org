@@ -48,7 +48,7 @@ Agora você pode colocar o que você acabou de cortar com o =Ctrl-y=
 Ok, mas se eu quiser copiar/colar a partir da área de transferência?
 Simples: geralmente o copiar está mapeado para =Ctril+Shift+c= e o colar para =Ctrl+Shift+v=
 
-E se eu quiser apagar uma palavra inteira? =Alt+f= faz isso, porém, com uma ressalva:
+E se eu quiser apagar uma palavra inteira? =Alt+d= faz isso, porém, com uma ressalva:
 - Ele vai apagar a partir da posição do seu cursor até o final da palavra!
 - Para apgar uma palavra inteira, possicione o cursor na primeira letra e então execute o comando
 
@@ -61,9 +61,9 @@ A seguir veremos alguns comandos essenciais para o dia a dia!
 Avisos:
 - A tecla =RET= significa "Return", que é o "Enter"
 - Todos os comandos são executados da seguinte maneira: =<comando> <flags> <entradas> + RET=
-- O shell padrão - ~sh~ - é bem simples e limitado; vários atalhosd de movimentação não serão reconhecidos
+- O shell padrão - ~sh~ - é bem simples e limitado; vários atalhos de movimentação não serão reconhecidos
 
-Bem, o docker que iremos utilizar vem instalado com quatro shells diferentes:
+Bem, o contêiner que iremos utilizar vem instalado com quatro shells diferentes:
 1. sh (padrão)
 2. bash
 3. zsh
@@ -75,7 +75,7 @@ Infelizmente, todas as vezes que vocês iniciarem o contêiner, os dados/program
 serão excluídos... Sim, existe algumas formas de persistir esses dados, porém, esses métodos
 envolvem um conhecimento mais aprofundado em docker e Linux, enão preferi evitar eles.
 
-Por isso, existem duas opções para modificvar o shell padrão:
+Por isso, existem duas opções para modificar o shell padrão:
 1. Executar o shell desejado toda vez que inciar um contêiner
 2. Ir no arquivo ~Dockerfile~ e mudar:
 #+begin_src dockerfile
@@ -299,6 +299,13 @@ Usos:
 
 Usos:
 - =<usuário>:<senha> | chpasswd= -> troca a senha do "usuário" para "senha"
+** usermod
+- Modifica um usuário
+- Pode ser usado para remover ou adicionar usuários à grupos
+
+Usos:
+- =sudo usermod -aG docker <usuário>= -> ~-a~ significa "append", ou "adicionar à" e ~-G~ significa a quais grupos.
+Logo, esse comando adiciona u "usuário" ao grupo "docker"
 ** free
 - Mostra o atual consumo de RAM
 
