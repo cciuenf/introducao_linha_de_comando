@@ -24,18 +24,18 @@ utilizado para versionar (criar versões) diferentes de um arquivo/projeto.
 - Em distros Linux baseadas no Debian, rode: =sudo apt install git=
   - Geralmente o ~git~ já vem instalado por padrão nas distros
 
-** Conceitos inciais
+** Conceitos iniciais
 *** Repositório
 Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~git~ usa o mesmo conceito.
 
-*** Repositório local
+**** Repositório local
 - Lugar onde fica os arquivos na sua máquina, de forma "local"
-*** Repositório remoto
+**** Repositório remoto
 - Lugar para onde enviamos as mudanças locais e armazenamos todas as mudanças
 - Geralmente usamos uma plataforma, como Github
 
 *** Working tree
-- "Árvore de trablaho", ou seja, local onde ficam as mudanças não commitadas
+- "Árvore de trabalho", ou seja, local onde ficam as mudanças não commitadas
 *** Commit
 - Cria um ponto ("save") no seu repositório
 - Responsável por criar a "linha do tempo" do projeto
@@ -130,8 +130,10 @@ git config --global user.name "Seu nome"
 - =git stash pop= -> recupera as últimas mudanças salvas no stash, na branch atual
 *** git merge <branch>
 - Mescla a branch especificada com a branch atual
+*** git rebase <branch>
+- Junta os commits da branch especificada com a atual
 *** git cherry-pick <commit-hash>
-- Possibilita adicionar um commit de uma branch em outra (nem smepre é a melhor prática)
+- Possibilita adicionar um commit de uma branch em outra (nem sempre é a melhor prática)
 *** git clean
 - Remove arquivos não supervisionados pelo git
 - =git clean -f .= -> limpa os arquivos da working tree do diretório atual
@@ -140,21 +142,27 @@ git config --global user.name "Seu nome"
 - Um "diário" que guarda as mudanças na do ~HEAD~
 
 ** Desfazer erros comuns
-- =git restore <arquivo>= -> descarta todas as mudanças não commitadas de um arquivo até seu último commit
-  - Se utilizado num arquivo deletado, restaura o arquivo
-  - Se utilizado com a flag ~-p~, oferece a possibilidade de descartar mudanças em partes específicas
-  - Se utilizado com a entrada ~.~, descarta todas as mudanças do diretório até o último commit
-  - Pode ser utilizado com a flag ~--source~, dado um commit hash e um arquivo, isso irá restaurar o arquivo para aquele ponto em
-    específico
-- =git commit --amend -m <mensagem>= -> edita a mensagem de commit do último commit
-  - Caso tenha esquecido de adicionar uma mudança, adicione ela ao staging e execute o comando
-  - Esse comando reescreve o histórico de commits (substitui o commit afetado). NÃO UTILIZE CASO JÁ TENHA DADO PUSH NO COMMIT
-- =git revert <commit-hash>= -> cria um novo commit o qual possui as mudanças opostas ao commit especificado!
-  - Para conseguir o commit hash, use =git log=
-  - Forma segura de "refazer um commit antigo"
-- =git reset --hard <commit-hash>= -> retorna para o commit especificado, descartando os commit seguintes
-  - A flasg ~--hard~ significa que todas as mudanças locais serão descartadas
-  - Para persistir as mudanças locais, use =git reset --mixed <commit-hash>=
+*** Descartando mudanças locais e restaurando arquivos
+**** git restore <arquivo>
+- Descarta todas as mudanças não commitadas de um arquivo até seu último commit
+- Se utilizado num arquivo deletado, restaura o arquivo
+- =git restore -p <arquivo>= -> oferece a possibilidade de descartar mudanças em partes específicas
+- =git restore .= -> descarta todas as mudanças do diretório até o último commit
+- =git restore --source <commit-hash>= -> dado um commit hash e um arquivo, isso irá restaurar o arquivo para aquele ponto em
+  específico
+*** Reverter ou editar um commit
+**** git commit --amend -m <mensagem>
+- Edita a mensagem de commit do último commit
+- Caso tenha esquecido de adicionar uma mudança, adicione ela ao staging e execute o comando
+- Esse comando reescreve o histórico de commits (substitui o commit afetado). NÃO UTILIZE CASO JÁ TENHA DADO PUSH NO COMMIT
+**** git revert <commit-hash>
+- Cria um novo commit o qual possui as mudanças opostas ao commit especificado!
+- Para conseguir o commit hash, use =git log=
+- Forma segura de "refazer um commit antigo"
+**** git reset <commit-hash>
+- Retorna para o commit especificado, descartando os commit seguintes
+- =git reset --hard <commit-hash>= -> todas as mudanças locais serão descartadas
+- =git reset --soft <commit-hash>= -> persiste as mudanças realizadas nos commits
 
 * Github
 Github é uma plataforma de hospedagem de código fonte, ou seja, onde criamos repositórios remotos.
