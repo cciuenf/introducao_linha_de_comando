@@ -32,6 +32,10 @@
 
 - Após terminar o exercício, remova o programa
 * 8 - Qual o resultado das seguintes expressões?
+- Já que as colunas da tabela são formadas por ~|~, não posso escrever o pipe dentro da tabela.
+  Tem como escapar com o ~\vert~, porém ele só é renderizado no ~org-mode~ :/
+- ~/vert~ == ~|~
+
 | expressão                     | resultado |
 |-------------------------------+-----------|
 | =false && echo foo \vert\vert echo bar= |           |
