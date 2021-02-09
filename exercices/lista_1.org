@@ -1,0 +1,6 @@
+#+title: Lista de exercícios 1 - docker
+#+author: <colocar seu nome>
+
+* 1 - Resumidamente, o que significa a palavra contêiner?
+* 2 - Cite algumas vantagens de dockerizar um programa/aplicação
+* 3 - Execute =docker run --rm chuanwen/cowsay= e descreva o resultado! Pode repetir a execução se quiser.
