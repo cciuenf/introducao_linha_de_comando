@@ -114,27 +114,53 @@
   1. Crie um arquivo "Dockerfile" (escrito exatamente assim, sem extensão)
   2. Esse é o conteúdo:
      #+begin_src dockerfile
-       FROM ubuntu:20.10
+     FROM ubuntu:20.10
 
-       RUN apt-get update && apt-get -y upgrade
+     RUN apt-get update && apt-get -y upgrade
 
-       RUN apt-get install -y sudo
+     RUN apt-get install -y sudo less iputils-ping telnet \
+         locales locales-all software-properties-common gnupg libtext-lorem-perl
 
-       RUN useradd ccuenf && usermod -aG sudo ccuenf
+     RUN apt-get install -y zsh fish
 
-       RUN mkdir -p /home/ccuenf && chown -R ccuenf:ccuenf /home/ccuenf
+     RUN useradd ccuenf && usermod -aG sudo ccuenf
 
-       RUN cd /home/ccuenf
+     ENV LC_ALL en_US.UTF-8
+     ENV LANG en_US.UTF-8
+     ENV LANGUAGE en_US.UTF-8
 
-       RUN echo 'ccuenf:ccuenf' | chpasswd
+     RUN mkdir -p /home/ccuenf && chown -R ccuenf:ccuenf /home/ccuenf
 
-       USER ccuenf
+     RUN cd /home/ccuenf
 
-       WORKDIR /home/ccuenf
+     RUN echo "y" | unminimize
 
-       CMD /bin/bash
+     RUN echo 'ccuenf:ccuenf' | chpasswd
+
+     USER ccuenf
+
+     WORKDIR /home/ccuenf
+
+     RUN mkdir desktop videos pictures downloads documents
+
+     CMD /bin/sh
      #+end_src
-  3. Construa a imagem e execute
+  3. Construa a imagem
      #+begin_src bash
-       docker build -t <nome> . && docker run --rm -it <nome>
+       docker build -t <nome> .
      #+end_src
+  4. Execute a imagem (você entrará no shell padrão)
+     #+begin_src bash
+     docker run -it -v C:\<aguma-pasta>:/var/lib/cli_intro cli_intro cli_intro
+     #+end_src
+
+     Na próxima vez que você quiser iniciar esse mesmo contêiner, execute:
+
+     #+begin_src bash
+     # pegue o CONTAINER ID
+     docker ps -a
+
+     docker exec -it <id> /bin/sh
+     #+end_src
+
+     Assim, todas as modificações que fizerem dentro do contêiner, será mantida!
