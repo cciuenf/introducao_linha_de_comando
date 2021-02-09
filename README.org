@@ -11,10 +11,36 @@ materiais complementares.
    4. [[./notas_de_aula/4_shell_commands.org][Comandos Shell]]
    5. [[./notas_de_aula/5_editors.org][Editores de Texto]]
    6. [[./notas_de_aula/6_git_github.org][Git e Github]]
+** Lista de exercícios
+*** Como fazer as listas?
+- Irei disponibilizar cada uma junto com sua respectiva nota de aula, no classroom
 
+- Edite o arquivo com qualquer editor de texto que quiser
+
+- Não precisa procurar/aprender a sintaxe desse tipo de arquivo (org), pode escrever as respostas sem nenhum símbolo
+
+- Se preferir, pode imprimir, porém será necessário escanear o resultado
+
+- Não se preocupe com a formatação, principalmente a das tabelas, pois não interfere em nada
+
+- Certifique-se de colocar seu nome no começo do arquivo (~#+author:~)
+
+- Guarde as listas em algum local no computador, elas serão usadas no segundo teste
+
+- Grande parte dos exercícios são práticos, então eu recomendo que tentem executar.
+
+- Caso ocorra algum erro nos comandos ou algo que você não sabe como resolver, pode me mandar mensagem/email
+
+*** Listas
+- [[./exercices/lista_1.org][Docker]]
+- [[./exercices/lista_2.orgces][Linux]]
+- [[./exercices/lista_3.org][Shell]]
+- [[./exercices/lista_4.org][Git e Github]]
 ** Pré-requisitos
    - Docker instalado*
    - Qualquer Unix OS**
+   - No mínimo, 1GB de espaço em disco
+   - Conexão com a internet
 
    *: Caso não tenha, abordarei isso na primeira aula, com um tutorial
 
