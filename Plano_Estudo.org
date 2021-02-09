@@ -117,17 +117,17 @@ computacionais (IC1, IC2) e 2 (dois) testes on-line (T1, T2). Ainda
 teremos 4 listas de exercícios ou projetos individuais como estudo
 individual que poderão ser anexadas à avaliação final.
 
-| Datas    | Enc. | Encontros Síncronos no MEET                                       |    |
-|----------+------+-------------------------------------------------------------------+----|
-| 08/02/21 |      | Informações Gerais e configuração do ambiente                     | S1 |
-| 11/02/21 | 1    | Introdução teórica ao Linux, parte I                              |    |
-| 15/02/21 | 2    | Introdução teórica ao Linux, parte II                             | S2 |
-| 18/02/20 | 3    | Conhecendo os diferentes Shells                                   |    |
-| 22/02/21 | 4    | Comandos Shell, parte I                                           | S3 |
-| 25/03/21 | 5    | Comandos Shell, parte II (IC1)                                    |    |
-| 01/03/21 | 6    | Entendendo outros editores de texto                               | S4 |
-| 04/03/21 | 7    | Introdução ao git e primeiros comandos (IC2, parte I)             |    |
-| 08/03/21 | 8    | Compreendendo melhor o git-flow e outros comandos (IC2, parte II) | S5 |
+| Datas    | Enc. | Encontros Síncronos no MEET                             |    |
+|----------+------+---------------------------------------------------------+----|
+| 08/02/21 |      | Informações Gerais e configuração do ambiente           | S1 |
+| 11/02/21 |    1 | Introdução teórica ao Linux, parte I                    |    |
+| 15/02/21 |    2 | Introdução teórica ao Linux, parte II                   | S2 |
+| 18/02/20 |    3 | Conhecendo os diferentes Shells                         |    |
+| 22/02/21 |    4 | Comandos Shell, parte I                                 | S3 |
+| 25/03/21 |    5 | Comandos Shell, parte II (IC1)                          |    |
+| 01/03/21 |    6 | Entendendo outros editores de texto                     | S4 |
+| 04/03/21 |    7 | Introdução ao git e primeiros comandos                  |    |
+| 08/03/21 |    8 | Compreendendo melhor o git-flow e outros comandos (IC2) | S5 |
 
 As *Implementações computacionais* serão desenvolvidas pelos discentes
 de forma individual, compartilhando o progresso na plataforma como

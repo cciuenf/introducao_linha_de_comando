@@ -1,0 +1,5 @@
+#+title: Implementação Computacional 2
+
+* Siga esse tutorial: https://docs.github.com/pt/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+
+* Crie um ~gist~ em ~.txt~ explicando o que foi feito e se houve algum erro no processo

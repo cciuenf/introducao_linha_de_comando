@@ -1,0 +1,6 @@
+#+title: Implementação Computacional 1
+
+* Procure 5 (cinco) ou mais comandos do shell e mostre pelo menos 2 (dois) exemplos de cada
+- Regras:
+  1. Não vale repetir comandos que já foram mostrados no material
+  2. Só são permitidos os comandos dos diretórios ~/bin~ e ~/sbin~

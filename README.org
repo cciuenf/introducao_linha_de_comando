@@ -28,6 +28,12 @@ materiais complementares.
 - [[./exercices/lista_2.orgces][Linux]]
 - [[./exercices/lista_3.org][Shell]]
 - [[./exercices/lista_4.org][Git e Github]]
+** Implementações Computacionais
+As implementações computacionais são pequenas atividas assíncronas em que
+seus resultados serão apresentadas em um encontro síncrono, com data definida
+
+- [[./exercices/ic1.org][IC 1]]
+- [[./exercices/ic2.org][IC 2]]
 ** Pré-requisitos
    - Docker instalado*
    - Qualquer Unix OS**
