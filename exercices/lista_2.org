@@ -2,7 +2,7 @@
 #+author: <colocar seu nome>
 
 * 1 - Explique a definição de "Linux"
-* 2 - Dado os diretórios da esquerda, correlacione-os com suas funções na direita:
+* 2 - Dado os diretórios da primeira tabela, correlacione-os com suas funções na segunda tabela:
 
 | opção | diretório |
 |-------+-----------|
