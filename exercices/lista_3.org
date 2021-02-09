@@ -11,15 +11,15 @@
 ./exercicios
 #+end_src
 
-| ação                                                                                    | comando |
-|-----------------------------------------------------------------------------------------+---------|
-| Verifique em qual diretório você está                                                   |         |
-| Crie a estrutura de diretórios sugerida logo acima na ~home~ do usuário                   |         |
-| Crie um arquivo "numeros.txt" com o ~cat~, não importa a quantidade de números            |         |
-| Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                             |         |
-| Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                     |         |
-| Exiba os arquivos com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual |         |
-| Apague a pasta "ccuenf" e "exercicios"                                                  |         |
+| ação                                                                                                          | comando |
+|---------------------------------------------------------------------------------------------------------------+---------|
+| Verifique em qual diretório você está                                                                         |         |
+| Crie a estrutura de diretórios sugerida logo acima na ~home~ do usuário                                         |         |
+| Crie um arquivo "numeros.txt" com o ~cat~, não importa a quantidade de números                                  |         |
+| Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                                                   |         |
+| Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                                           |         |
+| Exiba os arquivos da pasta "exercicios" com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual |         |
+| Apague a pasta "ccuenf" e "exercicios"                                                                        |         |
 * 5 - Liste todos os arquivos da pasta ~/bin~, salve em arquivo e orderne alfabeticamente. Quais foram os comandos utilizados? Não é obrigatório executar a sequência em apenas uma linha.
 * 6 - Crie um arquivo ~.txt~ com o centeúdo da execução de ~man <comando>~ - onde "comando" é qualquer comando linux conhecido e que possua um manual - e inverta a ordem das linhas, procure pela palavra "the" e conte o número de ocorrências. Coloque aqui seu resultado e qual comando usou para pegar o manual.
 * 7 - Escolha um ou mais programas da lista e tente instalá-lo, execute-o e descrava o resultado.
