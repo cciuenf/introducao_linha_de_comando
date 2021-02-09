@@ -1,0 +1,38 @@
+#+title: Lista de exercícios 2 - Linux
+#+author: <colocar seu nome>
+
+* 1 - Explique a definição de "Linux"
+* 2 - Dado os diretórios da esquerda, correlacione-os com suas funções na direita:
+
+| opção | diretório |
+|-------+-----------|
+| a     | ~/dev~      |
+| b     | ~/etc~      |
+| c     | ~/usr~      |
+| d     | ~/opt~      |
+
+| opção | função                                                                                               |
+|-------+------------------------------------------------------------------------------------------------------|
+|       | Localização de arquivos, programas e bibliotecas do escopo de usário ficam; não são dados essenciais |
+|       | Diretório destino das mapeações de cada hardware                                                     |
+|       | Aqui são encontrados softwares adicionais e proprietários                                            |
+|       | Local onde as configurações do sistema ficam disponíveis de forma global                             |
+
+* 3 - Escolha 3 (três) diretórios Linux a partir da raiz (~/~) e explique sua respectiva função.
+Regras:
+- Não vale repetir os diretórios da questão anterior ☺
+* 4 - Qual a finalidade de existirem grupos em sistemas operacionais baseados no Linux?
+* 5 - Descreva cada permissão:
+- Exemplo:
+=.rw-rw-rw-= -> ~.~ significa xxx, yyy tem permissões de nnn e mmm, etc...
+
+| permissão  | descrição |
+|------------+-----------|
+| =.rw-rw-rw-= |           |
+| =lr-x---rwx= |           |
+| =drwxr-xr-x= |           |
+| =.rw-r—r--=  |           |
+| =drwxrwxrwx= |           |
+
+* 6 - Defina ~STDIN~, ~STDOUT~ e ~STDERR~
+* 7 - Diferencie uma ~CLI~ de uma ~GUI~, apontando suas vantagens e desvantagens
