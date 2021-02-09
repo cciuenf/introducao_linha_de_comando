@@ -1,0 +1,32 @@
+#+title: Lista de exercícios 3 - shell
+#+author: <colocar seu nome>
+
+* 1 - Com suas palavras, explique o que é um shell
+* 2 - Quero executar esta sequência de comandos: ~cat xx.txt, ls, sort~ e guardar num arquivo ~.txt~. Cite ao menos uma forma de fazer isso, de maneira que o arquivo final tenha o conteúdo do ~ls~ e do ~cat~, não importando a ordem dos comandos.
+* 3 - Qual a utilidade de usar a técnica de ~shebang~?
+* 4 - Abaixo, serão listadas várias ações. Execute uma por vez no terminal e escreva o comando que usou logo em seguida.
+- Estrutura de diretórios sugerida
+#+begin_src bash
+./ccuenf
+./exercicios
+#+end_src
+
+| ação                                                                                    | comando |
+|-----------------------------------------------------------------------------------------+---------|
+| Verifique em qual diretório você está                                                   |         |
+| Crie a estrutura de diretórios sugerida logo acima na ~home~ do usuário                   |         |
+| Crie um arquivo "numeros.txt" com o ~cat~, não importa a quantidade de números            |         |
+| Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                             |         |
+| Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                     |         |
+| Exiba os arquivos com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual |         |
+| Apague a pasta "ccuenf" e "exercicios"                                                  |         |
+* 5 - Liste todos os arquivos da pasta ~/bin~, salve em arquivo e orderne alfabeticamente. Quais foram os comandos utilizados? Não é obrigatório executar a sequência em apenas uma linha.
+* 6 - Crie um arquivo ~.txt~ com o centeúdo da execução de ~man <comando>~ - onde "comando" é qualquer comando linux conhecido e que possua um manual - e inverta a ordem das linhas, procure pela palavra "the" e conte o número de ocorrências. Coloque aqui seu resultado e qual comando usou para pegar o manual.
+* 7 - Escolha um ou mais programas da lista e tente instalá-lo, execute-o e descrava o resultado.
+| programas |
+|-----------|
+| sl        |
+| cmatrix   |
+| rig       |
+| nyancat   |
+* 8 - Use a técnica de ~shebang~ para criar um shell script, utlizando os operadores lógicos entre os comandos
