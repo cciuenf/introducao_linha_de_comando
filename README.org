@@ -15,15 +15,7 @@ materiais complementares.
 *** Como fazer as listas?
 - Irei disponibilizar cada uma junto com sua respectiva nota de aula, no classroom
 
-- Edite o arquivo com qualquer editor de texto que quiser
-
-- Não precisa procurar/aprender a sintaxe desse tipo de arquivo (org), pode escrever as respostas sem nenhum símbolo
-
 - Se preferir, pode imprimir, porém será necessário escanear o resultado
-
-- Não se preocupe com a formatação, principalmente a das tabelas, pois não interfere em nada
-
-- Certifique-se de colocar seu nome no começo do arquivo (~#+author:~)
 
 - Guarde as listas em algum local no computador, elas serão usadas no segundo teste
 
