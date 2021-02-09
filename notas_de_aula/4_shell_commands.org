@@ -71,23 +71,13 @@ Bem, o contêiner que iremos utilizar vem instalado com quatro shells diferentes
 
 Para iniciar um shell, apenas digite o nome do shell desejado e tecle =RET=.
 
-Infelizmente, todas as vezes que vocês iniciarem o contêiner, os dados/programas modificados
-serão excluídos... Sim, existe algumas formas de persistir esses dados, porém, esses métodos
-envolvem um conhecimento mais aprofundado em docker e Linux, enão preferi evitar eles.
+Caso queriam iniciar sempre em um shell específico, ao iniciar o contêiner, execute:
+#+begin_src bash
+# copia o CONTAINER ID do cli_intro
+docker ps -a
 
-Por isso, existem duas opções para modificar o shell padrão:
-1. Executar o shell desejado toda vez que inciar um contêiner
-2. Ir no arquivo ~Dockerfile~ e mudar:
-#+begin_src dockerfile
-# mudar disso:
-CMD /bin/sh
-
-# para:
-CMD /bin/bash
-# OU
-CMD /bin/zsh
-# OU
-CMD /bin/fish
+# o "shell" pode ser: sh, bash, zsh ou fish
+docker exec -it <id> /bin/<shell>
 #+end_src
 
 Obviamente, será necessário montar a imagem docker novamente, com: =docker build -t <nome> .=!
