@@ -160,6 +160,8 @@
      # pegue o CONTAINER ID
      docker ps -a
 
+     docker start <CONTAINER_ID>
+
      docker exec -it <id> /bin/sh
      #+end_src
 
