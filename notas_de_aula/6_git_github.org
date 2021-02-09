@@ -181,6 +181,9 @@ Github é uma plataforma de hospedagem de código fonte, ou seja, onde criamos r
 *** Release
 - Um dos métodos de distribuição de um projeto. Geralmente é aqui onde os desenvolvedores expõem os binários
   (executáveis) de suas aplicações, junto com um "changelog", indicando as mudanças de cada atualização
+*** Gist
+- Pequeno trecho de código ou texto
+- Seu "nome" geralmente é um hash grande
 ** Como interagir com o Github
 - Existem algumas maneiras de interagir com o Github:
   1. Pelo site oficial -> https://github.com
@@ -216,6 +219,14 @@ sudo apt install gh
 - Igual o =git clone=, porém menos verboso, sem a necessidade de colocar uma URL
 ***** gh repo fork
 - Cria um fork de um repositório no Github
+**** gh gist
+***** gh gist create <arquivos>
+- Cria uma gist com os arquivos especificados
+- Retorna o link da gist
+***** gh gist delete <gist_id|gist_url>
+- Delete a gist especificada
+***** gh gist clone <gist> [diretorio]
+- Clona uma gist num diretório especificado ou com o nome original
 **** gh pr
 ***** gh pr create
 - Cria uma Pull Request no Github da branch que você está para a master/main

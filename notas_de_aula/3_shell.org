@@ -57,6 +57,15 @@ sendo adaptadas ou incrementas de alguma maneira.
 11. Estruturas de laços (loops)
 12. ~Here Documents~, utilizando o perador ~<<~ para delimitar uma entrda de texto multi linha
 
+*** Variáveis
+- Um conceito de programação
+- "Uma caixinha que guarda um valor"
+- No shell, ver o valor de uma variável, use: =echo $<variavel>=
+
+Algumas variáveis úteis no shell:
+- ~$PATH~ -> guarda todos os diretórios que possuem executáveis, como ~/bin~ e ~/sbin~
+- ~$EDITOR~ -> define qual vai ser o editor de texto usado na maioria dos programas
+- ~$HOME~ -> guarda o caminho absoluto para a ~/home~ do usuário logado
 *** Como organizar os comandos?
 Os comandos podem ser executados tanto em sequências ou de forma individual.
 
