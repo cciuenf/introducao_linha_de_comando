@@ -101,23 +101,19 @@ Usos:
 - =sudo rm /etc/fstab= -> remove o arquivo "fstab" da pasta ~/etc~
 
 ** exit
-Como sair do shell ou interromper o contêiner?
+- Como sair do shell ou interromper o contêiner?
+  Apenas execute o comando =exit= seguido de um =RET=
+  Uma alternativa é o atalho =Ctrl-d=
 
-Apenas execute o comando =exit= seguido de um =RET=
-Uma alternativa é o atalho =Ctrl-d=
-
-Caso você só tenha um shell rodando, o contêiner atual será desligado.
+- Caso você só tenha um shell rodando, o contêiner atual será desligado.
 ** whoami
-Bem, traduzindo de forma direta ~whoami~ significa "quem sou eu?".
-Esse comando serve para imprimir na tela qual o usuário que está logado
-
+- Bem, traduzindo de forma direta ~whoami~ significa "quem sou eu?".
+- Esse comando serve para imprimir na tela qual o usuário que está logado
 ** pwd
-"print working directory", ou "imprima o diretório de trabalho (atual)"
-
-Como o próprio nome diz: mostra em qual diretório você está atualmente!
+- "print working directory", ou "imprima o diretório de trabalho (atual)"
+- Como o próprio nome diz: mostra em qual diretório você está atualmente!
 ** ls
-Pode ser lembrado como "list"
-
+- Pode ser lembrado como "list"
 - Lista todos os arquivos presentes no atual diretório
 - Pode receber um outro diretório como entrada
 
@@ -126,14 +122,14 @@ Exemplos:
 - =ls -l= -> lista todos os arquivos/diretórios, mostrando também suas permissões
 - =ls -a= -> lista todos os arquivos/diretórios, inclusive os arquivos ocultos
 ** cd
-Pode ser entendido como "change directory"
+- Pode ser entendido como "change directory"
 
 - Método padrão de navegar entre diretórios
 - Recebe uma entrada: o diretório para o qual voc quer ir
 - Aceita tanto caminhos absolutos ou caminhos relativos
 - Nos shells ~zsh~ e ~fish~, não há necessidade de ser executado
 ** mkdir
-Traduzindo: "criando um diretório"
+- Traduzindo: "criando um diretório"
 
 Uso:
 - =mkdir pasta= -> cria um diretório com o nome "pasta"
@@ -142,8 +138,7 @@ Uso:
 - =mkdir pasta1 pasta2= -> cria duas pastas
 - =mkdir -p ./pasta1/pasta2= -> cria a "pasta2" dentro da "pasta1"
 ** rmdir
-"remove diretório"
-
+- "remove diretório"
 - Apenas funciona para diretórios vazios!
 
 Uso:
@@ -152,67 +147,93 @@ Uso:
 - =rmdir -p ./pasta1/pasta2= -> remove todas as pastas e seus "parentes"
 - =rmdir *= -> remove todos os diretório do caminho atual
 ** rm
-"remove" ou "remover", comando para exlucir qualquer coisa
+- "remove" ou "remover", comando para exlucir qualquer coisa
 
 Uso:
 - =rm <arquivos>= -> remove todos os arquivos listados, caso seja um diretório, dará erro
 - =rm -f= -> força a exclusão do arquivo
 - =rm -r= -> remove recursivamente tudo o que existir dentro de um diretório e o próprio junto.
 ** touch
-Cria um arquivo vazio
+- Cria um arquivo vazio
 
 Uso:
 - =touch <nome>.<extensão>= -> cria um arquivo vazio com o nome e extensão específicados
 ** echo
-"ecoar"
-
-Geralmente usamos ele para imprimir algum texto na tela ou redirecionar para um arquivo
+- "ecoar"
+- Geralmente usamos ele para imprimir algum texto na tela ou redirecionar para um arquivo
 
 Usos:
 - =echo <entrad>= -> imprime na tela as entradas
 - =echo <entrada> > <arquivo>= -> redireciona a STDOUT do ~echo~ para um arquivo
 - =echo <entrada> >> <arquivo>= -> redireciona a STDOUT ~echo~ e adiona o conteúdo no final do arquivo
 ** cat
-"concatenate" ou "concatenção".
-
-Pode ser usado para mostrar o conteúdo de um ou vários arquivos!
+- "concatenate" ou "concatenção".
+- Pode ser usado para mostrar o conteúdo de um ou vários arquivos!
 
 Uso:
 - =cat <arquivos>=
 - =cat -n <arquivos>= -> mostra o número de cada linha do arquivo
 - =cat -e <arquivos>= -> mostra um ~$~ em todo final de linha
 ** mv
-"move" ou "mover"
-
-Usado para mover arquivos ou diretórios de um caminho para o outro e também para renomear um arquivo/diretório
+- "move" ou "mover"
+- Usado para mover arquivos ou diretórios de um caminho para o outro e também para renomear um arquivo/diretório
 
 Usos:
 - =mv <caminho-inicial> <caminho-destino>= -> move algo do "caminh-inicial" para o "caminho-destino"
 - =mv pasta1 pasta2= -> renomeia "pasta1" para "pasta2"
 ** cp
-"copy" ou "copiar"
-
-Copia arquivos ou diretórios
+- "copy" ou "copiar"
+- Copia arquivos ou diretórios
 
 Uso:
 - =cp arquivo1 arquivo2 /home= -> copia os arquivos para a pasta ~/home~
 - =cp -r . ..= -> copia o diretório atual, recursivamente para o diretório ~home~
 ** head
-"cabeça"
-
-Imprime na tela as primeiras partes de um arquivo!
+- "cabeça"
+- Imprime na tela as primeiras partes de um arquivo!
 
 Usos:
 - =head <arquivo1> <arquivo2>= -> imprime as dez primerias linhas do "arquivo1" e "arquivo2" para a STDOUT
 - =head -n 15 <arquivo>= -> imprime as quinze primeiras linhas de um arquivo
 ** tail
-"cauda"
-
-Imprime as últimas partes de um arquivo
+- "cauda"
+- Imprime as últimas partes de um arquivo
 
 Usos:
 - =tail <arquivo1>= -> imprime as últimas dez linhas do "arquivo1"
 - =tail -n 15 <arquivo1>= -> imprime as últimas quinze linhas do "arquivo1"
+** sort
+- "ordernação"
+- Ordenar o conteúdo de um conjunto de linhas
+
+Usos:
+- =sort < arquivo.txt= -> orderna todas as linhas do arquivo
+- Pode receber "Here Documents" também
+  #+begin_src bash
+  sort << EOF
+  4
+  3
+  2
+  1
+  EOF
+  #+end_src
+** uniq
+- "único"
+- retorna apenas uma ocorrência de itens repetidos
+
+Usos:
+- =uniq < arquivo.txt= -> remove todas as linhas duplicadas do arquivo
+- Também aceita "Here Documents"
+  #+begin_src bash
+  uniq << EOF
+  1
+  1
+  2
+  2
+  3
+  3
+  EOF
+  #+end_src
 * Comandos intermediários
 ** which
 - Imprime o caminho para o executável do programa!
