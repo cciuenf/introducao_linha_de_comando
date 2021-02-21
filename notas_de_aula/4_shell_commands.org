@@ -50,7 +50,7 @@ Simples: geralmente o copiar está mapeado para =Ctril+Shift+c= e o colar para =
 
 E se eu quiser apagar uma palavra inteira? =Alt+d= faz isso, porém, com uma ressalva:
 - Ele vai apagar a partir da posição do seu cursor até o final da palavra!
-- Para apgar uma palavra inteira, possicione o cursor na primeira letra e então execute o comando
+- Para apagar uma palavra inteira, possicione o cursor na primeira letra e então execute o comando
 
 *** Nossa, minha tela está cheia, o que faço?
 Fácil! Você pode usar =Ctrl+l= ou o executar o comando ~clear~
@@ -79,8 +79,6 @@ docker ps -a
 # o "shell" pode ser: sh, bash, zsh ou fish
 docker exec -it <id> /bin/<shell>
 #+end_src
-
-Obviamente, será necessário montar a imagem docker novamente, com: =docker build -t <nome> .=!
 
 ** Parâmetros de opções
 Diversos comandos possuem algumas opções extras que podem ser acionadas com esses parâmetros!
@@ -189,7 +187,7 @@ Usos:
 
 Uso:
 - =cp arquivo1 arquivo2 /home= -> copia os arquivos para a pasta ~/home~
-- =cp -r . ..= -> copia o diretório atual, recursivamente para o diretório ~home~
+- =cp -r . ..= -> copia o diretório atual, recursivamente para o diretório acima (parente)
 ** head
 - "cabeça"
 - Imprime na tela as primeiras partes de um arquivo!
@@ -300,7 +298,7 @@ Usos:
 - =telnet 8.8.8.8 443= -> verifica se a porta ~443~ no DNS ~8.8.8.8~ está aberta
 ** curl
 - "Transfer a URL"
-- Transfere dados para uma URL, dado um protocolo de rede
+- Transfere dados de uma URL, dado um protocolo de rede
 
 Usos:
 - =curl https://www.google.com= -> retorna a página ~HTML~ do Google
@@ -337,13 +335,13 @@ Usos:
 
 Usos:
 - =sudo usermod -aG docker <usuário>= -> ~-a~ significa "append", ou "adicionar à" e ~-G~ significa a quais grupos.
-Logo, esse comando adiciona u "usuário" ao grupo "docker"
+Logo, esse comando adiciona o "usuário" ao grupo "docker"
 ** free
 - Mostra o atual consumo de RAM
 
 Usos:
 - =free= -> imprime o uso da memória RAM
-- =free -h= -> mostra de forma human-readable (humanamwente legível) o consumo de RAM
+- =free -h= -> mostra de forma human-readable (humanamente legível) o consumo de RAM
 ** grep
 - Procura por padrões em arquivos
 - Aceita expressões regulares como entrada (Perl ou EERs)
