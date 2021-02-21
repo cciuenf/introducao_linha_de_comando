@@ -151,7 +151,7 @@
      #+end_src
   4. Execute a imagem (você entrará no shell padrão)
      #+begin_src bash
-     docker run -it -v C:\<aguma-pasta>:/var/lib/cli_intro cli_intro cli_intro
+     docker run -v C:\<aguma-pasta>:/var/lib/cli_intro -it cli_intro
      #+end_src
 
      Na próxima vez que você quiser iniciar esse mesmo contêiner, execute:
@@ -165,4 +165,4 @@
      docker exec -it <id> /bin/sh
      #+end_src
 
-     Assim, todas as modificações que fizerem dentro do contêiner, será mantida!
+     Assim, todas as modificações que fizerem dentro do contêiner, serão mantidas!
