@@ -50,7 +50,7 @@ Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~g
 - Armazena as mudanças de forma temporária e facilmente reversível
 
 *** Clonar
-- É possível clonar repositórios remotos, ou seja, trazer o repositório remoto para um local
+- É possível clonar repositórios remotos, ou seja, trazer o repositório remoto para sua máquina
 
 *** Push
 - Faz o upload dos commits locais para um repositório remoto
@@ -72,7 +72,7 @@ Bem, nas outras aulas houve uma breve explição do que são repositórios! O ~g
 - Possui uma versão interativa na qual é possível trocar as mensagens de commits e realizar outras modificações
   antes de juntar os commits
 ** Comandos
-Antes de inciar os comandos, devemos configurar o git localamente, nos identificando:
+Antes de inciar os comandos, devemos configurar o git localmente, nos identificando:
 #+begin_src bash
 
 git config --global user.email "seu@email.com"
@@ -139,7 +139,7 @@ git config --global user.name "Seu nome"
 - =git clean -f .= -> limpa os arquivos da working tree do diretório atual
 - =git clean -fd .= -> limpa os diretórios da working tree
 *** git reflog
-- Um "diário" que guarda as mudanças na do ~HEAD~
+- Um "diário" que guarda as mudanças na ~HEAD~
 
 ** Desfazer erros comuns
 *** Descartando mudanças locais e restaurando arquivos
@@ -245,4 +245,4 @@ sudo apt install gh
 - Manual da CLI do Github: https://cli.github.com/manual/
 - 18 comandos git: https://towardsdatascience.com/git-commands-cheat-sheet-software-developer-54f6aedc1c46
 - Aula completa freeCodeCamp sobre git e github: https://www.youtube.com/watch?v=RGOj5yH7evk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=2
-- Aula completa spbre desfazer erros comuns: https://www.youtube.com/watch?v=lX9hsdsAeTk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=3
+- Aula completa sobre desfazer erros comuns: https://www.youtube.com/watch?v=lX9hsdsAeTk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=3
