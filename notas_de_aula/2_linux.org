@@ -430,7 +430,7 @@ Exemplos:
     [[../assets/manjaro_screenshot.png]]
 
     - Baseado no Arch Linux
-    - Usa o KDE plasma comom DE mas possui diversas versões com outros DEs
+    - Usa o KDE plasma como DE principal mas possui diversas versões com outros DEs
     - Rolling Release (sempre possui atualizações compatíveis com as versões anteriores)
 
 * Referências
