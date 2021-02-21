@@ -1,7 +1,7 @@
-* Introdução a Linha de Comando
+* Tópicos em Sistemas Operacionais
 
 Esse repositório tem a finalidade de abrigar todos os exercícios e trabalhos
-realizados na AARE Linha de Comando, junto com as respectivas notas de aulas e
+realizados na AARE Tópicos em Sistemas Operacionais, junto com as respectivas notas de aulas e
 materiais complementares.
 
 ** Notas de aula
