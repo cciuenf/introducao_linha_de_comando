@@ -29,7 +29,7 @@ O ~sh~ teve duas versões principais:
 
 A versão do Bourne se sobressaiu em número de funcionalidades e interativade, logo, não foi díficil se tornar a padrão (:
 
-Dica: Chamamos o primeiro caractere do shell de ~prompt~. Ele possui 2 formas:*
+Dica: Chamamos o primeiro caractere do shell de ~prompt~. Ele possui 2 formas*:
 1. ~$~ -> significa que seu usuário não possui privilégios de administrador
 2. ~#~ -> você está logado como usuário ~root~
 
@@ -47,7 +47,7 @@ sendo adaptadas ou incrementas de alguma maneira.
 2. Os scripts são majoritariamente interpretados e não compilados
 3. Variáveis globais ou locais, que podem ser exportadas com o comando ~export~
 4. Possibilidade de criar atalhos com o comando ~alias~
-   - ~alias l="ls -la"~ -> agora o comando ~ls -la~ pode ser executado apenas como ~l~
+   - =alias l="ls -la"= -> agora o comando ~ls -la~ pode ser executado apenas como ~l~
 5. Poderia ser utilizado de forma interativa ou não
 6. Capacidade de executar comandos síncronos e assíncronos
 7. Suporte a redirecionamento pelo STDIO e suporte a pipelines
@@ -55,12 +55,12 @@ sendo adaptadas ou incrementas de alguma maneira.
 9. Suporte a estrutura de fluxo e funções
 10. Substituição de comandos usando crases
 11. Estruturas de laços (loops)
-12. ~Here Documents~, utilizando o perador ~<<~ para delimitar uma entrda de texto multi linha
+12. ~Here Documents~, utilizando o perador ~<<~ para delimitar uma entrada de texto multi linha
 
 *** Variáveis
 - Um conceito de programação
 - "Uma caixinha que guarda um valor"
-- No shell, ver o valor de uma variável, use: =echo $<variavel>=
+- No shell, para ver o valor de uma variável, use: =echo $<variavel>=
 
 Algumas variáveis úteis no shell:
 - ~$PATH~ -> guarda todos os diretórios que possuem executáveis, como ~/bin~ e ~/sbin~
@@ -123,7 +123,7 @@ echo "TESTETESTETEST" >> test.txt; ls; cat test.txt
 # asdasdasd\nTESTETESTETEST
 #+end_src
 
-Um exemplo interessante é que você pode redirecionar a STDOUT e a STDERR:
+Um exemplo interessante é que você pode redirecionar a STDOUT e a STDERR ao mesmo tempo:
 #+begin_src sh
 echo "TESTESTESTETSTE" > test.txt 2>&1
 #+end_src
