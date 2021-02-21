@@ -47,7 +47,7 @@ sendo adaptadas ou incrementas de alguma maneira.
 2. Os scripts são majoritariamente interpretados e não compilados
 3. Variáveis globais ou locais, que podem ser exportadas com o comando ~export~
 4. Possibilidade de criar atalhos com o comando ~alias~
-   - =alias l="ls -la"= -> agora o comando ~ls -la~ pode ser executado apenas como ~l~
+   - ~alias l="ls -la"~ -> agora o comando =ls -la= pode ser executado apenas como =l=
 5. Poderia ser utilizado de forma interativa ou não
 6. Capacidade de executar comandos síncronos e assíncronos
 7. Suporte a redirecionamento pelo STDIO e suporte a pipelines
