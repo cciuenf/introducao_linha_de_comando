@@ -29,7 +29,7 @@ materiais complementares.
 - [[./exercices/lista_3.org][Shell]]
 - [[./exercices/lista_4.org][Git e Github]]
 ** Implementações Computacionais
-As implementações computacionais são pequenas atividas assíncronas em que
+As implementações computacionais são pequenas atividades assíncronas em que
 seus resultados serão apresentadas em um encontro síncrono, com data definida
 
 - [[./exercices/ic1.org][IC 1]]

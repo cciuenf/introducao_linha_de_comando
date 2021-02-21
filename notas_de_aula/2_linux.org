@@ -236,8 +236,13 @@ Exemplos:
   Na imagem de exemplo, as permissões são representadas por 10 caracteres na primeira
   coluna do comando ~ls~. Vamos distrinchar isso:
 
-           0123456789
-  Exemplo: -~---------~
+           
+  Exemplo: 
+
+  #+begin_example
+   0123456789
+  ~----------~
+  #+end_example
 
   O primeiro caractere representa o tipo do arquivo:
   - ~d~ se for uma pasta
