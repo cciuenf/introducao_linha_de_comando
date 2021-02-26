@@ -67,7 +67,7 @@ https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.e
 - Tenta rodar o Docker novamente
 
 Caso isso não tenha funcionado, desinstale tudo relacionado ao Docker e o Virtualbox, renicie e instale
-o Docker desktop, que você encontra o link [[https://github.com/cciuenf/command_line_intro/blob/main/notas_de_aula/1_docker.org][aqui]].
+o Docker desktop, que você encontra o link [[https://github.com/cciuenf/command_line_intro/blob/master/notas_de_aula/1_docker.org][aqui]].
 
 Inicie o instalador! Se ele pedir pra instalar o =Hyper-V= ou =WSL2=, instala e segue o que ele tá falando.
 
