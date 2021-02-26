@@ -128,6 +128,9 @@
         https://docs.docker.com/get-started/
       #+end_example
 * Preparando o ambiente
+  Caso não queria criar um arquivo =Dockerfile=, você pode baixar neste link:
+  https://downgit.github.io/#/home?url=https://github.com/cciuenf/command_line_intro/blob/master/Dockerfile
+
   1. Crie um arquivo "Dockerfile" (escrito exatamente assim, sem extensão)
      Para isso, botão direito d mouse -> novo -> documento de texto.
   2. Cole este conteúdo dentro deste arquivo criado:
