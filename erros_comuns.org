@@ -84,3 +84,9 @@ estiver meio azulado, significa que tá funcionando.
 
 Caso tenha problemas com o conteúdo do arquivo ou como criá-lo corretamente, leia com atenção a
 seção =Preparando o ambiente=, da nota de aula sobre Docker.
+
+
+Alguns links para fóruns e possíveis soluções:
+- https://stackoverflow.com/questions/40459280/docker-cannot-start-on-windows
+- https://stackoverflow.com/questions/57441382/error-with-pre-create-check-this-computer-doesnt-have-vt-x-amd-v-enabled-ena
+- https://stackoverflow.com/questions/50053255/virtualbox-raw-mode-is-unavailable-courtesy-of-hyper-v-windows-10
