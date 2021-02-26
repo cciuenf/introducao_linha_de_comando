@@ -1,0 +1,86 @@
+#+title: Principais erros na Instalação do Docker
+#+author: Matheus de Souza Pessanha
+#+email:  00119110328@pq.uenf.br
+
+Antes de tudo, uma dica:
+
+Leiam a mensagem de erro, joguem no Google e tenta achar alguma coisa, às vezes é mais simples doq parece.
+
+Qualquer ccoisa, postem no classroom que vou responder.
+
+* Verificar se a opção de virtualização está ativada
+
+1. Verifique se a opção "Virtualização" está habilitada
+   Gerenciador de tarefas -> aba desempenho
+
+   #+caption: Virtualização desabilitada
+   [[./assets/erros/virtualization.jpeg]]
+
+   Caso a opção esteja desativada, será necessário ativar na =BIOS=
+
+   Mas o que é isso? De forma simples, é um programa que gerencia as configurações
+   básicas quando o computador liga!
+
+   Como ativar essa opção?
+
+   Bem, isso varia de coputador/notebook, mas vou tentar ajudar na pesquisa de vocês:
+
+   - Procurem em como entrar na =BIOS= do seu computador (pesquisem pela marca)
+
+     Geralmente é assim: desliguem o computador, e pressionem o botão de ligar.
+
+     Assim que a primeria tela acender (a do logo da marca ou algo do tipo), fique apertando
+     uma tecla. As mais comuns são: =F2=, =F3=, =F5=, =F10=, porém, você precisa descobrir qual é.
+
+     Inclusive, existem alguns notebooks que possuem um botão físico para entrar na =BIOS=...
+     Verifiquem se existe algum botão pequeno e meio escondido, do lado esquerdo do notebook
+     (em especial os da Lenovo mais antigos)
+
+     Assim que entrar na =BIOS= ou =BIOS Setup=, se atente à:
+
+     - Você só pode usar o teclado para se movimentar
+
+     - As setas direcionais te movimentam
+
+     - O Enter entra ou confirma uma nova configuração
+
+     - NÃO MUDE NENHUMA CONFIGURAÇÃO QUE VOCÊ NÃO SABE O QUE SIGNIFICA
+
+     Procure por uma opção =Intel Virtual Technology= ou algo parecido, mas que tenha a opção de
+     =Virtual= ou =Virtualização=. Se estiver em dúvida, pergunta lá no classroom.
+
+     Dê enter em cima dessa opção, mude para "Enabled" com as setas.
+
+     Após fazer isso, vá apara a aba "Exit" e dêr enter na opção de salvar e reiniciar, ou
+     "Exit saving changes".
+
+     O computador vai reiniciar. Recomendo remover tudo relacionado ao docker e virtualbox e instalar de  novo.
+
+* Erro na versão do Virtualbox
+Algumas pessoas tiveram um erro ao executar o Docker, no qual reclamava que não achava a versão
+do virtualbox.
+
+Uma possibilidade, é desinstalar só o virtualbox, e baixar a versão mais nova por esse link:
+https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe
+
+- Instala e renicia o computador
+- Tenta rodar o Docker novamente
+
+Caso isso não tenha funcionado, desinstale tudo relacionado ao Docker e o Virtualbox, renicie e instale
+o Docker desktop, que você encontra o link [[https://github.com/cciuenf/command_line_intro/blob/main/notas_de_aula/1_docker.org][aqui]].
+
+Inicie o instalador! Se ele pedir pra instalar o =Hyper-V= ou =WSL2=, instala e segue o que ele tá falando.
+
+Depois, reinicie o ocmputador, abra o atalho do Docker Desktop.
+
+No canto inferior esquerdo do programa, vai ter uma imagem de baleia, num fundo colorido. Se este fundo
+estiver meio azulado, significa que tá funcionando.
+* Não consegue montar a imagem Docker
+- Verifique se o arquivo =Dockerfile= que você criou, realmente está sem estensão (sem =.txt=).
+- Confirme que o Powershell que você abriu, está na mesma pasta em que o arquivo =Dockerfile=
+- Execute os comandos, exatamente como estão escritos, substituindo coisas como
+  "<nome>" para um nome que você queria, que lembre e que não possua espaço, nem letras maiúsculas,
+  nem digítos e nem carecteres especias, com exeção do underline =_= e o hífen =-=
+
+Caso tenha problemas com o conteúdo do arquivo ou como criá-lo corretamente, leia com atenção a
+seção =Preparando o ambiente=, da nota de aula sobre Docker.

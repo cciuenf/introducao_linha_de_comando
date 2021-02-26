@@ -71,6 +71,13 @@
    4. Execute o "Docker Quickstart", ele vai realizar as configurações iniciais
    5. Espere aparecer um "$" no terminal
 
+   Após isso, abra um powershell e rode:
+   #+begin_example
+   docker -v
+   #+end_example
+
+  Este comando mostrará a versão do docker que está instalada.
+
 *** Windows 10 Pro
     1. Verifique se a opção "Virtualization" ou "Virtualização" existe:
        1. Gerenciador de tarefas -> Performance
@@ -81,14 +88,24 @@
     6. Aceite o pedido para ativar o "Hyper-V and Container features"
        - Caso apareça um erro dizendo que não foi iniciado corretamente, reinicie o computador
     7. Você verá um ícone do Docker na barra de tarefas
+
+    É possível que ele peça para instalar o WSL2, se isso acontecer, siga o link que ele indica
+    e faça o tutorial oficial da Microsoft.
+
+    Após terminar com a WSL2, reinicie o computador, abra um powershell e execute:
+    #+begin_example
+    docker -v
+    #+end_example
+
+   Para que tudo esteja correto, a versão do docker tem que aparecer na tela com esse comando.
 ** Pós instalação
-   1. Execute no terminal do "Docker Quickstart", CMD, Powershell ou terminal:
-      #+begin_src bash
+   1. Execute no terminal, CMD, Powershell:
+      #+begin_example
         docker run hello-world
-      #+end_src
+      #+end_example
 
    2. Caso apareça esta mensagem, tudo correu bem:
-      #+begin_src bash
+      #+begin_example
         Hello from Docker!
         This message shows that your installation appears to be working correctly.
 
@@ -109,10 +126,11 @@
 
         For more examples and ideas, visit:
         https://docs.docker.com/get-started/
-      #+end_src
+      #+end_example
 * Preparando o ambiente
   1. Crie um arquivo "Dockerfile" (escrito exatamente assim, sem extensão)
-  2. Esse é o conteúdo:
+     Para isso, botão direito d mouse -> novo -> documento de texto.
+  2. Cole este conteúdo dentro deste arquivo criado:
      #+begin_src dockerfile
      FROM ubuntu:20.10
 
@@ -145,24 +163,49 @@
 
      CMD /bin/sh
      #+end_src
-  3. Construa a imagem
-     #+begin_src bash
+  3. Caso seu arquivo ainda esteja com a extensão =.txt=, remová-a desta maneira:
+     - Abra um explorador de arquivo, encontre o arquivo "Dockerfile"
+
+     - Procure pela opção "Exibir", clique nela
+
+     - Procure uma caixa de seleção "checkbox" com a opção "mostrar extensão", clique nela
+
+     - Volte para o arquivo "Dockerfile.txt" e renomeie-o, removendo a parte do =.txt=
+  4. Abra um Powershell na mesma pasta em que criou o Dockerfile
+     - Pode abrir um explorador de arquivos, ir na pasta
+
+     - Segurar o =Shift= e clicar com o botão direito na dentro da pasta
+
+     - Selecione a opção "Abrir um Powershell aqui" ou CMD
+
+     - Execute esse comando, onde você pode escolher o "<nome>" (sem espaços ou acentos):
+        #+begin_src bash
        docker build -t <nome> .
-     #+end_src
-  4. Execute a imagem (você entrará no shell padrão)
-     #+begin_src bash
-     docker run -v C:\<aguma-pasta>:/var/lib/cli_intro -it cli_intro
-     #+end_src
+        #+end_src
+  5. Execute a imagem
+     - Crie um volume:
+       #+begin_example
+       docker create volume <nome>
+       #+end_example
+     - Use o volume para executar a imagem:
+       - Substitua =<nome-do-volume>= pelo nome que você deu no no pass anterior
 
-     Na próxima vez que você quiser iniciar esse mesmo contêiner, execute:
+       - Substitua =<nome-da-imagem= pelo nome que você deu no passo *4*
 
-     #+begin_src bash
-     # pegue o CONTAINER ID
-     docker ps -a
+       - Substitua =<nome>= por um novo nome para o contêiner
+     #+begin_example
+     docker run -v <nome-do-volume>:/var/lib/<nome-da-imagem> -it <nome-da-imagem> --name <nome>
+     #+end_example
 
-     docker start <CONTAINER_ID>
+     Pronto! Você estará dentro do Linux Ubuntu, com um caractere =$=.
 
-     docker exec -it <id> /bin/sh
-     #+end_src
+     Cada vez que você reiniciar o computador, o contêiner irá ser desligado;
+     na próxima vez em que quiser usar o contêiner
+
+     #+begin_example
+     docker start <nome>
+
+     docker exec -it <nome> /bin/sh
+     #+end_example
 
      Assim, todas as modificações que fizerem dentro do contêiner, serão mantidas!
