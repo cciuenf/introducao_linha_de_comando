@@ -190,10 +190,10 @@ Github é uma plataforma de hospedagem de código fonte, ou seja, onde criamos r
   2. Pelo aplicativo em GUI oficial -> https://desktop.github.com/
   3. Pela CLI oficial: https://cli.github.com/
 
-Como estamos numa AARE de linha de comando... Vamos de CLI. Porém... irei mostrar como fazer as mesmas ações, só que no site 😊
+Como estamos numa AARE de linha de comando... Vamos de CLI. Porém todas essas ações podem ser replicadas pelo site 😊
 
 *** Instalando a github-cli
-No nosso contêiner estamos usando a distro ~ubuntu~, que é baseada no Debian, logo,
+No nosso contêiner estamos usando a distro ~Ubuntu~, que é baseada no Debian, logo,
 precisamos adicionar o repositório do github e suas chaves para instalar o software:
 
 #+begin_src bash
@@ -202,6 +202,19 @@ sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install gh
 #+end_src
+
+*** Configurando a CLI
+
+Para prosseguir e realizar as listas de exercícios e o teste final, é necessário ter a CLI do github devidamente configurada!
+Existem 2 passos para atingir esse objetivo:
+
+1. Adicionar uma chave ~SSH~ na sua conta do Github
+2. Se autenticar na CLI
+
+O primeiro passo pode ser executado, seguindo o tutorial para Linux, no site oficial do github:
+https://docs.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Já o segundo passo, pode ser executado com o comando ~gh auth login~, que é descrito na próxima seção.
 
 *** Comandos
 **** gh auth
@@ -238,6 +251,7 @@ sudo apt install gh
 - Fecha a Pull Request
 ***** gh pr comment <pr>
 - Dado uma PR, cria um novo comentário
+
 * Referências
 - Site oficial Git: https://git-scm.com/
 - Fonte dos comandos animados: https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1#revert
