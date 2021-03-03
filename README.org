@@ -1,4 +1,16 @@
-* Tópicos em Sistemas Operacionais
+#+title: Tópicos em Sistemas Operacionais
+#+author: Matheus de Souza Pessanha
+
+** AVISO
+
+Gostaria de ressaltar que uma das principais finalidades desta AARE é incentivar a pesquisa!
+As notas de aula e as listas de exercícios são materiais de apoio para guiar e dar um "pontapé inicial"
+no estudo de vocês! Não se prendam a esse material!
+
+Visitem as fontes mensionadas em cada nota de aula e no Plano de Estudos! Teve algum erro? Poste no classroom,
+mas tbm tente procurar no Google!
+
+** Descrição
 
 Esse repositório tem a finalidade de abrigar todos os exercícios e trabalhos
 realizados na AARE Tópicos em Sistemas Operacionais, junto com as respectivas notas de aulas e
