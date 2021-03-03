@@ -183,21 +183,21 @@
 
      - Execute esse comando, onde você pode escolher o "<nome>" (sem espaços ou acentos):
         #+begin_src bash
-       docker build -t <nome> .
+       docker build -t <nome-da-imagem> .
         #+end_src
   5. Execute a imagem
      - Crie um volume:
        #+begin_example
-       docker volume create <nome>
+       docker volume create <nome-do-volume>
        #+end_example
      - Use o volume para executar a imagem:
-       - Substitua =<nome-do-volume>= pelo nome que você deu no no pass anterior
+       - Substitua =<nome-do-volume>= pelo nome que você deu no no passo anterior
 
        - Substitua =<nome-da-imagem= pelo nome que você deu no passo *4*
 
-       - Substitua =<nome>= por um novo nome para o contêiner
+       - Substitua =<nome-do-conteiner>= por um novo nome para o contêiner
      #+begin_example
-     docker run -v <nome-do-volume>:/var/lib/<nome-da-imagem> -it <nome-da-imagem> --name <nome>
+     docker run -v <nome-do-volume>:/var/lib/<nome-da-imagem> --name <nome-do-conteiner> -it <nome-da-imagem> 
      #+end_example
 
      Pronto! Você estará dentro do Linux Ubuntu, com um caractere =$=.
@@ -206,9 +206,9 @@
      na próxima vez em que quiser usar o contêiner
 
      #+begin_example
-     docker start <nome>
+     docker start <nome-do-conteiner>
 
-     docker exec -it <nome> /bin/sh
+     docker exec -it <nome-do-conteiner> /bin/sh
      #+end_example
 
      Assim, todas as modificações que fizerem dentro do contêiner, serão mantidas!
