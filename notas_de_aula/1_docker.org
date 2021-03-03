@@ -188,7 +188,7 @@
   5. Execute a imagem
      - Crie um volume:
        #+begin_example
-       docker create volume <nome>
+       docker volume create <nome>
        #+end_example
      - Use o volume para executar a imagem:
        - Substitua =<nome-do-volume>= pelo nome que você deu no no pass anterior
