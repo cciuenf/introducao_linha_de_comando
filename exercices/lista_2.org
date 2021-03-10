@@ -31,7 +31,7 @@ Regras:
 | =.rw-rw-rw-= |           |
 | =lr-x---rwx= |           |
 | =drwxr-xr-x= |           |
-| =.rw-r—r--=  |           |
+| =.rw-r—r---= |           |
 | =drwxrwxrwx= |           |
 
 * 6 - Defina ~STDIN~, ~STDOUT~ e ~STDERR~
