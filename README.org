@@ -37,7 +37,7 @@ materiais complementares.
 
 *** Listas
 - [[./exercices/lista_1.org][Docker]]
-- [[./exercices/lista_2.orgces][Linux]]
+- [[./exercices/lista_2.org][Linux]]
 - [[./exercices/lista_3.org][Shell]]
 - [[./exercices/lista_4.org][Git e Github]]
 ** Implementações Computacionais
