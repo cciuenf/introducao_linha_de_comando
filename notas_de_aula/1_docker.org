@@ -30,7 +30,7 @@
 
 * Por que Docker?
   - Não precisa instalar máquina virtual
-  - Despensa instalação nativa do SO
+  - Dispensa instalação nativa do SO
   - Simples de usar
   - Oferece um ambiente replicável
   - Não consome tanta memória (depende)
