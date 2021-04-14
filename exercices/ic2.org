@@ -1,6 +1,10 @@
 #+title: Implementação Computacional 2
 
-* Siga esse tutorial: https://docs.github.com/pt/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+* Siga esses tutoriais:
+1. [[https://docs.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent][Criando uma chave SSH]]
+2. [[https://docs.github.com/pt/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account][Adicionando uma chave SSH ao Github]]
+
+** Observações
 - Como você está usando com contêiner, siga as intruções para ~Linux~
 
 * Crie um ~gist~ em ~.txt~ explicando o que foi feito e se houve algum erro no processo
