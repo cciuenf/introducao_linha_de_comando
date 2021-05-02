@@ -260,3 +260,4 @@ Já o segundo passo, pode ser executado com o comando ~gh auth login~, que é de
 - 18 comandos git: https://towardsdatascience.com/git-commands-cheat-sheet-software-developer-54f6aedc1c46
 - Aula completa freeCodeCamp sobre git e github: https://www.youtube.com/watch?v=RGOj5yH7evk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=2
 - Aula completa sobre desfazer erros comuns: https://www.youtube.com/watch?v=lX9hsdsAeTk&list=PL8Vfm2INuMLE5DMqGlHSYC4wnp0Mna-Vl&index=3
+- Post sobre como usr o =git checkrry-pick=: [[https://gitbetter.substack.com/p/how-to-use-git-cherry-pick-effectively]]
