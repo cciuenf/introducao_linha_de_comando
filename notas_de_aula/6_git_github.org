@@ -151,15 +151,15 @@ git config --global user.name "Seu nome"
 - =git restore --source <commit-hash>= -> dado um commit hash e um arquivo, isso irá restaurar o arquivo para aquele ponto em
   específico
 *** Reverter ou editar um commit
-**** git commit --amend -m <mensagem>
+**** =git commit --amend -m <mensagem>=
 - Edita a mensagem de commit do último commit
 - Caso tenha esquecido de adicionar uma mudança, adicione ela ao staging e execute o comando
 - Esse comando reescreve o histórico de commits (substitui o commit afetado). NÃO UTILIZE CASO JÁ TENHA DADO PUSH NO COMMIT
-**** git revert <commit-hash>
+**** =git revert <commit-hash>=
 - Cria um novo commit o qual possui as mudanças opostas ao commit especificado!
 - Para conseguir o commit hash, use =git log=
 - Forma segura de "refazer um commit antigo"
-**** git reset <commit-hash>
+**** =git reset <commit-hash>=
 - Retorna para o commit especificado, descartando os commit seguintes
 - =git reset --hard <commit-hash>= -> todas as mudanças locais serão descartadas
 - =git reset --soft <commit-hash>= -> persiste as mudanças realizadas nos commits
