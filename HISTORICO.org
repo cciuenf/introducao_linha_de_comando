@@ -1,0 +1,43 @@
+#+title: Histório da AARE, seus partiipantes e trabalhos
+#+author: Matheus de Souza Pessanha
+#+email: 00119110328@pq.uenf.br
+
+** Primeira edição
+Você pode acompanhar o estado e o conteúdo da primeira edição,
+tendo em vista o [[https://github.com/cciuenf/command_line_intro/tree/ce92414][último commit da mesma]].
+
+Na primeira edição, foram apresentados os seguintes tópicos:
+- Docker
+- Linux
+- Shell Script
+- Editores de texto
+- Git e Github
+
+Houveram 4 (quatro) listas de exercícios em conjunto com 2 (duas) implementações
+computacionais (IC). Junto a isso houveram pequenas avaliações realizadas na plataforma
+=Google Classroom=.
+
+Ao final da edição, os participantes realizaram um teste final o qual incluia, dentre outras
+questões, abrir =Pull Requests= neste repositório com o intuito de não apenas praticar o chamado
+/git flow/ mas também com a intenção de centralizar todo o conteúdo gerado a partir da AARE.
+
+Todas as listas e ICs desta edição podem ser consultadas [[][por esse link]]!
+
+#+begin_html
+<details>
+  <summary>
+    Participantes e suas produções
+  </summary>
+  <p>
+#+end_html
+
+| [[https://github.com/Mdsp9070.png?size=60]] | [[https://github.com/Annabell.png?size=60]] |
+|-----------------------------------------+-----------------------------------------|
+| [[][Matheus de Souza Pessanha]]         | [[][Annabell Del Real Tamariz]]         |
+|                                         |                                         |
+
+
+#+begin_html
+  </p>
+</details
+#end_html
