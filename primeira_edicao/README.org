@@ -1,4 +1,4 @@
-#+title: Tópicos em Sistemas Operacionais
+#+title: Primeira Edição
 #+author: Matheus de Souza Pessanha
 
 ** AVISO

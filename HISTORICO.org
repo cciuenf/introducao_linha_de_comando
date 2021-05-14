@@ -1,4 +1,4 @@
-#+title: Histório da AARE, seus partiipantes e trabalhos
+#+title: Histório da AARE, seus partipantes e trabalhos
 #+author: Matheus de Souza Pessanha
 #+email: 00119110328@pq.uenf.br
 
@@ -35,7 +35,6 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 | [[https://github.com/Mdsp9070.png?size=60]] | [[https://github.com/Annabell.png?size=60]] |
 |-----------------------------------------+-----------------------------------------|
 | [[./primeira_edicao/listas_exercicios][Matheus de Souza Pessanha]]               | [[./primeira_edicao/Plano_Estudo.org][Annabell Del Real Tamariz]]               |
-|                                         |                                         |
 
 *** Participantes
 |   |   |   |   |
