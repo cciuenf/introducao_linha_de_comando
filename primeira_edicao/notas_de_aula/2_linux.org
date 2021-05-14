@@ -3,7 +3,7 @@
 #+email: 00119110328@pq.uenf.br
 
 * Afinal, o que é Linux?
-  [[../assets/linux_logo.png]]
+  [[../imagens/linux_logo.png]]
 
   - Linux é um Kernel (núcleo) ([[https://linux.org]])
   - TODOS os sistemas operacionais possuem um Kernel
@@ -28,7 +28,7 @@
    - Essas "mensagens" são chamadas de syscalls (system calls)
 
 ** Linux Foundation
-   [[../assets/lf_logo.png]]
+   [[../imagens/lf_logo.png]]
    
    - Consórcio de grandes empresas
    - Gerencia pagamentos de desenvolvedores fixos
@@ -36,7 +36,7 @@
    - Apoia uso de tecnologias Open Source
    - Melhorias e modificações no Kernel são compartilhadas com a comunidade
 * Estrutura dos diretórios
-  [[../assets/linux_folders.jpeg]]
+  [[../imagens/linux_folders.jpeg]]
 
   - Diretórios são pastas
   - Baseado no sistema UNIX
@@ -46,7 +46,7 @@
   ESTEJAM AVISADOS
 
 ** root ou "/" (Raiz ou Barra)
-   [[../assets/root_ls.png]]
+   [[../imagens/root_ls.png]]
 
    - Diretório raiz (como se fosse o ~C:\~ do Windows)
    - Os nomes dos diretórios geralmente são abreviações em ingês
@@ -64,7 +64,7 @@
    - Apenas os ~.exe~ ficam aqui
 
 ** /boot (Inicialização do SO)
-   [[../assets/warning_logo.png]]
+   [[../imagens/warning_logo.png]]
 
    - Pasta onde ficam as configurações para que o seu SO inicie corretamente
    - SÓ MEXA NESSA PASTA CASO SEJA EXTREMAMENTE NECESSÁRIO!!!
@@ -72,7 +72,7 @@
    - Possui o executável do "memtest" para testes de memória RAM
 
 ** /dev (Devices)
-   [[../assets/warning_logo.png]]
+   [[../imagens/warning_logo.png]]
 
    - Possui arquivos que represetam seu hardware, como:
      1. Webcam
@@ -124,7 +124,7 @@
        simbólico para ~/opt/google/chrome/google-chrome~
 
 ** /proc (Processes ou Processos)
-   [[../assets/warning_logo.png]]
+   [[../imagens/warning_logo.png]]
 
    - Diretório virtual, ou seja, ele não é escrito no seu disco rígido
    - Representa cada processo do SO como um arquivo, ex: cada aba do chrome é um processo
@@ -132,7 +132,7 @@
    - Gerado todas as vezes que seu computador inicia
 
 ** /root (Um "/home" para o administrador)
-   [[../assets/warning_logo.png]]
+   [[../imagens/warning_logo.png]]
 
    - Fica separado do ~/home~ para poder ter permissões especiais
    - Tendo o ~/home~ separado, você pode logar como root e restaurar o sistema
@@ -160,7 +160,7 @@
    - Por estar na raiz do sistema, permite a criação de permissões diferentes para cada arquivo
 
 ** /sys (System ou Sistema)
-   [[../assets/warning_logo.png]]
+   [[../imagens/warning_logo.png]]
 
    - Permite que você interaja diretamente com o Kernel Linux
    - Armazena os drivers, firmwares ou "módulos"
@@ -221,7 +221,7 @@ Exemplos:
   /NO WINDOWS, DÊ REBOOT, NO LINUX, SEJA ROOT/
 
 * Permissões
-  [[../assets/root_ls.png]]
+  [[../imagens/root_ls.png]]
 
   - Lembrem que tudo no Linux é representado por arquivos!
   
@@ -343,7 +343,7 @@ Exemplos:
    Aqui estão alguns exemplos de DEs para Linux:
 
 *** GNOME
-    [[../assets/gnome_screenshot.png]]
+    [[../imagens/gnome_screenshot.png]]
 
     - O mais conhecido
     - Relativamente minimalista
@@ -351,14 +351,14 @@ Exemplos:
     - DE padrão do Ubuntu
 
 *** XFCE
-    [[../assets/xfce_screenshot.png]]
+    [[../imagens/xfce_screenshot.png]]
 
     - Consumo de memória reduzido
     - Não é tão flexivel
     - Bastante minimalista
 
 *** KDE
-    [[../assets/kde_screenshot.png]]
+    [[../imagens/kde_screenshot.png]]
 
     - O mais "bonito" inicialmente
     - Alto consumo de memória
@@ -387,18 +387,18 @@ Exemplos:
      - Curva de aprendizado elevada
 
 **** I3
-     [[../assets/i3_screenshot.png]]
+     [[../imagens/i3_screenshot.png]]
 
      - Porta de entrada para as WMs
      - Fácil configuração para leigos e não programadores
 
 **** awesome
-    [[../assets/awesome_screenshot.png]]
+    [[../imagens/awesome_screenshot.png]]
 
     - Utiliza a linguagem de programação "Lua" (linguagem brasileira criada na USP)
 
 **** xmonad 
-     [[../assets/xmonad_screenshot.png]]
+     [[../imagens/xmonad_screenshot.png]]
 
      - Configurado com a linguagem de programação "Haskell"
 
@@ -419,7 +419,7 @@ Exemplos:
 
 ** Exemplos
 *** Ubuntu
-    [[../assets/ubuntu_screenshot.png]]
+    [[../imagens/ubuntu_screenshot.png]]
 
     - O mais famoso
     - Utiliza o GNOME como DE mas possui outras versões
@@ -427,7 +427,7 @@ Exemplos:
     - Tende a ser estável
 
 *** Manjaro
-    [[../assets/manjaro_screenshot.png]]
+    [[../imagens/manjaro_screenshot.png]]
 
     - Baseado no Arch Linux
     - Usa o KDE plasma como DE principal mas possui diversas versões com outros DEs

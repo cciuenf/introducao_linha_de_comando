@@ -1,0 +1,60 @@
+#+title: Primeira Edição
+#+author: Matheus de Souza Pessanha
+
+** AVISO
+
+Gostaria de ressaltar que uma das principais finalidades desta AARE é incentivar a pesquisa!
+As notas de aula e as listas de exercícios são materiais de apoio para guiar e dar um "pontapé inicial"
+no estudo de vocês! Não se prendam a esse material!
+
+Visitem as fontes mensionadas em cada nota de aula e no Plano de Estudos! Teve algum erro? Poste no classroom,
+mas tbm tente procurar no Google!
+
+** Descrição
+
+Esse repositório tem a finalidade de abrigar todos os exercícios e trabalhos
+realizados na AARE Tópicos em Sistemas Operacionais, junto com as respectivas notas de aulas e
+materiais complementares.
+
+** Notas de aula
+   1. [[./notas_de_aula/1_docker.org][Docker]]
+   2. [[./notas_de_aula/2_linux.org][Linux]]
+   3. [[./notas_de_aula/3_shell.org][Shell]]
+   4. [[./notas_de_aula/4_shell_commands.org][Comandos Shell]]
+   5. [[./notas_de_aula/5_editors.org][Editores de Texto]]
+   6. [[./notas_de_aula/6_git_github.org][Git e Github]]
+** Lista de exercícios
+*** Como fazer as listas?
+- Irei disponibilizar cada uma junto com sua respectiva nota de aula, no classroom
+
+- Se preferir, pode imprimir, porém será necessário escanear o resultado
+
+- Guarde as listas em algum local no computador, elas serão usadas no segundo teste
+
+- Grande parte dos exercícios são práticos, então eu recomendo que tentem executar.
+
+- Caso ocorra algum erro nos comandos ou algo que você não sabe como resolver, pode me mandar mensagem/email
+
+*** Listas
+- [[./listas_exercicios/lista_1.org][Docker]]
+- [[./listas_exercicios/lista_2.org][Linux]]
+- [[./listas_exercicios/lista_3.org][Shell]]
+- [[./listas_exercicios/lista_4.org][Git e Github]]
+** Implementações Computacionais
+As implementações computacionais são pequenas atividades assíncronas em que
+seus resultados serão apresentadas em um encontro síncrono, com data definida
+
+- [[./listas_exercicios/implementacoes_computacionais/ic1.org][IC 1]]
+- [[./listas_exercicios/implementacoes_computacionais/ic2.org][IC 2]]
+** Pré-requisitos
+   - Docker instalado*
+   - Qualquer Unix OS**
+   - No mínimo, 1GB de espaço em disco
+   - Conexão com a internet
+
+   *: Caso não tenha, abordarei isso na primeira aula, com um tutorial
+
+   **: Também será abordado na primeira aula!
+
+** Plano de Estudos
+   O plano de estudos está disponível nesse repositório, [[./Plano_Estudo.org][neste arquivo]]!
