@@ -25,7 +25,7 @@ Existem diversas maneiras de se movimentar pelo terminal e isso também depende 
 Porém, existe alguns atalhos do teclado que de certa forma são universais! Iremos ver cada um deles:
 
 ** Movimentação básica
-[[../assets/basic_moves.gif]]
+[[../imagens/basic_moves.gif]]
 
 Vamos tentar algumas movimentações básicas:
 

@@ -4,7 +4,7 @@
 
 * O que é  Docker?
 ** O que significa "Contêiner"?
-   [[../assets/virtualization_vs_containers.png]]
+   [[../imagens/virtualization_vs_containers.png]]
    
    - Tecnologia comum no mundo Linux
    - Conjunto de um ou mais processos
@@ -12,14 +12,14 @@
    - Dependências fornecidas por uma ou mais imagens
 
 ** Docker
-   [[../assets/docker_logo.png]]
+   [[../imagens/docker_logo.png]]
 
    - Baseado no LXC
    - Tecnologia usada para criar contêineres
    - Fácil criação e contrução dos contêineres
 
 *** Vantagens do Docker 
-    [[../assets/traditional_linux_containers_vs_docker.png]]
+    [[../imagens/traditional_linux_containers_vs_docker.png]]
     
     - Modularidade
     - Uma imagem Docker é a junção de diversas camadas
