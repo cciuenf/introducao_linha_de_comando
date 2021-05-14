@@ -21,7 +21,7 @@ Ao final da edição, os participantes realizaram um teste final o qual incluia,
 questões, abrir =Pull Requests= neste repositório com o intuito de não apenas praticar o chamado
 /git flow/ mas também com a intenção de centralizar todo o conteúdo gerado a partir da AARE.
 
-Todas as listas e ICs desta edição podem ser consultadas [[][por esse link]]!
+Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/listas_exercicios][por esse link]]!
 
 #+begin_html
 <details>
@@ -33,7 +33,7 @@ Todas as listas e ICs desta edição podem ser consultadas [[][por esse link]]!
 
 | [[https://github.com/Mdsp9070.png?size=60]] | [[https://github.com/Annabell.png?size=60]] |
 |-----------------------------------------+-----------------------------------------|
-| [[][Matheus de Souza Pessanha]]         | [[][Annabell Del Real Tamariz]]         |
+| [[./primeira_edicao/listas_exercicios][Matheus de Souza Pessanha]]  | [[./primeira_edicao/Plano_Estudo.org][Annabell Del Real Tamariz]]  |
 |                                         |                                         |
 
 
