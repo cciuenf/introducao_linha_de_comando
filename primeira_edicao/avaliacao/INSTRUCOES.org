@@ -1,0 +1,119 @@
+#+title: Instruções para a avaliação final
+#+author: Matheus de Souza Pessanha
+#+email: 00119110328@pq.uenf.br
+
+Este documento estabelece as instruções básicas para a realização da avaliação da primeira edição da
+AARE *Introdução a Linha de Comando* durante o dia *19/05/2021*.
+
+** Como será a avaliação?
+Será disponibilizado um documento pela plataforma =Google Classroom=, em forma de atividade.
+
+O aluno deverá clonar o repositório oficial (=cciuenf/introducao_linha_de_comando=), criar uma pasta
+no diretório =/primeira_edicao/trabalhos_alunos/= que deve conter:
+- Um arquivo que represente as repostas escritas da avaliação
+- Todo o material adicional exigido pela avaliação (scripts e listas de exercícios)
+
+Além disso, o aluno deve se adicionar no arquivo =/HISTORICO.org=, da seguinte maneira:
+
+No arquivo em questão, há uma parte envolvida por HTML, como mostra a figura:
+
+#+caption: Demonstração da estrutura do arquivo HISTORICO.org
+[[../imagens/avaliacao/demo_historico.png]]
+
+Como pode ser notado na imagem, há duas tabelas:
+- uma para os organizadores
+- outra para os alunos, separadas em 8 (oito) tabelas menores com 4 (quatro) espaços cada e outra com 2 (dois) espaços
+
+Limitei cada tabela em 4 (quatro) espaços para as linhas não ficarem tão extensas.
+
+A ideia é que cada aluno se adicione na tabela, em ordem alfabética, repetindo a sintaxe da tabela de organizadores:
+o cabeçalho da sua tabela é o ícone do seu GitHub e o conteúdo é um link apontando para seu diretório final, com a
+descrição sendo seu nome completo!
+
+*** Exemplo
+
+- Usuário do GitHub -> =Mdsp9070=
+- Nome Completo -> =Matheus de Souza Pessanha=
+- Caminho diretório final -> =/primeira_edicao/trabalhos_alunos/matheus_pessanha/=
+- Resultado:
+#+begin_example
+| [[https://github.com/Mdsp9070.png?size=60]] |
+|------------------------------------------------------------------|
+| [[./primeira_edicao/trabalhos_alunos/matheus_pessanha][Matheus de Souza Pessanha]] |
+#+end_example
+
+A tabela não precisa ficar 100% formatada!
+
+
+*** Consideração final
+Após a realização da última questão, o aluno deverá abrir uma PR no repositório oficial e esperar a revisão
+de um organizador.
+
+A partir da abertura da PR, considere a avaliação feita. Entretanto, um organizador poderá solicitar mudanças em questão de
+sintaxe ou organização de conteúdo. Nesse caso, se as mudanças sugeridas não envolvam as regras descritas abaixo, o
+cálculo da nota final não será alterado.
+
+**** Exemplo 1
+Toda a estrutura do diretório final está correto, porém a sintaxe da adição na tabela do arquivo =HISTORICO.org= está incorreta.
+
+Um organizador solicitará a correção mas não irá impactar o cálculo da nota final.
+
+**** Exemplo 2
+Toda a sintaxe está correta, porém a estrutura do diretório final está incorreta e as mensagens de commit estão em ingês.
+
+Um organizador solicitará as devidas correções e como alguns itens dessa PR ferem as regras descritas, o cálculo da nota
+será impactado.
+
+** Restrições e orientações
+*** Diretório final
+A pasta criada para abrigar o trabalho final deverá seguir a seguinte convenção de nome:
+#+begin_example
+<primeiro_nome>_<ultimo_nome>
+#+end_example
+
+Em outras palavras: a pasta deverá ser localizada no caminho =/primeira_edicao/trabalhos_alunos/= onde
+=/= é a raiz do repositório. O nome da pasta deve ser composto pelo seu primeiro e último nome em letras
+minúsculas, intercalados com um underline =_=.
+
+**** Exemplo
+- Primeiro nome -> Matheus
+- Último nome -> Pessanha
+
+Diretório resultante: =/primeira_edicao/trabalhos_alunos/matheus_pessanha/=
+
+**** Estrutura sugerida
+Apenas uma sugestão de organização e hierarquia para seu diretório final.
+
+#+begin_example
+primeira_edicao/
+└── trabalhos_alunos
+    └── matheus_pessanha
+        ├── listas
+        ├── respostas.org
+        └── scripts
+#+end_example
+
+*** Arquivo com respostas
+Esse arquivo deverá ser escrito em umas dessas duas linguagens de marcação:
+1. Org mode
+2. Markdown
+
+A intenção é que suas respostas sejam visíveis para os outros membros e pessoas que visitarem este repositório
+futuramente, diretamente pelo GitHub.
+
+A organização das respostas e estilos do arquivo é de total responsabilidade do aluno.
+
+*** Scripts
+- Todos os scripts, seja da avaliação final ou das listas de exercícios deverão ser separados em seus próprios arquivos!
+- Todos os scripts deverão possuir uma linha /shebang/
+- É permito o uso de qualquer "linguagem" para shell, exemplos: =fish, bash, csh=
+- Não é permitido o uso de nenhuma linguagem de programação durante os scripts, exemplos: =perl e python=
+
+*** Listas de exercícios
+- É obrigatória a entrega de todas as 4 (quatro) listas
+- As listas podem estar em qualquer formato de arquivo, desde que sejam visíveis no GitHub, exemplos: =.org, .md, .pdf=
+
+*** Git Flow
+- Todas as mensagens de commit devem estar em português
+- A interação com o GitHub é permitida tanto em GUI, CLI ou pelo website
+- A interação com o Git é limitda apenas à CLI
