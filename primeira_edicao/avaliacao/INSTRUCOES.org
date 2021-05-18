@@ -7,26 +7,27 @@ AARE *Introdução a Linha de Comando* durante o dia *19/05/2021*.
 
 ** Como será a avaliação?
 Será disponibilizado um documento pela plataforma =Google Classroom=, em forma de atividade.
+Esta atividade direcionará para um arquivo neste repositório que será liberado no horário da aula.
 
 O aluno deverá clonar o repositório oficial (=cciuenf/introducao_linha_de_comando=), criar uma pasta
 no diretório =/primeira_edicao/trabalhos_alunos/= que deve conter:
 - Um arquivo que represente as repostas escritas da avaliação
-- Todo o material adicional exigido pela avaliação (scripts e listas de exercícios)
+- Todo o material gerado pelo aluno nesta AARE (estudos ou adicionais) e as 4 (quatro) listas de exercícios
 
 Além disso, o aluno deve se adicionar no arquivo =/HISTORICO.org=, da seguinte maneira:
 
-No arquivo em questão, há uma parte envolvida por HTML, como mostra a figura:
+Preste atenção nessa demo:
 
 #+caption: Demonstração da estrutura do arquivo HISTORICO.org
-[[../imagens/avaliacao/demo_historico.png]]
+[[../imagens/avaliacao/demo_historico.gif]]
 
-Como pode ser notado na imagem, há duas tabelas:
-- uma para os organizadores
-- outra para os alunos, separadas em 8 (oito) tabelas menores com 4 (quatro) espaços cada e outra com 2 (dois) espaços
+Como pode ser notado na demo, há algumas tabelas envolvidas por HTML, dentre essas tabelas:
+- uma é para os organizadores
+- outras para os alunos, separadas em 8 (oito) tabelas menores com 4 (quatro) espaços cada e outra com 2 (dois) espaços
 
 Limitei cada tabela em 4 (quatro) espaços para as linhas não ficarem tão extensas.
 
-A ideia é que cada aluno se adicione na tabela, em ordem alfabética, repetindo a sintaxe da tabela de organizadores:
+A ideia é que cada aluno se adicione na tabela, em ordem da abertura da PR, repetindo a sintaxe da tabela de organizadores:
 o cabeçalho da sua tabela é o ícone do seu GitHub e o conteúdo é um link apontando para seu diretório final, com a
 descrição sendo seu nome completo!
 
@@ -35,13 +36,18 @@ descrição sendo seu nome completo!
 - Usuário do GitHub -> =Mdsp9070=
 - Nome Completo -> =Matheus de Souza Pessanha=
 - Caminho diretório final -> =/primeira_edicao/trabalhos_alunos/matheus_pessanha/=
-- Resultado:
+- PRs abertas -> 2
+
+Em outras palavras, se existirem 2 PRs e a tabela estiver vazia, você irá preencher a terceira coluna!
+
+Resultado:
 #+begin_example
-| [[https://github.com/Mdsp9070.png?size=60]] |
-|------------------------------------------------------------------|
-| [[./primeira_edicao/trabalhos_alunos/matheus_pessanha][Matheus de Souza Pessanha]] |
+|   titulo 1    |  titulo 2    | [[https://github.com/Mdsp9070.png?size=60]]                                          | titulo 4 |
+|---------------+--------------+--------------------------------------------------------------------------------------+----------|
+|    nome 1     |  nome 2      | [[./primeira_edicao/trabalhos_alunos/matheus_pessanha][Matheus de Souza Pessanha]]   | nome 4   |
 #+end_example
 
+Não há problemas em você preencher uma tabela vazia!
 A tabela não precisa ficar 100% formatada!
 
 
@@ -103,14 +109,15 @@ futuramente, diretamente pelo GitHub.
 
 A organização das respostas e estilos do arquivo é de total responsabilidade do aluno.
 
-*** Scripts
-- Todos os scripts, seja da avaliação final ou das listas de exercícios deverão ser separados em seus próprios arquivos!
-- Todos os scripts deverão possuir uma linha /shebang/
-- É permito o uso de qualquer "linguagem" para shell, exemplos: =fish, bash, csh=
-- Não é permitido o uso de nenhuma linguagem de programação durante os scripts, exemplos: =perl e python=
+*** Material
+- Todo o material, seja da avaliação final ou das listas de exercícios deverão ser separados nos seus próprios arquivos!
+- Caso exista algum shell script no material, todos deverão possuir uma linha /shebang/
+- É permito o uso de qualquer "linguagem" para shell script, exemplos: =fish, bash, csh, tsh=
+- Não é permitido o uso de nenhuma linguagem de programação durante os shell scripts, exemplos: =perl e python=
 
 *** Listas de exercícios
 - É obrigatória a entrega de todas as 4 (quatro) listas
+- O cálculo da nota será influenciado pela corretude dos exercícios de cada lista
 - As listas podem estar em qualquer formato de arquivo, desde que sejam visíveis no GitHub, exemplos: =.org, .md, .pdf=
 
 *** Git Flow
