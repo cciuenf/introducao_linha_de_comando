@@ -124,3 +124,4 @@ A organização das respostas e estilos do arquivo é de total responsabilidade 
 - Todas as mensagens de commit devem estar em português
 - A interação com o GitHub é permitida tanto em GUI, CLI ou pelo website
 - A interação com o Git é limitda apenas à CLI
+- Caso tenha alguma dúvida ou dificuldade durante a avaliação, [[https://github.com/cciuenf/introducao_linha_de_comando/issues/new/choose][abra uma issue!]]
