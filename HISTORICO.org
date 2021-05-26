@@ -61,9 +61,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |   |
+|   | [[https://github.com/ilzd.png?size=60]]  |   |   |
 |---+---+---+---|
-|   |   |   |   |
+|   | [[./primeira_edicao/trabalhos_alunos/ian_louzada][Ian Pontes Louzada]]  |   |   |
 |   |   |   |   |
 |   |   |   |   |
 

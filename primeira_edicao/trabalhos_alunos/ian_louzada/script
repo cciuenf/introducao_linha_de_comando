@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Script criado para a questão 2 da avaliacao final
+# Durante esta disciplina eu tive que limpar
+# os arquivos de texto de uma pasta e criar
+# muitos arquivos de texto
+# então criei este script para
+# deletar os txt de uma pasta e criar N
+# arquivos de texto vazios de uma vez sóo
+
+read n
+
+rm *.txt
+
+for (( i = 1; i<=$n; i++))
+do
+	echo '' > "$i.txt"
+done
+echo "Arquivos criados com sucesso no diretorio"
+pwd
