@@ -1,0 +1,39 @@
+docker ps -a   - listar containers
+docker volume ls - listar volumes
+docker images
+
+docker rm <nomec>  - apagar container
+docker rmi <nomei>  - apagar imagem
+docker volume rm <nomev> - apagar volume
+
+docker start <nome-do-conteiner>
+
+docker exec -it <nome-do-conteiner> /bin/sh
+
+cut - mv - cat 
+
+ps -a mostra processos dee usuarios ativos 
+ps -V mostra informações sobre a versao
+
+cp -b t.txt D:/Aula/BUP copia o txt para a pasta destino
+cp -i pede a confirmação antes de sobreescrever
+cp -v ele mostra oque foi feito
+
+uniq -c printa as linhas e mostra quantas vezes cada uma se repete
+uniq -d mostra somente as linhas que se repetem
+uniq -u so mostra as linha que sao unicas
+
+wc - w printa a quantidade de palavras do arquivo
+wc - l printa a quantidade de linhas do arquivo
+m caracteres c bytes
+
+cut -c 1-5 mostra apenas oque a parte de caracteres que foi pedido de todas as linhas
+cut -d delimita oque é mostrado para a coluna pedida
+
+grap -i proucura pelo padrao especificado ignorando se a letra é maiuscula ou minuscula
+grap -v mostra a linhas que nao possuem o padrao proucurado
+grap -n mostra o numero da linha que esta o conteudo proucurado
+c
+
+ls /bin/ /sbin/ | shuf -n 1
+
