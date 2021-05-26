@@ -1,0 +1,59 @@
+#+title: Lista de exercícios 2 - Linux
+#+author: Bruno Palmeira de Oliveira
+
+1)Explique a definição de "Linux"
+Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em um computador e outros dispositivos. Linux pode ser livremente modificado e distribuído.
+Evoluiu a partir de um kernel criado por Linus Torvalds, ele é é uma interface entre o hardware do computador / servidor e os programas que são executados nele.
+
+
+2) Dado os diretórios da primeira tabela, correlacione-os com suas funções na segunda tabela:
+
+| opção | diretório |
+|-------+-----------|
+| a     | ~/dev~      |
+| b     | ~/etc~      |
+| c     | ~/usr~      |
+| d     | ~/opt~      |
+
+| opção | função                                                                                               |
+|-------+------------------------------------------------------------------------------------------------------|
+|   c   | Localização de arquivos, programas e bibliotecas do escopo de usário ficam; não são dados essenciais |
+|   a   | Diretório destino das mapeações de cada hardware                                                     |
+|   d   | Aqui são encontrados softwares adicionais e proprietários                                            |
+|   b   | Local onde as configurações do sistema ficam disponíveis de forma global                             |
+
+
+3) Escolha 3 (três) diretórios Linux a partir da raiz (~/~) e explique sua respectiva função.
+Regras:
+- Não vale repetir os diretórios da questão anterior ☺
+
+-> /boot: Pasta onde ficam as configurações para que o seu SO inicie corretamente
+-> /tmp : Armazena arquivos temporários, geralmente pequenos e que são apagagados toda vez que é feito um reboot.
+-> /var : Armazena arquivos que são esperados em aumentar de tamanho. Guarda arquivos de backup, logs, cache do sistema
+
+
+4) Qual a finalidade de existirem grupos em sistemas operacionais baseados no Linux?
+Os grupos em sistemas operacionais baseados no Linux tem como finalidade organizar e controlar os acessos ao sistema operacional.
+
+5) Descreva cada permissão:
+- Exemplo:
+=.rw-rw-rw-= -> ~.~ significa xxx, yyy tem permissões de nnn e mmm, etc...
+
+| permissão  | descrição |
+|------------+-----------|
+| =.rw-rw-rw-= | Significa que é um arquivo comum. Todos os usuários do sistema tem permissão de leitura e escrita.                                                     
+| =lr-x---rwx= | Significa que é um link simbólico. O dono pode ler e executar, o grupo do dono não tem permissões,os demais usuários tem todas as permissões          
+| =drwxr-xr-x= | Significa que é um diretório. O dono tem todas as permissões, o grupo do dono e os demais usuários tem permissão de ler e executar.                   
+| =.rw-r--r--= | Significa que é um aqrquivo comum. O dono tem permissão de ler e escrever, o grupo do dono e os demais usuários tem permissão de ler.                 
+| =drwxrwxrwx= | Significa que é um diretório. Todos os usuários do sistema possuem todas as permissões.          
+
+6) Defina ~STDIN~, ~STDOUT~ e ~STDERR~
+-> STDIN : Significa “Standard Input” (Entrada padrão). Os programas e comandos possuem vários tipos de entrada para receber dados.
+-> STDOUT : Significa “Standard Output” (Saída Padrão). É a saída gerada por um programa ou comando que foi executado, podendo ser efeitos no sistema ou uma mensagem.
+-> STDERR : Significa "Standard Error" (Erro Padrão). É uma saída especial que guarda as mensagens de erros geradas pelos programas/comandos, Guarda as mensagens de erros geradas pelos programas/comandos.
+
+
+
+7) Diferencie uma ~CLI~ de uma ~GUI~, apontando suas vantagens e desvantagens
+ Uma CLI é a forma de acesso ao sistema por linha de comando. Vantagem: Pouco uso de memória RAM, alto desempenho. Desvantagem: Assustador para leigos, não possui tanta interatividade quanto uma GUI.
+ Uma GUI é o mesmo só que por uma interface gráfica. Vantagem: Curva de aprendizado quase ínfima, altamente customizável. Desvantagem: Médio ou baixo desempenho geral, médio a alto consumo de memória.
