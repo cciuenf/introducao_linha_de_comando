@@ -4,7 +4,7 @@
 
 ## Questão 1.
 
-Primeiramente, implementei o Dockerfile, utilizando como base uma imagem da distribuição Alpine. Em seguida, entrei mesma pasta do Dockerfile pelo terminal e executei o seguinte comando para criar a imagem:
+Primeiramente, [implementei o Dockerfile](https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/trabalho_alunos/guilherme_tavares/Dockerfile), utilizando como base uma imagem da distribuição Alpine. Em seguida, entrei na mesma pasta do Dockerfile pelo terminal e executei o seguinte comando para criar a imagem:
 
 ```docker build -t imagem-exemplo .```
 
@@ -17,8 +17,6 @@ Ao final da execução do container obtive o seguinte resultado (saída do coman
 ```
 Wed May 26 18:35:41 UTC 2021
 ```
-
-[Clique aqui para visualizar o Dockerfile.](https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/trabalho_alunos/guilherme_tavares/Dockerfile)
 
 ## Questão 2.
 
