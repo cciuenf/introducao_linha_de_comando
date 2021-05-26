@@ -26,9 +26,16 @@ mkdir ./ccuenf ./exercicios       |
 | Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                                                   |   cp numeros1.txt numeros2.txt      |
 | Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                                           |  cp *.txt /exercicios       |
 | Exiba os arquivos da pasta "exercicios" com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual |  ls -la /exercicios       |
-| Apague a pasta "ccuenf" e "exercicios"                                                                        |         |
-* 5 - Liste todos os arquivos da pasta ~/bin~, salve em arquivo e orderne alfabeticamente. Quais foram os comandos utilizados? Não é obrigatório executar a sequência em apenas uma linha.
+| Apague a pasta "ccuenf" e "exercicios"                                                                        |  rm -r ccuenf exercicios   |
+
+
+* 5 - Liste todos os arquivos da pasta ~/bin~, salve em arquivo e orderne alfabeticamente. Quais foram os comandos utilizados? Não é obrigatório executar a sequência em apenas uma linha. 
+    ls /bin > conteudo_bin.txt; cat conteudo_bin.txt | sort;
+
 * 6 - Crie um arquivo ~.txt~ com o centeúdo da execução de ~man <comando>~ - onde "comando" é qualquer comando linux conhecido e que possua um manual - e inverta a ordem das linhas, procure pela palavra "the" e conte o número de ocorrências. Coloque aqui seu resultado e qual comando usou para pegar o manual.
+man ls | tac | grep -c the
+16
+
 * 7 - Escolha um ou mais programas da lista e tente instalá-lo, execute-o e descreva o resultado.
 | programas |
 |-----------|
@@ -36,6 +43,14 @@ mkdir ./ccuenf ./exercicios       |
 | cmatrix   |
 | rig       |
 | nyancat   |
+Instalaei usando "sudo apt install <programa>"
+ - nyancat é o clássico absoluto em toda sua glória felina e colorida no nosso terminal
+ - sl é um trem de ASCII
+ - rig eu não entendi, retorna um nome, endereço e telefone (creep). Li a documentação e é super interessante, um gerador de registros geograficamente consistente. 
+ -cmatrix  é o também clássico efeito visual do filme matrix
+Para remove-los: 
+ sudo apt remove sl cmatrix rig nyancat
+
 
 - Após terminar o exercício, remova o programa
 * 8 - Qual o resultado das seguintes expressões?
