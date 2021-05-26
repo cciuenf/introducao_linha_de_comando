@@ -61,9 +61,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |   |
+| [[https://github.com/LuisPeixoto.png?size=60]]  |   |   |   |
 |---+---+---+---|
-|   |   |   |   |
+| [[./primeira_edicao/trabalhos_alunos/luisFernando_cabral][Luis Fernando Peixoto Cabral]]  |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
