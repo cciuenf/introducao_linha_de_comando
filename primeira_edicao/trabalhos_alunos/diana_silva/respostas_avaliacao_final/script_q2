@@ -1,0 +1,22 @@
+#!/bin/sh
+##Um script pra me dizer coisas boas quando eu estiver estressada, o que acontece com uma boa frequência
+
+#Cria um arquivo com os mantras
+touch mantras.txt
+
+#Escreve alguns mantras nesse arquivo, um por linha
+echo "Você é incrível :) 
+Vai dar tudo certo :) 
+Foca na respiração :) 
+Tá tudo bem :) 
+Não precisa fazer tudo sozinha :) 
+Você consegue :)" > mantras.txt
+
+#printa uma saudação
+echo "Olá, Diana!"
+
+#pega uma linha aleatoria do arquivo de mantras e printa :)
+cat mantras.txt | tail | shuf -n 1
+
+#apaga o arq quando terminar de usar
+rm ./mantras.txt
