@@ -43,15 +43,15 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |[[ https://github.com/Leonardondm.png?size=60]]   |
+|   |   |   |   |
 |---+---+---+---|
 |   |   |   |[[./primeira_edicao/trabalhos_alunos/leonardo_machado][Leonardo Nascimento Dias Machado]]   |
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |   |
+|   |   |   |[[ https://github.com/Leonardondm.png?size=60]]   |
 |---+---+---+---|
-|   |   |   |   |
+|   |   |   |[[./primeira_edicao/trabalhos_alunos/leonardo_machado][Leonardo Nascimento Dias Machado]]   |
 |   |   |   |   |
 |   |   |   |   |
 
