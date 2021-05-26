@@ -18,4 +18,4 @@
 1. Git é um software VCS local que permite aos desenvolvedores salvar snapshots de seus projetos ao longo do tempo. Geralmente é melhor para uso individual.
 GitHub é uma plataforma baseada na web que incorpora os recursos de controle de versões do gitHub para que possam ser usados colaborativamente. Também inclui recursos de gerenciamento de projetos e equipes, assim como oportunidades para networking e codificação social.
 
-2. 
+2. https://github.com/jamm2k/optativa
