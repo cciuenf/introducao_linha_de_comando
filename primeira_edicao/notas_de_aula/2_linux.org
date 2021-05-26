@@ -49,8 +49,8 @@
    [[../imagens/root_ls.png]]
 
    - Diretório raiz (como se fosse o ~C:\~ do Windows)
-   - Os nomes dos diretórios geralmente são abreviações em ingês
-   - Segue o padão FHS (Filesystem Hierarchy Standard), mantido pela Linux Foundation
+   - Os nomes dos diretórios geralmente são abreviações em inglês
+   - Segue o padrão FHS (Filesystem Hierarchy Standard), mantido pela Linux Foundation
    - Todos os outros diretórios e subpastas estão localizados aqui
    - Alguns diretórios são links simbólicos (atalhos)
    - Alguns necessitam de permissões de administrador para
@@ -74,7 +74,7 @@
 ** /dev (Devices)
    [[../imagens/warning_logo.png]]
 
-   - Possui arquivos que represetam seu hardware, como:
+   - Possui arquivos que representam seu hardware, como:
      1. Webcam
      2. Microfone
      3. Fones de ouvido
@@ -102,7 +102,7 @@
    - São links simbólicos (atalhos) para ~/usr~, ex: ~/lib~ -> ~/usr/lib~
    - Guarda as bibliotecas necessárias de cada software!
    - Essas "libs" podem ser comparadas com as "DLLs" do Windows
-   - O nome das pastas represetam a arquitetura a qual elas guardam os arquivos
+   - O nome das pastas representam a arquitetura a qual elas guardam os arquivos
 
 ** /media (Mídias)
    - Guarda os arquivos que representam mídias externas, como:
@@ -117,8 +117,8 @@
    - Tem a finalidade de abrigar as montagens de dispositivos feitas manualmente pelo usuário
    - Leva em consideração o arquivo ~/etc/fstab~
 
-** /opt (Optional ou Opicional)
-   - Gerealmente fabricantes que fazem computadores com Linux, guardam configurações aqui
+** /opt (Optional ou Opcional)
+   - Geralmente fabricantes que fazem computadores com Linux, guardam configurações aqui
    - Também pode abrigar um software proprietário (como o Google Chrome)
      - Na pasta ~/usr/bin~ encontramos o binário do ~google-chrome-stable~, que é um link
        simbólico para ~/opt/google/chrome/google-chrome~
@@ -144,7 +144,7 @@
 
 ** /sbin (System Binaries ou Binários de sistema)
    - Link simbólico para ~/usr/sbin~
-   - Guarda os executáveeis dos programas que precisam de permissões de admin para serem executados
+   - Guarda os executáveis dos programas que precisam de permissões de admin para serem executados
 
 ** /snap (Referência aos pacotes SNAP)
    - Diretório mais novo no padrão FHS
@@ -152,7 +152,7 @@
    - SNAP é um forma diferente de empacotamento e distribuição de software
    - Mantido pela Canonical (que também mantem o Ubuntu)
 
-** /srv (Services ou Serviçoes)
+** /srv (Services ou Serviços)
    - Geralmente fica vazia
    - Caso a máquina seja um servidor, ela pode abrigar os diferentes arquivos
      que são acessíveis para os outros usuários
@@ -177,7 +177,7 @@
 ** /usr (User, Usuário ou "Unix System Resources")
    - Foi modificada ao longo do tempo
    - Antigamente era onde a ~/home~ ficava
-   - Guarda arquivos e bibliotecas úteis para os usuários mas que não são vitais para o sistema
+   - Guarda arquivos e bibliotecas úteis para os usuários, mas que não são vitais para o sistema
 
 *** /usr/local
     - Programas instalados via código fonte guardam suas informações aqui
@@ -190,7 +190,7 @@
    - Guarda arquivos de backup, logs, cache do sistema
 
 ** Caminhos (Paths)
-Os caminhos (pastas) nos sistemas UNIX, são representaos da seguinte forma:
+Os caminhos (pastas) nos sistemas UNIX, são representamos da seguinte forma:
 - Cada pasta é separada por uma ~/~
 - A pasta no nível hierárquico acima é representada com ~..~
 - O diretório atual é representado por ~.~
@@ -205,7 +205,7 @@ Exemplos:
 
 ** Usuário
    - Qualquer um que usa o computador, geralmente representado pelo nome da pessoa
-   - Usuários comuns possuem permissões distantas e restritas ao sistema
+   - Usuários comuns possuem permissões distantes e restritas ao sistema
    - Esses usuários comuns podem acessar programas/arquivos de sistema com os
      comandos ~su~ ou ~sudo~
 
@@ -234,7 +234,7 @@ Exemplos:
   e as permissões para os outros usuários de outros grupos.
 
   Na imagem de exemplo, as permissões são representadas por 10 caracteres na primeira
-  coluna do comando ~ls~. Vamos distrinchar isso:
+  coluna do comando ~ls~. Vamos destrinchar isso:
 
            
   Exemplo: 
@@ -249,7 +249,7 @@ Exemplos:
   - ~l~ se for um link simbólico
   - ~.~ se for um arquivo comum
 
-  Após esse primeiro caractere, os 9 seguintes são agrupos de 3 em 3, sendo:
+  Após esse primeiro caractere, os 9 seguintes são grupos de 3 em 3, sendo:
   - Os 3 primeiros representando as permissões do usuário que criou o arquivo
   - Os 3 seguintes são as permissões do grupo o qual o dono do arquivo pertence
   - Os 3 últimos mostram as permissões dos demais usuários
@@ -257,7 +257,7 @@ Exemplos:
   Exemplos:
   ~drwxr-xr-x~
   - Significa que é uma pasta, o dono do arquivo possui todas as permissões;
-  - o grupo a qual o dono pertence pode ler e executar o arquivo e demais usuários só podem executá-lo.
+  - O grupo a qual o dono pertence pode ler e executar o arquivo e demais usuários só podem executá-lo.
 
   ps: Permissão de executar uma pasta significa que você pode entrar nela!
 
@@ -312,7 +312,7 @@ Exemplos:
 *** Vantagens
     - Pouco uso de memória RAM
     - Alto desempenho
-    - Menos flexivel do que uma GUI
+    - Menos flexível do que uma GUI
     - Geralmente se usa só o teclado
     - Perfeita para tarefas complexas do SO
 
@@ -328,7 +328,7 @@ Exemplos:
 *** Vantagens
     - Curva de aprendizado quase ínfima
     - Altamente customizável
-    - Completamente flexivel
+    - Completamente flexível
     - Multitarefa costuma ser algo simples
 
 *** Desvantagens
@@ -354,7 +354,7 @@ Exemplos:
     [[../imagens/xfce_screenshot.png]]
 
     - Consumo de memória reduzido
-    - Não é tão flexivel
+    - Não é tão flexível
     - Bastante minimalista
 
 *** KDE
@@ -369,7 +369,7 @@ Exemplos:
     forma automática!
 
     Tendem a ser extremamente customizáveis e programáveis, por isso, não possuem um
-    design incial, você é quem vai montar ele pelas configurações.
+    design inicial, você é quem vai montar ele pelas configurações.
 
     Existe um termo na internet chamado "ricer", que é denominado a quem gosta de
     deixar seu desktop com WM o mais elegante e chamativo possível!
@@ -408,13 +408,13 @@ Exemplos:
 
   Vamos resumir assim:
   - Linux é o Kernel; 
-  - composto pelos GNU Shell Utilities (ou utilitários para shell) - uma CLI - e/ou
+  - Composto pelos GNU Shell Utilities (ou utilitários para shell) - uma CLI - e/ou
     por um por um servidor gráfico (X.Org ou Wayland);
   - Um DE (Desktop Environment) executa um servidor gráfico, o que dá acesso à GUIs;
-  - uma distro é um conjunto de programas pré-selecionados e instalados, possuindo um DE ou não.
+  - Uma distro é um conjunto de programas pré-selecionados e instalados, possuindo um DE ou não.
     Uma distro é de fato um Sistema Operacional, baseado no Linux.
 
-  Lembre que tudo (ou quase tudo) no mundo Linux é Open Source, ou seja: possui o
+  Lembre-se que tudo (ou quase tudo) no mundo Linux é Open Source, ou seja: possui o
   código fonte aberto e geralmente é gratuito para uso.
 
 ** Exemplos
@@ -430,11 +430,11 @@ Exemplos:
     [[../imagens/manjaro_screenshot.png]]
 
     - Baseado no Arch Linux
-    - Usa o KDE plasma como DE principal mas possui diversas versões com outros DEs
+    - Usa o KDE plasma como DE principal mas, possui diversas versões com outros DEs
     - Rolling Release (sempre possui atualizações compatíveis com as versões anteriores)
 
 * Referências
-1. Viva o Linux:  [[https://www.vivaolinux.com.br]]
+1. Viva o Linux: [[https://www.vivaolinux.com.br]]
 2. Canal Diolinux: [[https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA]]
 3. Blog Diolinux: https://diolinux.com.br/linux/10-dicas-para-novos-usuarios-de-linux.html
 4. Arch wiki: https://wiki.archlinux.org/
