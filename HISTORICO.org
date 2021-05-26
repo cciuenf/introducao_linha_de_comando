@@ -40,8 +40,8 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |---+---+---+---|
 |   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
+| [[https://github.com/yurigc77.png?size=60]]  |   |   |   |
+| [[./primeira_edicao/trabalhos_alunos/YuriGarcia][Yuri Garcia Campos]]  |   |   |   |
 
 |   |   |   |   |
 |---+---+---+---|
@@ -73,9 +73,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   | [[https://github.com/yurigc77.png?size=60]]  |   |
+|   |   |   |   |
 |---+---+---+---|
-|   |   | [[./primeira_edicao/trabalhos_alunos/YuriGarcia][Yuri Garcia Campos]]  |   |
+|   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
