@@ -55,9 +55,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   | [https://github.com/JeanVassalo.png?size=60]  |
+|   |   |   | [[https://github.com/JeanVassalo.png?size=60]]  |
 |---+---+---+---|
-|   |   |   | [./primeira_edicao/listas_exercicios/jean_ferreira][Jean Matheus Vassalo Ferreira]  |
+|   |   |   | [[./primeira_edicao/trabalhos_alunos/jean_ferreira][Jean Matheus Vassalo Ferreira]] |
 |   |   |   |   |
 |   |   |   |   |
 
