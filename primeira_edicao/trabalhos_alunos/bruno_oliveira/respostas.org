@@ -1,4 +1,4 @@
 1) O Dockerfile foi criado na pasta de scripts e executei o comando "docker build -t teste ."
 
 
-2)
+2)O arquivo de scrip esta na pasta de scripts
