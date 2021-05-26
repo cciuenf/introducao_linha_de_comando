@@ -49,11 +49,11 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-| [[https://github.com/MateusSchulz.png?size=60]] |   |   |   |
+|  |   |   |   |
 |---+---+---+---|
-| [[./primeira_edicao/trabalhos_alunos/mateus_moraes/][Mateus Nunes Schulz Moraes]] |   |   |   |
 |   |   |   |   |
-|   |   |   |   |
+|   | [[https://github.com/MateusSchulz.png?size=60]] |   |   |
+|   | [[./primeira_edicao/trabalhos_alunos/mateus_moraes/][Mateus Nunes Schulz Moraes]] |   |   |
 
 |   |   |   |   |
 |---+---+---+---|
