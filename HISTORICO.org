@@ -37,15 +37,15 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 | [[./primeira_edicao/listas_exercicios][Matheus de Souza Pessanha]]               | [[./primeira_edicao/Plano_Estudo.org][Annabell Del Real Tamariz]]               |
 
 *** Alunos
-|   |   |   | [[https://github.com/Kayo-V.png?size=60]]  |
+|   |   |   |   |
 |---+---+---+---|
-|   |   |   | [[./primeira_edicao/trabalhos_alunos/kayo_veloso][Kayo Dos Santos Veloso]]  |
+|   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |   |
+|   |   | [[https://github.com/Kayo-V.png?size=60]]  |   |
 |---+---+---+---|
-|   |   |   |   |
+|   |   |   | [[./primeira_edicao/trabalhos_alunos/kayo_veloso][Kayo Dos Santos Veloso]]  |  |
 |   |   |   |   |
 |   |   |   |   |
 
