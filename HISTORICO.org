@@ -55,15 +55,15 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   | [[https://github.com/Brunopalm.png?size=60]] |
+|   |   |   |  |
 |---+---+---+---|
-|   |   |   | [[./primeira_edicao/listas_exercicios/bruno_oliveira][Bruno Palmeira de Oliveira]]|
+|   |   |   | |
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |   |
+|[[https://github.com/Brunopalm.png?size=60]]    |   |   |   |
 |---+---+---+---|
-|   |   |   |   |
+|[[./primeira_edicao/listas_exercicios/bruno_oliveira][Bruno Palmeira de Oliveira]]   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
