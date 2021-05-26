@@ -161,7 +161,7 @@ Uso:
 - Geralmente usamos ele para imprimir algum texto na tela ou redirecionar para um arquivo
 
 Usos:
-- =echo <entrad>= -> imprime na tela as entradas
+- =echo <entrada>= -> imprime na tela as entradas
 - =echo <entrada> > <arquivo>= -> redireciona a STDOUT do ~echo~ para um arquivo
 - =echo <entrada> >> <arquivo>= -> redireciona a STDOUT ~echo~ e adiona o conteúdo no final do arquivo
 ** cat
