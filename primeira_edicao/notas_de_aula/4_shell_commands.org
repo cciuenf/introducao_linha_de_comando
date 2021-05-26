@@ -3,7 +3,7 @@
 #+email: 00119110328@pq.uenf.br
 
 * Onde eu consigo uma ajuda?
-Todos os comandos (nativos ou não) possuem uma "man page", ou "página de manual", onde fica toda a documentção do comando.
+Todos os comandos (nativos ou não) possuem uma "man page", ou "página de manual", onde fica toda a documentação do comando.
 
 Para abrir o manual de algum comando, apenas digite no terminal:
 
