@@ -4,7 +4,7 @@
 # Descrição: Este script é um jogo de advinhação! 
 # Você deve tentar advinhar um número aleatório
 # que varia de 1 até 100.
-# Date: 26/05/2021
+# Data: 26/05/2021
 
 # Atribuindo um número aleatório a uma variável
 RANDOM_NUMBER=$(shuf -i 1-100 -n 1)
