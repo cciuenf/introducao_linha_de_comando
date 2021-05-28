@@ -215,7 +215,7 @@ Exemplos:
 ** Grupos
    - Conjunto de permissões
    - Usuários pertencem à grupos, herdando suas respectivas permissões
-   - O mais comum é p grupo ~wheel~, que representa quais usuários
+   - O mais comum é o grupo ~wheel~, que representa quais usuários
      podem pedir permissões de administrador de forma temporária
 
   /NO WINDOWS, DÊ REBOOT, NO LINUX, SEJA ROOT/
