@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# As vezes temos que fazer relatórios com um limite de número de palavras
+# Saber esse número de palavras de uma forma rápida é sempre bem-vindo
+# O script em questão conta e exibe o número de palavras 
+# presentes no texto informado como argumento 
+    
+# Envia o primeiro argumento do script para a saída padrão
+# e redireciona a saída padrão para um arquivo txt
+echo $1 > ./temp.txt
+
+# Exibe uma mensagem informativa
+echo "Número de palavras no texto digitado:"
+
+#Conta a quantidade de palavras no arquivo txt criado
+wc -w < ./temp.txt 
+
+#Exclui o arquivo txt criado
+rm ./temp.txt
