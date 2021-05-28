@@ -38,9 +38,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 
 *** Alunos
 
-| [[https://github.com/pedrohb88.png?size=60]]   | [[https://github.com/dianasgs.png?size=60]]   |   |   |
+| [[https://github.com/pedrohb88.png?size=60]]   | [[https://github.com/dianasgs.png?size=60]]   | [[https://github.com/AugustoAmaral.png?size=60]]  |   |
 |---+---+---+---|
-| [[./primeira_edicao/trabalhos_alunos/pedro_leal][Pedro Henrique Bonfim Leal]]  | [[./primeira_edicao/trabalhos_alunos/diana_silva][Diana de Sales Glória Silva]]   |   |   |
+| [[./primeira_edicao/trabalhos_alunos/pedro_leal][Pedro Henrique Bonfim Leal]]  | [[./primeira_edicao/trabalhos_alunos/diana_silva][Diana de Sales Glória Silva]]   | [[./trabalhos_alunos/augusto_amaral][Augusto Amaral Pereira]] |   |
 |   |   |   |   |
 |   |   |   |   |
 
