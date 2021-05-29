@@ -1,0 +1,57 @@
+#+title: Lista de exercícios 2 - Linux
+#+author: Thiago Rodrigues de Souza Pessanha
+
+* 1 - Explique a definição de "Linux"
+Segundo tutorial do linux.org, Linux é um sistema operacional que evoluiu a partir de um kernel criado por Linus Torvalds, ele é é uma interface entre o hardware do computador / servidor e os programas que são executados nele.
+
+
+* 2 - Dado os diretórios da primeira tabela, correlacione-os com suas funções na segunda tabela:
+
+| opção | diretório |
+|-------+-----------|
+| a     | ~/dev~      |
+| b     | ~/etc~      |
+| c     | ~/usr~      |
+| d     | ~/opt~      |
+
+| opção | função                                                                                               |
+|-------+------------------------------------------------------------------------------------------------------|
+|   c   | Localização de arquivos, programas e bibliotecas do escopo de usário ficam; não são dados essenciais |
+|   a   | Diretório destino das mapeações de cada hardware                                                     |
+|   d   | Aqui são encontrados softwares adicionais e proprietários                                            |
+|   b   | Local onde as configurações do sistema ficam disponíveis de forma global                             |
+
+
+* 3 - Escolha 3 (três) diretórios Linux a partir da raiz (~/~) e explique sua respectiva função.
+Regras:
+- Não vale repetir os diretórios da questão anterior ☺
+
+-> /tmp : Armazena arquivos temporários, geralmente pequenos e que são apagagados toda vez que é feito um reboot.
+-> /mnt : Abrigar as montagens de dispositivos feitas manualmente pelo usuário.
+-> /boot : Onde ficam as configurações para que o seu SO inicie corretamente.
+
+
+* 4 - Qual a finalidade de existirem grupos em sistemas operacionais baseados no Linux?
+Para organizar e controlar os acessos ao sistema operacional.
+
+* 5 - Descreva cada permissão:
+- Exemplo:
+=.rw-rw-rw-= -> ~.~ significa xxx, yyy tem permissões de nnn e mmm, etc...
+
+| permissão  | descrição |
+|------------+-----------|
+| =.rw-rw-rw-= | Significa ue é um arquivo comum. Todos os usuários do sistema tem permissão de leitura e escrita.                                                     |
+| =lr-x---rwx= | Significa que é um link simbólico. O dono pode ler e executar, o grupo do dono não tem permissões,os demais usuários tem todas as permissões          |
+| =drwxr-xr-x= | Significa que é um diretório. O dono tem todas as permissões, o grupo do dono e os demais usuários tem permissão de ler e executar.                   |
+| =.rw-r--r--= | Significa que é um aqrquivo comum. O dono tem permissão de ler e escrever, o grupo do dono e os demais usuários tem permissão de ler.                 |
+| =drwxrwxrwx= | Significa que é um diretório. Todos os usuários do sistema possuem todas as permissões.          |
+
+* 6 - Defina ~STDIN~, ~STDOUT~ e ~STDERR~
+-> STDIN : Significa “Standard Input” (Entrada padrão). São as entradas que os programas ou comandos podem receber como parâmetro de execução.
+-> STDOUT : Significa “Standard Output” (Saída Padrão). É a saída gerada por um programa ou comando que foi executado, podendo ser efeitos no sistema ou uma mensagem.
+-> STDERR : Significa "Standard Error" (Erro Padrão). É uma saída especial que guarda as mensagens de erros geradas pelos programas/comandos.
+
+
+
+* 7 - Diferencie uma ~CLI~ de uma ~GUI~, apontando suas vantagens e desvantagens
+Basicamente, uma CLI é a forma de acesso ao sistema por linha de comando, já GUI é o mesmo só que por uma interface gráfica. Algumas das vantagens que o uso de CLI traz são: o pouco uso da memória RAM e o alto desempenho, entretanto não possui muita flexibilidade, interatividade e não é tão fácil de se usar, características essas que estão presentes na GUI.
