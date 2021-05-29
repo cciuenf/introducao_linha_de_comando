@@ -1,0 +1,8 @@
+#imagem da distro
+FROM alpine:3.7
+
+#atualizando 
+RUN apt-get update && apt-get upgrade 
+
+#executa o comando du
+ENTRYPOINT ["du"]

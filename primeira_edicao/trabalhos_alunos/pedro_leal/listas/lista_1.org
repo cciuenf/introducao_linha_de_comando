@@ -1,0 +1,11 @@
+#+title: Lista de exercícios 1 - docker
+#+author: Pedro Leal
+
+* 1 - Resumidamente, o que significa a palavra contêiner?
+    Container é um conjunto de um ou mais processos organizados e empacotados isoladamente de forma a conter todas as dependências necessárias para se rodar uma aplicação. Desde o sistema, ambiente de execução, ferramentas, bibliotecas e o próprio código da aplicação. 
+
+* 2 - Cite algumas vantagens de dockerizar um programa/aplicação
+    Dockerizando uma aplicação, padronizamos o ambiente em que essa aplicação roda, facilitando com que os desenvolvedores trabalhem na mesma base. Além de modularizar, ou seja, empacotar de forma independente partes de uma aplicação em um ambiente isolado e de execução própria, possibilitando que haja trabalho de forma paralela e mais rápida em diferentes partes de uma aplicação. Em adição, uma imagem docker é construída a partir de diversas camadas, sendo que estas são "cacheadas"/reutilizadas caso não haja alterações, agilizando a montagem e execução desses ambientes modularizados. 
+
+* 3 - Execute =docker run --rm chuanwen/cowsay= e descreva o resultado! Pode repetir a execução se quiser.
+    A imagem chuanwen/cowsay não foi encontrada localmente e a última versão foi baixada. Após baixada, um container com a imagem foi executado, exibindo uma "vaca" dizendo a mensagem "tentei usar a chamada de sistemas 'clone' mas não funcionou.". Na segunda execução a mensagem exibida foi "Muitas pessoas não estão entusiasmadas com seu trabalho.". Ou seja, a imagem em questão é baseada em dois programas, o "cowsay" que exibe uma vaca dizendo uma mensagem, e o "fortune" que gera uma frase para que seja exibida. Também é importante notar que o comando "--rm" faz a remoção do container criado após sua execução. 
