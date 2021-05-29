@@ -1,0 +1,19 @@
+#+title: Lista de exercícios 4 - git e github
+#+author: Pedro Leal
+
+* 1 - Qual a diferença entre git e github? Como os dois estão relacionados?
+Git é um sistema de controle de versão, um programa utilizado para gerenciar mudanças e versões de arquivos, sendo comumente utilizado no desenvolvimento de software para gerenciar versões de códigos. Já o Github é uma plataforma para hospedagem de repositórios (usualmente contendo arquivos de códigos) que utiliza o git como software de controle de versão. 
+
+
+* 2 - Execute o seguinte git-flow:
+1. Crie um repositório local
+2. Crie um ou mais arquivos com conteúdo
+3. Adicione todo o diretório ao staging
+4. Crie um commit
+5. Edite a mensagem do último commit
+6. Crie um repositório remoto com a cli do github ou no site deles
+7. Adicione a url do repositório remoto no seu repositório local
+8. Envie os commits locais para o repositório remoto
+9. Coloque aqui o link para seu repositório remoto!
+
+Repo: https://github.com/pedrohb88/tso
