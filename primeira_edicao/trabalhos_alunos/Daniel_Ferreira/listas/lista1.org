@@ -1,0 +1,12 @@
+
+#+title: Lista de exercícios 1 - docker
+#+author: <Daniel de Faria Ferreira>
+
+* 1 - Resumidamente, o que significa a palavra contêiner?
+  Resposta: O container é um ambiente isolado
+
+* 2 - Cite algumas vantagens de dockerizar um programa/aplicação
+  Resposta: Desempenho,boot rápido e economia de recursos.
+
+* 3 - Execute =docker run --rm chuanwen/cowsay= e descreva o resultado! Pode repetir a execução se quiser.
+  Resposta:É imprimido na tela uma vaca em ASCII com uma frase aleatória escrita em um balão.
