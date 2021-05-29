@@ -43,9 +43,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |   |
+|   |   |   | [[https://github.com/guilhermeomt.png?size=60]]  |
 |---+---+---+---|
-|   |   |   |   |
+|   |   |   | [[./primeira_edicao/trabalhos_alunos/guilherme_tavares][Guilherme Oliveira Mussa Tavares]]  |
 |   |   |   |   |
 |   |   |   |   |
 
@@ -55,9 +55,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-| [[https://github.com/guilhermeomt.png?size=60]]   |   |   |   |
+|    |   |   |   |
 |---+---+---+---|
-| [[./primeira_edicao/trabalhos_alunos/guilherme_tavares][Guilherme Oliveira Mussa Tavares]]  |   |   |   |
+|   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
