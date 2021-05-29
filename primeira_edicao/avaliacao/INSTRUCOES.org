@@ -22,8 +22,8 @@ Preste atenção nessa demo:
 [[../imagens/avaliacao/demo_historico.gif]]
 
 Como pode ser notado na demo, há algumas tabelas envolvidas por HTML, dentre essas tabelas:
-- uma é para os organizadores
-- outras para os alunos, separadas em 8 (oito) tabelas menores com 4 (quatro) espaços cada e outra com 2 (dois) espaços
+- Uma é para os organizadores
+- Outras para os alunos, separadas em 8 (oito) tabelas menores com 4 (quatro) espaços cada e outra com 2 (dois) espaços
 
 Limitei cada tabela em 4 (quatro) espaços para as linhas não ficarem tão extensas.
 
@@ -60,9 +60,9 @@ sintaxe ou organização de conteúdo. Nesse caso, se as mudanças sugeridas nã
 cálculo da nota final não será alterado.
 
 **** Exemplo 1
-Toda a estrutura do diretório final está correto, porém a sintaxe da adição na tabela do arquivo =HISTORICO.org= está incorreta.
+Toda a estrutura do diretório final está correta, porém a sintaxe da adição na tabela do arquivo =HISTORICO.org= está incorreta.
 
-Um organizador solicitará a correção mas não irá impactar o cálculo da nota final.
+Um organizador solicitará a correção, mas não irá impactar o cálculo da nota final.
 
 **** Exemplo 2
 Toda a sintaxe está correta, porém a estrutura do diretório final está incorreta e as mensagens de commit estão em ingês.
@@ -123,5 +123,5 @@ A organização das respostas e estilos do arquivo é de total responsabilidade 
 *** Git Flow
 - Todas as mensagens de commit devem estar em português
 - A interação com o GitHub é permitida tanto em GUI, CLI ou pelo website
-- A interação com o Git é limitda apenas à CLI
+- A interação com o Git é limitada apenas à CLI
 - Caso tenha alguma dúvida ou dificuldade durante a avaliação, [[https://github.com/cciuenf/introducao_linha_de_comando/issues/new/choose][abra uma issue!]]

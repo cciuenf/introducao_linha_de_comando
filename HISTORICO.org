@@ -56,39 +56,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 | [[https://github.com/dbs-97.png?size=60]]  | [[https://github.com/MateusSchulz.png?size=60]]  | [[https://github.com/jamm2k.png?size=60]]  | [[https://github.com/cossettijhonatan.png?size=60]]  |
 | [[./primeira_edicao/trabalhos_alunos/Daniel_Brito/][Daniel Brito dos Santos]] | [[./primeira_edicao/trabalhos_alunos/mateus_moraes/][Mateus Nunes Schulz Moraes]]  | [[./primeira_edicao/trabalhos_alunos/josé_mulatinho][José Arthur de Mello Mulatinho]]  | [[./primeira_edicao/trabalhos_alunos/Jhonatan_Cossetti][Jhonatan ALves Cossetti]]  |
 
-|    |   |   |   |
-|---+---+---+---|
-|   |   |   |  |
-|   |   |   |   |
-|   |   |   |   |
-
-|    |   |   |   |
-|---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-
-|   |   |   |   |
-|---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-
-|   |   |   |   |
-|---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-
-|   |   |   |   |
-|---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-
-|   |   |
-|---+---|
-|   |   |
+| [[https://github.com/jvfd3.png?size=60]]  |
+|------|
+| [[./primeira_edicao/trabalhos_alunos/joao_vitor_fernandes_dias][Joao Vitor Fernandes Dias]]  | 
 
 
 #+begin_html

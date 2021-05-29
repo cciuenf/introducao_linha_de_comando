@@ -1,0 +1,706 @@
+* Implementações Computacionais
+  :PROPERTIES:
+  :CUSTOM_ID: implementações-computacionais
+  :END:
+** Implementação Computacional 1
+   :PROPERTIES:
+   :CUSTOM_ID: implementação-computacional-1
+   :END:
+Procure 5 (cinco) ou mais comandos do shell e mostre pelo menos 2 (dois)
+exemplos de cada
+
+Regras:
+
+Não vale repetir comandos que já foram mostrados no material
+
+Só são permitidos os comandos dos diretórios /bin e /sbin
+
+*** Pesquisados
+    :PROPERTIES:
+    :CUSTOM_ID: pesquisados
+    :END:
+**** base64 (2)
+     :PROPERTIES:
+     :CUSTOM_ID: base64-2
+     :END:
+$ echo 'annabell' | base64
+
+YW5uYWJlbGwK
+
+$ echo 'YW5uYWJlbGwK' | base64 --decode
+
+annabell
+
+**** base32 (2)
+     :PROPERTIES:
+     :CUSTOM_ID: base32-2
+     :END:
+*$ echo 'annabell' | base32*
+
+MFXG4YLCMVWGYCQ=
+
+*$ echo 'MFXG4YLCMVWGYCQ=' | base32 --decode*
+
+Annabell
+
+*$ base32 --version*
+
+base32 (GNU coreutils) 8.32
+
+Copyright (C) 2020 Free Software Foundation, Inc.
+
+License GPLv3+: GNU GPL version 3 or later
+<https://gnu.org/licenses/gpl.html>.
+
+This is free software: you are free to change and redistribute it.
+
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Simon Josefsson.
+
+*$ base32 --help*
+
+Usage: base32 [OPTION]... [FILE]
+
+Base32 encode or decode FILE, or standard input, to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+
+-d, --decode decode data
+
+-i, --ignore-garbage when decoding, ignore non-alphabet characters
+
+-w, --wrap=COLS wrap encoded lines after COLS character (default 76).
+
+Use 0 to disable line wrapping
+
+--help display this help and exit
+
+--version output version information and exit
+
+The data are encoded as described for the base32 alphabet in RFC 4648.
+
+When decoding, the input may contain newlines in addition to the bytes
+of
+
+the formal base32 alphabet. Use --ignore-garbage to attempt to recover
+
+from any other non-alphabet bytes in the encoded stream.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+
+Full documentation <https://www.gnu.org/software/coreutils/base32>
+
+or available locally via: info '(coreutils) base32 invocation'
+
+**** date (3)
+     :PROPERTIES:
+     :CUSTOM_ID: date-3
+     :END:
+$ date
+
+Wed Mar 31 04:48:02 PM UTC 2021
+
+$ date --date='next day'
+
+Thu Apr 1 05:52:01 PM UTC 2021
+
+$ date --date='next year'
+
+Thu Mar 31 05:52:13 PM UTC 2022
+
+**** False (1?)
+     :PROPERTIES:
+     :CUSTOM_ID: false-1
+     :END:
+$ False.
+
+**** True (1?)
+     :PROPERTIES:
+     :CUSTOM_ID: true-1
+     :END:
+$ True.
+
+**** Lorem (1?)
+     :PROPERTIES:
+     :CUSTOM_ID: lorem-1
+     :END:
+$ lorem
+
+Ut eius illum suscipit dolorem et culpa accusantium natus. Eos sapiente
+quia nihil ipsa. Blanditiis possimus similique est optio praesentium
+sed. Dolorum quo rerum cupiditate reiciendis voluptate nihil et
+voluptates. Ducimus velit consequuntur repellendus voluptatem maiores.
+Quasi saepe enim est possimus voluptatibus provident earum.
+
+**** Sleep (4)
+     :PROPERTIES:
+     :CUSTOM_ID: sleep-4
+     :END:
+$ sleep 5s
+
+$ sleep 5m
+
+$ sleep 5h
+
+$ sleep 5d
+
+'s' for seconds (the default),
+
+'m' for minutes,
+
+'h' for hours
+
+'d' for days.
+
+**** Test (2)
+     :PROPERTIES:
+     :CUSTOM_ID: test-2
+     :END:
+test 99 -lt 98 && echo "Sim." || echo "Nao."
+
+test 98 -lt 99 && echo "Sim." || echo "Nao."
+
+test 99 -gt 98 && echo "Sim" || echo "Não."
+
+test 98 -gt 99 && echo "Sim" || echo "Não."
+
+Todos Comandos
+
+'[' head reset add-apt-repository hexdump resizepart
+
+addpart hostid resolvectl
+
+apropos hostname rev
+
+apt hostnamectl rgrep
+
+apt-add-repository i386 rm
+
+apt-cache iconv rmdir
+
+apt-cdrom id runcon
+
+apt-config infocmp run-mailcap
+
+apt-get infotocap run-parts
+
+apt-key install rzsh
+
+apt-mark instmodsh savelog
+
+arch ionice script
+
+awk ipcmk scriptlive
+
+b2sum ipcrm scriptreplay
+
+base32 ipcs sdiff
+
+base64 ischroot sed
+
+basename join see
+
+basenc journalctl select-editor
+
+bash json_pp sensible-browser
+
+bashbug kbxutil sensible-editor
+
+bc kernel-install sensible-pager
+
+bootctl keyring seq
+
+bunzip2 kill setarch
+
+busctl last setpriv
+
+bzcat lastb setsid
+
+bzcmp lastlog setterm
+
+bzdiff lcf sg
+
+bzegrep ldd sh
+
+bzexe less sha1sum
+
+bzfgrep lessecho sha224sum
+
+bzgrep lessfile sha256sum
+
+bzip2 lesskey sha384sum
+
+bzip2recover lesspipe sha512sum
+
+bzless lexgrog shasum
+
+bzmore libnetcfg shred
+
+captoinfo link shuf
+
+cat linux32 skill
+
+catchsegv linux64 slabtop
+
+catman ln sleep
+
+cautious-launcher locale snice
+
+chage locale-check soelim
+
+chardet localectl sort
+
+chardetect localedef splain
+
+chattr logger split
+
+chcon login stat
+
+chfn loginctl stdbuf
+
+chgrp logname stty
+
+chmod look su
+
+choom lorem sudo
+
+chown ls sudoedit
+
+chrt lsattr sudoreplay
+
+chsh lsblk sum
+
+cksum lsb_release symcryptrun
+
+clear lscpu sync
+
+clear_console lsipc systemctl
+
+cmp lslocks systemd
+
+col lslogins systemd-analyze
+
+colrm lsmem systemd-ask-password
+
+column lsns systemd-cat
+
+comm lspgpot systemd-cgls
+
+compose lynx systemd-cgtop
+
+corelist lzcat systemd-delta
+
+cp lzcmp systemd-detect-virt
+
+cpan lzdiff systemd-escape
+
+cpan5.30-x86_64-linux-gnu lzegrep systemd-id128
+
+c_rehash lzfgrep systemd-inhibit
+
+csplit lzgrep systemd-machine-id-setup
+
+cut lzless systemd-mount
+
+cvtsudoers lzma systemd-notify
+
+dash lzmainfo systemd-path
+
+date lzmore systemd-resolve
+
+dbus-cleanup-sockets man systemd-run
+
+dbus-daemon mandb systemd-socket-activate
+
+dbus-monitor manpath systemd-stdio-bridge
+
+dbus-run-session man.REAL systemd-sysusers
+
+dbus-send man-recode systemd-tmpfiles
+
+dbus-update-activation-environment mawk systemd-tty-ask-password-agent
+
+dbus-uuidgen mcookie systemd-umount
+
+dd md5sum tabs
+
+debconf md5sum.textutils tac
+
+debconf-apt-progress mesg tail
+
+debconf-communicate migrate-pubring-from-classic-gpg tar
+
+debconf-copydb mkdir taskset
+
+debconf-escape mkfifo tbl
+
+debconf-set-selections mknod tee
+
+debconf-show mktemp telnet
+
+deb-systemd-helper more telnet.netkit
+
+deb-systemd-invoke mount tempfile
+
+delpart mountpoint test
+
+df mv tic
+
+diff namei timedatectl
+
+diff3 nawk timeout
+
+dir neqn tload
+
+dircolors networkctl toe
+
+dirmngr networkd-dispatcher top
+
+dirmngr-client newgrp touch
+
+dirname nice tput
+
+dmesg nisdomainname tr
+
+dnsdomainname nl troff
+
+domainname nohup true
+
+dpkg nproc truncate
+
+dpkg-deb nroff tset
+
+dpkg-divert nsenter tsort
+
+dpkg-maintscript-helper numfmt tty
+
+dpkg-query od tzselect
+
+dpkg-realpath openssl ucf
+
+dpkg-split pager ucfq
+
+dpkg-statoverride partx ucfr
+
+dpkg-trigger passwd ul
+
+du paste umount
+
+echo pathchk uname
+
+edit pdb3 unattended-upgrade
+
+egrep pdb3.8 unattended-upgrades
+
+enc2xs perl uncompress
+
+encguess perl5.30.3 unexpand
+
+env perl5.30-x86_64-linux-gnu uniq
+
+eqn perlbug unlink
+
+expand perldoc unlzma
+
+expiry perlivp unshare
+
+expr perlthanks unxz
+
+factor pgrep update-alternatives
+
+faillog pic update-mime-database
+
+fallocate piconv uptime
+
+false pidof users
+
+fgrep pinentry utmpdump
+
+file pinentry-curses vdir
+
+fincore ping vmstat
+
+find ping4 w
+
+findmnt ping6 wall
+
+fish pinky watch
+
+fish_indent pkaction watchgnupg
+
+fish_key_reader pkcheck wc
+
+flock pkcon wdctl
+
+fmt pkexec whatis
+
+fold pkill whereis
+
+free pkmon which
+
+gapplication pkttyagent who
+
+gdbus pl2pm whoami
+
+geqn pldd w.procps
+
+getconf pmap write
+
+getent pod2html write.ul
+
+getopt pod2man www-browser
+
+gio pod2text x86_64
+
+gio-querymodules pod2usage xargs
+
+glib-compile-schemas podchecker xdg-user-dir
+
+gpasswd podselect xdg-user-dirs-update
+
+gpg pr xsel
+
+gpg-agent preconv xsubpp
+
+gpgcompose print xz
+
+gpgconf printenv xzcat
+
+gpg-connect-agent printf xzcmp
+
+gpgparsemail prlimit xzdiff
+
+gpgsm prove xzegrep
+
+gpgsplit ps xzfgrep
+
+gpgtar ptar xzgrep
+
+gpgv ptardiff xzless
+
+gpg-wks-server ptargrep xzmore
+
+gpg-zip ptx yes
+
+gpic pwd ypdomainname
+
+grep pwdx zcat
+
+gresource py3clean zcmp
+
+groff py3compile zdiff
+
+grog py3versions zdump
+
+grops pydoc3 zegrep
+
+grotty pydoc3.8 zfgrep
+
+groups pygettext3 zforce
+
+gsettings pygettext3.8 zgrep
+
+gtbl pyjwt3 zipdetails
+
+gunzip python3 zless
+
+gzexe python3.8 zmore
+
+gzip rbash znew
+
+h2ph readlink zsh
+
+h2xs realpath zsh5
+
+hd renice
+
+*** Comandos interessantes
+    :PROPERTIES:
+    :CUSTOM_ID: comandos-interessantes
+    :END:
+apt-get
+
+base32
+
+base64
+
++basename+
+
++catman+
+
++clear console+
+
++cmp+
+
+date
+
++dd+
+
++dircolors+
+
++domainname+
+
++du+
+
+_false_
+
++gio+
+
++hd+
+
++ionice+
+
++keyring+
+
+locale
+
++look+
+
+_lorem_
+
++man+
+
++namei+
+
++nice+
+
++pic+
+
+_ping_
+
+_ping4_
+
+_ping6_
+
++pkmon+
+
++skill+
+
+*sleep*
+
+*test*
+
++tic+
+
+true
+
+*** Dúvidas e conteúdo
+    :PROPERTIES:
+    :CUSTOM_ID: dúvidas-e-conteúdo
+    :END:
+Como assim? Cada diretório tem comandos diferentes?
+
+/bin (Binaries ou Binários)
+
+- Link simbólico para “usr/bin”
+
+- Abriga todos os comandos que podem ser usados no terminal
+
+- Inclui novos comandos quando um novo software é instalado
+
+- Pode ser comparada com o “C:\Arquivos\ de\ Programas” do Windows
+
+- Apenas os .exe ficam aqui
+
+/sbin (System Binaries ou Binários de sistema)
+
+- Link simbólico para /usr/sbin
+
+- Guarda os executáveeis dos programas que precisam de permissões de
+  admin para serem executados
+
+*Não usar:*
+
+*alias l="ls -la"*
+
+*# agora o comando `ls -la` pode ser executado apenas como `l`*
+
+Algumas variáveis úteis no shell:
+
+$PATH -> guarda todos os diretórios que possuem executáveis, como /bin e
+/sbin
+
+Como organizar os comandos?
+
+Os comandos podem ser executados tanto em sequências ou de forma
+individual.
+
+Para ciar uma sequência, existem algumas possibilidades:
+
+1. Utilizar um ; após cada comando.
+
+- ls; pwd -> executa o comando ls e após sua finalização, executa o
+  comando pwd
+
+2. Executar um comando em segundo plano com &
+
+- ls & pwd -> começa a executar o comando ls em segundo plano, e ao
+  mesmo tempo executa o comando pwd. Nesse caso, o comando ls fica sendo
+  executado até que o usuário interrompa a execução dele, mesmo que ele
+  já tenha terminado
+
+- 
+
+** Implementação Computacional 2
+   :PROPERTIES:
+   :CUSTOM_ID: implementação-computacional-2
+   :END:
+*** GitHub
+    :PROPERTIES:
+    :CUSTOM_ID: github
+    :END:
+*Implementação Computacional 2*
+
+*Siga esses tutoriais:*
+
+1. [[https://docs.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent][Criando
+   uma chave SSH]]
+
+2. [[https://docs.github.com/pt/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account][Adicionando
+   uma chave SSH ao Github]]
+
+*Observações*
+
+- Como você está usando com contêiner, siga as intruções para Linux
+
+*Crie um gist em .txt explicando o que foi feito e se houve algum erro
+no processo*
+
+*** João
+    :PROPERTIES:
+    :CUSTOM_ID: joão
+    :END:
+*Implementação Computacional 2*
+
+*Siga esses tutoriais:*
+
+1. [[https://docs.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent][Criando
+   uma chave SSH]]
+
+2. [[https://docs.github.com/pt/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account][Adicionando
+   uma chave SSH ao Github]]
+
+*Observações*
+
+- Como você está usando com contêiner, siga as intruções para Linux
+
+*Crie um gist em .txt explicando o que foi feito e se houve algum erro
+no processo*
+
+Reinstalei o Docker:
+[[https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/notas_de_aula/1_docker.org]]
+
+Agora vou instalar o github:
+[[https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/notas_de_aula/6_git_github.org]]
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key
+C99B11DEB97541F0
+
+sudo apt-add-repository https://cli.github.com/packages
+
+sudo apt update
+
+sudo apt install gh
