@@ -4,6 +4,3 @@
 - Regras:
   1. Não vale repetir comandos que já foram mostrados no material
   2. Só são permitidos os comandos dos diretórios ~/bin~ e ~/sbin~
---------------------------------------------------------
-https://docs.google.com/presentation/d/1CqNolYdMk-Hdm1kcpw4mg33ZMO-Erd_QouIOj_c9QTA/
-
