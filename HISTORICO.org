@@ -50,11 +50,11 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 | [[https://github.com/mlstellet.png?size=60]]  | [[https://github.com/yromanhaes.png?size=60]]  | [[https://github.com/JeanVassalo.png?size=60]]  | [[https://github.com/danielferreira2.png?size=60]]  |
 | [[./trabalhos_alunos/maria_stellet][Maria Luiza de Souza Stellet]] | [[./trabalhos_alunos/yro_manhaes][Yro Manhães]]  | [[./primeira_edicao/trabalhos_alunos/jean_ferreira][Jean Matheus Vassalo Ferreira]]  | [[./primeira_edicao/trabalhos_alunos/Daniel_Ferreira][Daniel de Faria Ferreira]]  |
 
-| [[https://github.com/ilzd.png?size=60]]  | [[https://github.com/Brunopalm.png?size=60]]  | [[https://github.com/Zehlu.png?size=60]]  |   |
+| [[https://github.com/ilzd.png?size=60]]  | [[https://github.com/Brunopalm.png?size=60]]  | [[https://github.com/Zehlu.png?size=60]]  | [[https://github.com/larisard.png?size=60]]  |
 |---+---+---+---|
-| [[./primeira_edicao/trabalhos_alunos/ian_louzada][Ian Pontes Louzada]]  | [[./primeira_edicao/listas_exercicios/bruno_oliveira][Bruno Palmeira de Oliveira]]  |  [[./trabalhos_alunos/jose_azevedo][José Lucio Azevedo]] |   |
-|   |   |   |   |
-|   |   |   |   |
+| [[./primeira_edicao/trabalhos_alunos/ian_louzada][Ian Pontes Louzada]]  | [[./primeira_edicao/listas_exercicios/bruno_oliveira][Bruno Palmeira de Oliveira]]  |  [[./trabalhos_alunos/jose_azevedo][José Lucio Azevedo]] | [[./primeira_edicao/trabalhos_alunos/larissa_sardinha/][Larissa Ribeiro Sardinha]]  |
+| [[https://github.com/dbs-97.png?size=60]]  |   |   |   |
+| [[./primeira_edicao/trabalhos_alunos/Daniel_Brito/][Daniel Brito dos Santos]] |   |   |   |
 
 |    |   |   |   |
 |---+---+---+---|
