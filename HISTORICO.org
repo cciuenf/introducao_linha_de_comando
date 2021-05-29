@@ -44,14 +44,9 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 | [[https://github.com/yurigc77.png?size=60]]  | [[https://github.com/nandolinhares.png?size=60]]  | [[https://github.com/Kayo-V.png?size=60]]  |  [[https://github.com/Javiercuba.png?size=60]]  |
 | [[./primeira_edicao/trabalhos_alunos/YuriGarcia][Yuri Garcia Campos]]  | [[./primeira_edicao/trabalhos_alunos/fernando_linhares][Fernando Viana Linhares]]  | [[./primeira_edicao/trabalhos_alunos/kayo_veloso][Kayo Dos Santos Veloso]]  | [[./primeira_edicao/trabalhos_alunos/javier_ernesto][Javier Ernesto]]  |
 
+| [[https://github.com/ThiagoRSP.png?size=60]]  | [[https://github.com/ARRETdaniel.png?size=60]] |   |   |
 |---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-
-| [[https://github.com/ThiagoRSP.png?size=60]]  |   |   |   |
-|---+---+---+---|
-| [[./primeira_edicao/listas_exercicios/thiago_pessanha][Thiago Rodrigues de Souza Pessanha]]  |   |   |   |
+| [[./primeira_edicao/listas_exercicios/thiago_pessanha][Thiago Rodrigues de Souza Pessanha]]  | [[.trabalhos_alunos/daniel_terra_gomes][DANIEL TERRA GOMES]]  |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
