@@ -1,0 +1,51 @@
+#+title: Lista de exercícios 2 - Linux
+#+author: <Daniel Brito dos Santos>
+
+* 1 - Explique a definição de "Linux"
+Linux é um kernel, ou seja, um software que maneja diretamente os recursos de hardware como memória e processador criando, dessa forma, uma camada de abstração que permite o execução de comandos e processos, o chamado sistema operacional. 
+
+* 2 - Dado os diretórios da primeira tabela, correlacione-os com suas funções na segunda tabela:
+
+| opção | diretório |
+|-------+-----------|
+| a     | ~/dev~      |
+| b     | ~/etc~      |
+| c     | ~/usr~      |
+| d     | ~/opt~      |
+
+| opção | função                                                                                               |
+|-------+------------------------------------------------------------------------------------------------------|
+|   /dev    | Localização de arquivos, programas e bibliotecas do escopo de usário ficam; não são dados essenciais |
+|   /dev    | Diretório destino das mapeações de cada hardware                                                     |
+|   /opt    | Aqui são encontrados softwares adicionais e proprietários                                            |
+|   /etc    | Local onde as configurações do sistema ficam disponíveis de forma global                             |
+
+* 3 - Escolha 3 (três) diretórios Linux a partir da raiz (~/~) e explique sua respectiva função.
+Regras:
+- Não vale repetir os diretórios da questão anterior ☺
+- /bin é um softlink para /usr/bin onde são salvos os binários, como o bash por exemplo, são comandos que podem ser executados do terminal.
+- /home onde ficam os arquivos e configurações pessoais do usuário.
+- /lib32 or /lib64 outro soflink para /usr e guarda bibliotecas de programas.
+- /media ponto de montagem automático padrão de pendrives por exemplo,  /mnt é sugerido para montagem manual.
+
+* 4 - Qual a finalidade de existirem grupos em sistemas operacionais baseados no Linux?
+Servem pra delimitar permissões para determinados conjuntos de usuários.
+* 5 - Descreva cada permissão:
+- Exemplo:
+=.rw-rw-rw-= -> ~.~ significa xxx, yyy tem permissões de nnn e mmm, etc...
+São três grupos de três caracteres representando em ordem as permissõs para o dono do arquivo, o grupo ao qual ele pertence e outros usuários de acessar (read), modificar (write), e executar (execute), 
+
+| permissão  | descrição |
+|------------+-----------|
+| =.rw-rw-rw-= | arquivo qualquer -> owner: read, write; group: read, write; others:read,write;         |
+| =lr-x---rwx= | link simbólico -> owner: execute, others: read, write, execute.          |
+| =drwxr-rx-x= | diretório owner: read, write, execute, group: execute, read, execute, others: execute           |
+| =.rw-r—r--=  | arquivo qualquer owner: read, write; group read; others: read;         |
+| =drwxrwxrwx= | diretório libertinagem        |
+
+* 6 - Defina ~STDIN~, ~STDOUT~ e ~STDERR~
+Entrada, saida e mensagem de erro de um processo
+* 7 - Diferencie uma ~CLI~ de uma ~GUI~, apontando suas vantagens e desvantagens
+GUI é uma interface gráfica para o usuário que apresenta em geral as ações possíveis de uma aplicação em botões e menus, normalmente utilizando o mouse. É mais intuitivo e pode ser especialmente útil em aplicações de grande apelo visual. Sua grande desvantagem é a rigidez e baixa expressividade, no sentido de ser apenas possível executar uma ação por vez, de modo manual.
+
+Já as linhas de comando são extremamente flexiveis permitindo infinitas combinaçoes, modificações, criação de pipelines, automatização de comandos, ações paralelas dentre outras. Suas vantagens e desvantagens são opostas a interface gráfica, pecando, portanto na intuitividade e clareza visual em determinadas situações.

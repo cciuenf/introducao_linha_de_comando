@@ -1,0 +1,59 @@
+*Lista 1*
+
+1- É uma metodologia utilizada para empacotar aplicações para que possam
+ser executadas/disponibilizadas.
+
+2- A modularidade, rápida implantação, a reutilização e reversibilidade
+das camadas.
+
+3- Foi feito um download de uma imagem que gera a figura de uma vaca.
+
+*Lista 2*
+
+1- É um núcleo monolítico de código aberto para sistemas operacionais
+tipo UNIX.
+
+2- opção diretório a /dev b /etc c /usr d /opt opção função c
+Localização de arquivos, programas e bibliotecas do escopo de usuário
+ficam; não são dados essenciais a Diretório destino das mapeação de cada
+hardware d Aqui são encontrados softwares adicionais e proprietários b
+Local onde as configurações do sistema ficam disponíveis de forma global
+
+3- /run - Guarda informações do sistema desde o último boot /bin -
+Contém todos os comandos que podem ser usados no terminal, incluindo
+comandos de um novo software instalado. /tmp - Armazena arquivos
+temporários (geralmente pequenos) que são apagados a cada reboot.
+
+4- São utilizados para organizar e controlar os acessos ao sistema
+operacional.
+
+6- STDIN - é a entrada padrão STDOUT - é a saída padrão STDERR - é a
+saída especial, guarda as mensagens de erros geradas pelos
+programas/comandos
+
+7- CLI- é a interface de linha de comando que permite que um usuário se
+comunique com o sistema por meio de comandos. Consome pouca memória RAM,
+tem alto desempenho, entretanto, é de mais difícil utilização por
+iniciantes e não possui tanta interatividade quanto *Lista 3*
+
+1- É o interpretador de comandos do Linux, responsável por interpretar
+as instruções enviadas pelo usuário e seus programas para o kernel.
+
+2- cat teste.txt >> file.txt && ls >> file.txt && sort file.txt
+
+5- ls /bin -r >> binao contrário.txt
+
+7- cmatrix - exibe a chuva de códigos nyan cat - aparece o nyan cat
+voando na tela
+
+Lista 4
+
+1- Git é um sistema de controle de versão de arquivos. Através deles
+podemos desenvolver projetos na qual diversas pessoas podem contribuir
+simultaneamente no mesmo, editando e criando novos arquivos e permitindo
+que os mesmos possam existir sem o risco de suas alterações serem
+sobrescritas. Já o GitHub é um serviço web que oferece diversas
+funcionalidades extras aplicadas ao git. Além disso, quase todos os
+projetos/frameworks/bibliotecas sobre desenvolvimento open source estão
+no github, e você pode acompanhá-los através de novas versões,
+contribuir informando bugs ou até mesmo enviando código e correções.

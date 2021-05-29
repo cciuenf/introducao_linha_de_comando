@@ -1,0 +1,63 @@
+#+title: Lista de exercícios 3 - shell
+#+author: <Daniel de Faria Ferreira>
+
+* 1 - Com suas palavras, explique o que é um shell
+
+Resposta: O Shell é um programa que possibilita o usuário acessar recursos do sistema, através de um Terminal ou de uma interface gráfica.
+
+* 2 - Quero executar esta sequência de comandos: ~cat xx.txt, ls, sort~ e guardar num arquivo ~.txt~. Cite ao menos uma forma de fazer isso, de maneira que o arquivo final tenha o conteúdo do ~ls~ e do ~cat~, não importando a ordem dos comandos.
+
+Resposta "cat arquivo.txt | ls | sort > novoArquivo.txt"   
+
+* 3 - Qual a utilidade de usar a técnica de ~shebang~?
+
+Resposta: Permite que o sistema operacional entenda qual programa usar para executar o script/arquivo, sem precisar usar explicitamente o comando.
+
+* 4 - Abaixo, serão listadas várias ações. Execute uma por vez no terminal e escreva o comando que usou logo em seguida.
+- Estrutura de diretórios sugerida
+#+begin_src bash
+./ccuenf
+./exercicios
+#+end_src
+
+| ação                                                                                                          | comando |
+|---------------------------------------------------------------------------------------------------------------+---------|
+| Verifique em qual diretório você está                                                                         |   pwd   |
+| Crie a estrutura de diretórios sugerida logo acima na ~home~ do usuário                                         |    mkdir ~/ccuenf ~/exercicios     |
+| Crie um arquivo "numeros.txt" com o ~cat~, não importa a quantidade de números                                  |  cat >  numeros.txt |
+| Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                                                   | tee numeros1.txt numeros2.txt < numeros.txt  |
+| Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                                           |  cp *.txt exercicios |
+| Exiba os arquivos da pasta "exercicios" com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual |  ls -lh exercicios |
+| Apague a pasta "ccuenf" e "exercicios"                                                                        | rm -r ~/ccuenf ~/exercicios        |
+* 5 - Liste todos os arquivos da pasta ~/bin~, inverta a ordem (de Z para A) e depois salve num arquivo. Quais foram os comandos utilizados? Não é obrigatório executar a sequência em apenas uma linha.
+  
+Resposta : "ls /bin| sort -r >arquivo.txt"  
+
+
+* 6 - Crie um arquivo ~.txt~ com o centeúdo da execução de ~man <comando>~ - onde "comando" é qualquer comando linux conhecido e que possua um manual - e inverta a ordem das linhas, procure pela palavra "the" e conte o número de ocorrências. Coloque aqui seu resultado e qual comando usou para pegar o manual.
+
+Resposta: "man ls|sort -r|grep 'the' -wc > arquivo.txt" 
+resultado: 13 foi o numero ocorrências da palavara "the" no manual do comando "ls" 
+
+* 7 - Escolha um ou mais programas da lista e tente instalá-lo, execute-o e descreva o resultado.
+| programas |
+|-----------|
+| sl        |
+| cmatrix   |
+| rig       |
+| nyancat   |
+
+Resposta: O programa escolhido foi o "sl". Após instalar e executar aparece uma locomotiva em ASCII se movendo da direita para a esquerda do terminal e quando ela some o programa é encerrado.
+
+- Após terminar o exercício, remova o programa
+* 8 - Qual o resultado das seguintes expressões?
+- Já que as colunas da tabela são formadas por ~|~, não posso escrever o pipe dentro da tabela.
+  Tem como escapar com o ~\vert~, porém ele só é renderizado no ~org-mode~ do ~emacs~ :/
+- ~\vert~ == ~|~
+
+| expressão                     | resultado |
+|-------------------------------+-----------|
+| =false && echo foo \vert\vert echo bar= |   bar     |
+| =true && echo foo \vert\vert echo bar=  |   foo     |
+| =true \vert\vert echo foo && echo bar=  |   bar     |
+| =false \vert\vert echo foo && echo bar= |   foo bar |
