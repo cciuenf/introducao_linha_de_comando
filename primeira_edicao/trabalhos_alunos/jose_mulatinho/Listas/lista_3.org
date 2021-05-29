@@ -1,0 +1,88 @@
+#+title: Lista de exercícios 3 - shell
+#+author: <colocar seu nome>
+
+* 1 - Com suas palavras, explique o que é um shell
+* 2 - Quero executar esta sequência de comandos: ~cat xx.txt, ls, sort~ e guardar num arquivo ~.txt~. Cite ao menos uma forma de fazer isso, de maneira que o arquivo final tenha o conteúdo do ~ls~ e do ~cat~, não importando a ordem dos comandos.
+* 3 - Qual a utilidade de usar a técnica de ~shebang~?
+* 4 - Abaixo, serão listadas várias ações. Execute uma por vez no terminal e escreva o comando que usou logo em seguida.
+- Estrutura de diretórios sugerida
+#+begin_src bash
+./ccuenf
+./exercicios
+#+end_src
+
+| ação                                                                                                          | comando |
+|---------------------------------------------------------------------------------------------------------------+---------|
+| Verifique em qual diretório você está                                                                         |         |
+| Crie a estrutura de diretórios sugerida logo acima na ~home~ do usuário                                         |         |
+| Crie um arquivo "numeros.txt" com o ~cat~, não importa a quantidade de números                                  |         |
+| Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                                                   |         |
+| Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                                           |         |
+| Exiba os arquivos da pasta "exercicios" com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual |         |
+| Apague a pasta "ccuenf" e "exercicios"                                                                        |         |
+* 5 - Liste todos os arquivos da pasta ~/bin~, inverta a ordem (de Z para A) e depois salve num arquivo. Quais foram os comandos utilizados? Não é obrigatório executar a sequência em apenas uma linha.
+* 6 - Crie um arquivo ~.txt~ com o centeúdo da execução de ~man <comando>~ - onde "comando" é qualquer comando linux conhecido e que possua um manual - e inverta a ordem das linhas, procure pela palavra "the" e conte o número de ocorrências. Coloque aqui seu resultado e qual comando usou para pegar o manual.
+* 7 - Escolha um ou mais programas da lista e tente instalá-lo, execute-o e descreva o resultado.
+| programas |
+|-----------|
+| sl        |
+| cmatrix   |
+| rig       |
+| nyancat   |
+
+- Após terminar o exercício, remova o programa
+* 8 - Qual o resultado das seguintes expressões?
+- Já que as colunas da tabela são formadas por ~|~, não posso escrever o pipe dentro da tabela.
+  Tem como escapar com o ~\vert~, porém ele só é renderizado no ~org-mode~ do ~emacs~ :/
+- ~\vert~ == ~|~
+
+| expressão                     | resultado |
+|-------------------------------+-----------|
+| =false && echo foo \vert\vert echo bar= |           |
+| =true && echo foo \vert\vert echo bar=  |           |
+| =true \vert\vert echo foo && echo bar=  |           |
+| =false \vert\vert echo foo && echo bar= |           |
+
+
+
+
+
+
+1. É um programa que disponibiliza uma interface de usuário para o sistema operacional.
+
+2. cat xx.txt >> lalala.txt && ls >> lalala.txt && sort lalala.txt
+
+3. É indispensável para indicar qual interpretador será usado para o script, evitando a ocorrência de execuções de comando diferente do esperado.
+
+4. 
+| ação                                                                                                          | comando |
+|---------------------------------------------------------------------------------------------------------------+---------|
+| Verifique em qual diretório você está                                                                         |   pwd  															 |
+| Crie a estrutura de diretórios sugerida logo acima na ~home~ do usuário                                       |  mkdir ccuenf exercicio   										 |
+| Crie um arquivo "numeros.txt" com o ~cat~, não importa a quantidade de números                                |  cat > numeros.txt     											 |
+| Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                                                   |  cp numeros.txt numeros1.txt && cp numeros.txt numeros2.txt   	 |
+| Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                                         |   cp desktop/*.txt exercicios       								 |
+| Exiba os arquivos da pasta "exercicios" com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual |    ls -lh     													 |
+| Apague a pasta "ccuenf" e "exercicios"                                                                        |    rm -r ccuenf exercicios      								   	 |
+
+5- ls /bin -r >> binaocontrario.txt
+
+6. 
+comandos:	man ls >> ls.txt
+			tac ls.txt | grep -c "the"
+
+resultado: 	19 ocorrências
+
+7. 
+	cmatrix - aparece a chuva de codigos do filme "Matrix"
+	rig - aparece aleatoriamente nome de pessoas, endereço, telefone, etc
+	nyancat - aparece o nyancat voando na tela
+
+8. 
+
+| expressão                    				 | resultado |
+|-------------------------------+----------- |
+| =false && echo foo \vert\vert echo bar= 	 |     nenhuma saida      |
+| =true && echo foo \vert\vert echo bar=  	 |     foo vertvert echo bar      |
+| =true \vert\vert echo foo && echo bar=   	 |     bar     |
+| =false \vert\vert echo foo && echo bar= 	 |     nenhuma saida      |
