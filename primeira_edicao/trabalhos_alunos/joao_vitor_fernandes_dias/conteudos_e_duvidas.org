@@ -1,0 +1,217 @@
+* Conteúdo Tópicos SO 2021
+  :PROPERTIES:
+  :CUSTOM_ID: conteúdo-tópicos-so-2021
+  :END:
+** Lista 1 -- Docker
+   :PROPERTIES:
+   :CUSTOM_ID: lista-1-docker
+   :END:
+Refazendo a intalação do Docker:
+[[https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/notas_de_aula/1_docker.org]]
+
+docker build -t nome_da_imagem .
+
+(Powershell, não precisa de direitos de administrador, shift botão
+direito na pasta onde estiver o powershell)
+
+*Criar um Volume*: docker volume create nome_do_volume
+
+*Executar uma Imagem:* docker run -v
+nome_do_volume:/var/lib/nome_da_imagem --name nome_do_container -it
+nome_da_imagem
+
+*Cada vez que você reiniciar o computador, o contêiner irá ser
+desligado; na próxima vez em que quiser usar o contêiner*
+
+docker start nome_do_container
+
+docker exec -it nome_do_container /bin/sh
+
+*** Conteúdo
+    :PROPERTIES:
+    :CUSTOM_ID: conteúdo
+    :END:
+O que é docker?
+
+O software de TI "Docker” é uma tecnologia de containerização para
+criação e uso de containers Linux®.[[file:media/image1.png]]
+
+-Qual a diferença entre virtualização e containers?
+
+-O que é um Guest OS?
+
+-O que é um Hypervisor?
+
+-O que é containers Linux?
+
+dockerfile: receita do bolo volume: bandeja do bolo imagem: bolo pronto
+container: bolo servido
+
+**** Comandos
+     :PROPERTIES:
+     :CUSTOM_ID: comandos
+     :END:
+*Criar imagem:* docker build -t <nome-da-imagem> .
+
+*Criar volume:* docker volume create <nome-do-volume>
+
+*Executar a imagem:* docker run -v
+<nome-do-volume>:/var/lib/<nome-da-imagem> --name <nome-do-conteiner>
+-it <nome-da-imagem>
+
+*religar o container:* docker start <nome-do-conteiner>
+
+#+begin_quote
+  docker exec -it <nome-do-conteiner> /bin/sh
+#+end_quote
+
+*Listar containes criados:* docker os
+
+** Lista 2
+   :PROPERTIES:
+   :CUSTOM_ID: lista-2
+   :END:
+Pipe
+
+Nós chamamos esse redirecionamento de pipeline, que é uma segmentação
+contínua de 2 ou mais comandos, que relaciona a saída do primeiro
+comando com a entrada do segundo e assim opr diante.
+
+Nesse conceito, temos o operador |, ou pipe.
+
+Exemplos:
+
+ls | grep "sbin"
+
+cat list.txt | sort | uniq
+
+É importante frizar que o pipe, redireciona a saída (STDOUT) de um
+comando e insere como entrada (STDIN) do próximo comando.
+
+Arquivos
+
+** Lista 3 -- Shell
+   :PROPERTIES:
+   :CUSTOM_ID: lista-3-shell
+   :END:
+** Lista 4 -- Git e GitHub/ CLI
+   :PROPERTIES:
+   :CUSTOM_ID: lista-4-git-e-github-cli
+   :END:
+*** Dúvidas
+    :PROPERTIES:
+    :CUSTOM_ID: dúvidas
+    :END:
+**** Staging
+     :PROPERTIES:
+     :CUSTOM_ID: staging
+     :END:
+
+- Passo anterior ao commit
+
+- Armazena as mudanças de forma temporária e facilmente reversível
+
+*Dúvida: Qual seria o problema de fazer um commit e ao invés de um
+stage? Não tem como voltar para um commit anterior?*
+
+**** Clonar
+     :PROPERTIES:
+     :CUSTOM_ID: clonar
+     :END:
+
+- É possível clonar repositórios remotos, ou seja, trazer o repositório
+  remoto para sua máquina
+
+*Dúvida: Clonar é o mesmo que efetuar o download?*
+
+**** Pull
+     :PROPERTIES:
+     :CUSTOM_ID: pull
+     :END:
+Faz o download das mudanças de um repositório remoto para um local
+
+*Dúvida: Clonar e pull fazem o download do repositório remoto? Se sim,
+qual a diferença entre eles?*
+
+**** Merge
+     :PROPERTIES:
+     :CUSTOM_ID: merge
+     :END:
+
+- Junta commits de uma branch em outra
+
+*Dúvida:* De que forma essa junção é feita? Como o Git sabe qual está
+mais correto? Ele apenas compara os arquivos e os que não forem
+exatamente iguais ele substitui?
+
+**** git status
+     :PROPERTIES:
+     :CUSTOM_ID: git-status
+     :END:
+
+- Mostra o estado atual do seu repositório local
+
+*Dúvida:* O que seria esse status?
+
+**** git fetch <repo-remoto>
+     :PROPERTIES:
+     :CUSTOM_ID: git-fetch-repo-remoto
+     :END:
+
+- Sincroniza o repositório local e repositório remoto
+
+*Dúvida:* Tipo um merge entre o local e o remoto?
+
+**** git checkout
+     :PROPERTIES:
+     :CUSTOM_ID: git-checkout
+     :END:
+
+- git checkout -b <nome-branch> -> cria uma nova branch com o nome
+  especificado e muda o HEAD para ela
+
+- git checkout <branch> -> muda a HEAD para uma branch existente
+
+*Dúvida:* Por que eu mudaria a Head? Por que a Head não mudaria sozinha?
+
+**** git stash
+     :PROPERTIES:
+     :CUSTOM_ID: git-stash
+     :END:
+
+- Salva temporariamente as mudanças não commitadas para serem
+  recuperadas depois, mesmo em outras branches
+
+*Dúvida:* É tipo criar uma variável global?
+
+**** git clean
+     :PROPERTIES:
+     :CUSTOM_ID: git-clean
+     :END:
+
+- Remove arquivos não supervisionados pelo git
+
+*Dúvida:* O que seriam arquivos não supervisionados pelo git?
+
+**** Release
+     :PROPERTIES:
+     :CUSTOM_ID: release
+     :END:
+
+- Um dos métodos de distribuição de um projeto. Geralmente é aqui onde
+  os desenvolvedores expõem os binários (executáveis) de suas
+  aplicações, junto com um “changelog”, indicando as mudanças de cada
+  atualização
+
+*Dúvida:* O que seriam esses binários?
+
+**** Gist
+     :PROPERTIES:
+     :CUSTOM_ID: gist
+     :END:
+
+- Pequeno trecho de código ou texto
+
+- Seu “nome” geralmente é um hash grande
+
+*Dúvida:* Não entendi o que é Gist
