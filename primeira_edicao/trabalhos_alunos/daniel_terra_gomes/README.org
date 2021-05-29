@@ -1,0 +1,17 @@
+Comandos usados:
+mrdir
+date
+echo
+
+* Q 1)
+** Criado o dockerfile:
+*** executei o comando docker build  "docker build -t imagemprova ."
+*** Depois: "docker run --name provarun -it imagemprova"
+** Comandos usados:
+*** date
+** rodando a imagem aparece em tela a Data e hora atual.
+
+* Q 2)
+sh que automatiza o processo de apagar arquivos em uma pasta.
+
+* Q 3)
