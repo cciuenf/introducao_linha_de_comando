@@ -1,0 +1,4 @@
+1 - Criei o Dockerfile que está na pasta "Scripts", executei o comando docker build -t provatopicos . , e obtive sucesso.
+(https://user-images.githubusercontent.com/15971393/119710727-13d1e900-be35-11eb-9750-cbf9ab165ea2.png)
+
+2-O script criado está na pasta "Scripts" no arquivo "trabalhar.sh".

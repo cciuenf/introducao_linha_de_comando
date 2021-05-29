@@ -3,7 +3,7 @@
 #+email: 00119110328@pq.uenf.br
 
 * Onde eu consigo uma ajuda?
-Todos os comandos (nativos ou não) possuem uma "man page", ou "página de manual", onde fica toda a documentção do comando.
+Todos os comandos (nativos ou não) possuem uma "man page", ou "página de manual", onde fica toda a documentação do comando.
 
 Para abrir o manual de algum comando, apenas digite no terminal:
 
@@ -161,7 +161,7 @@ Uso:
 - Geralmente usamos ele para imprimir algum texto na tela ou redirecionar para um arquivo
 
 Usos:
-- =echo <entrad>= -> imprime na tela as entradas
+- =echo <entrada>= -> imprime na tela as entradas
 - =echo <entrada> > <arquivo>= -> redireciona a STDOUT do ~echo~ para um arquivo
 - =echo <entrada> >> <arquivo>= -> redireciona a STDOUT ~echo~ e adiona o conteúdo no final do arquivo
 ** cat

@@ -1,0 +1,13 @@
+O SSH é um protocolo que fornece um mecanismo para autenticar o usuário, permitindo que o mesmo tenha acesso remoto e seguro ao servidor.
+
+
+
+Para nos conectarmos ao GitHub utilizando o SSH, primeiramente deve ser gerada uma chave SSH. Essa chave, na verdade, se dá através de um par, sendo uma pública e uma privada. A pública será utilizada mais adiante e a privada jamais deve ser compartilhada. 
+
+Após gerarmos a chave SSH, a adicionamos ao ssh-agent. O ssh-agent gerencia as chaves e as frases-senha, desta forma, não é mais necessário digitar a frase-senha toda vez que o usuário se conectar via SSH. 
+
+Para concluir, devemos acessar nossa conta no GitHub, copiar a chave pública e a inserir no campo "Key", que se encontra em Settings > SSH and GPG keys > New SSH keys. Após colocar o título desejado na chave, clicamos em adicionar e pronto: chave adicionada. 
+
+
+
+O trabalho foi realizado seguindo os tutoriais indicados e não foram encontrados erros e/ou dificuldades.
