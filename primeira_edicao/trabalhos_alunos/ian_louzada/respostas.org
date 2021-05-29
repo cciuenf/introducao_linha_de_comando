@@ -1,0 +1,34 @@
+Questão 1
+
+#DEFINE A IMAGEM BASE PARA A IMAGEM A SER CRIADA
+FROM ubuntu:20.10
+
+#DEFINE O COMANDO QUE SERÁ EXECUTADO ASSIM QUE O CONTAINER FOR STARTADO
+ENTRYPOINT ["pwd"]
+
+---------------------------------------------------------------------------
+
+Questão 2
+
+#!/bin/bash
+
+# Script criado para a questão 2 da avaliacao final
+# Durante esta disciplina eu tive que limpar
+# os arquivos de texto de uma pasta e criar
+# muitos arquivos de texto
+# então criei este script para
+# deletar os txt de uma pasta e criar N
+# arquivos de texto vazios de uma vez sóo
+
+read n
+
+rm *.txt
+
+for (( i = 1; i<=$n; i++))
+do
+	echo '' > "$i.txt"
+done
+echo "Arquivos criados com sucesso no diretorio"
+pwd
+
+---------------------------------------------------------------------------
