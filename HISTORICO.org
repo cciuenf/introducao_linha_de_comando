@@ -43,15 +43,15 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 |   |   |   |   |
 |   |   |   |   |
 
-|   |   |   |   |
+| [[https://github.com/ThiagoRSP.png?size=60]]  |   |   |   |
 |---+---+---+---|
-|   |   |   |   |
+| [[./primeira_edicao/listas_exercicios/thiago_pessanha][Thiago Rodrigues de Souza Pessanha]]  |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
-| [[https://github.com/ThiagoRSP.png?size=60]]  |   |   |   |
+|   |   |   |   |
 |---+---+---+---|
-| [[./primeira_edicao/listas_exercicios/thiago_pessanha][Thiago Rodrigues de Souza Pessanha]]   |   |   |   |
+|    |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 
