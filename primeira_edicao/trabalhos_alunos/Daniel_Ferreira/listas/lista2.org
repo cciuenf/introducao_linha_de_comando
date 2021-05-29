@@ -1,0 +1,61 @@
+#+title: Lista de exercícios 2 - Linux
+#+author: <Daniel de Faria Ferreira>
+
+* 1 - Explique a definição de "Linux"
+Resposta: O Linux é um kernel "nucleo" open source criado por Linus Torvads.
+
+* 2 - Dado os diretórios da primeira tabela, correlacione-os com suas funções na segunda tabela:
+
+| opção | diretório |
+|-------+-----------|
+| a     | ~/dev~      |
+| b     | ~/etc~      |
+| c     | ~/usr~      |
+| d     | ~/opt~      |
+
+| opção | função                                                                                               |
+|-------+------------------------------------------------------------------------------------------------------|
+|   c   | Localização de arquivos, programas e bibliotecas do escopo de usário ficam; não são dados essenciais |
+|   a   | Diretório destino das mapeações de cada hardware                                                     |
+|   d   | Aqui são encontrados softwares adicionais e proprietários                                            |
+|   b   | Local onde as configurações do sistema ficam disponíveis de forma global                             |
+
+* 3 - Escolha 3 (três) diretórios Linux a partir da raiz (~/~) e explique sua respectiva função.
+Regras:
+- Não vale repetir os diretórios da questão anterior ☺
+
+Resposta:
+
+ /bin: Abriga todos os comandos que podem ser usados no terminal. 
+
+ /var: Armazena arquivos que são esperados aumentar de tamanho.
+
+ /tmp: Armazena arquivos temporários, pode guardar arquivos de recuperação.
+
+* 4 - Qual a finalidade de existirem grupos em sistemas operacionais baseados no Linux?
+Resposta:
+ São utilizados para organizar e controlar os acessos ao sistema operacional.
+
+* 5 - Descreva cada permissão:
+- Exemplo:
+=.rw-rw-rw-= -> ~.~ significa xxx, yyy tem permissões de nnn e mmm, etc...
+
+| permissão  | descrição |
+|------------+-----------|
+| =.rw-rw-rw-= | Arquivo o dono pode ler e escrever o grupo do dono pode ler e escrever e os demais usuários podem ler e escrever.|
+| =lr-x---rwx= | link simbolico o dono pode ler, o grupo do dono pode executar e os demais usuários tem todas as permisões.|
+| =drwxr-xr-x= | Uma pasta onde o dono possui todas as permissões o grupo a qual o dono pertence pode ler e executar o arquivo e demais usuários só podem executá-lo |
+| =.rw-r--r--= | Arquivo o dono pode ler e escrever, o grupo do dono ler e os demais ler.|
+| =drwxrwxrwx= | uma pasta onde o dono, o grupo do dono e os demais usuários tem todas as permisões.|
+
+* 6 - Defina ~STDIN~, ~STDOUT~ e ~STDERR~
+Resposta:
+ STDIN: Entrada padrão, recebe diversos tipos de entrada.
+ STDOUT: Saída padrão, manipular arquivos e retornar conteúdo.
+ STDERR: Saída de erro, guarda mensagebs de erros feradas por programas e comandos.
+
+* 7 - Diferencie uma ~CLI~ de uma ~GUI~, apontando suas vantagens e desvantagens
+Resposta: 
+CLI ou interface de linha de comando permite o acesso ao sistema de forma simples e direta, tem pouco uso de memória ram, possui alto desempenho porém não possui tanta interatividade quanto uma GUI e é preciso conhecimento de comandos diversos.
+
+GUI ou interface gráfica de usuário possui uma curva de aprendizado pequena onde qualquer usuário rapidamente está apto a utilizar e e altamente customizável porém tende a possuir desempenho geral menor e um alto consumo de memória.
