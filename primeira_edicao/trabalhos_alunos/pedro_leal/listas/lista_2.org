@@ -1,0 +1,55 @@
+#+title: Lista de exercícios 2 - Linux
+#+author: Pedro Leal
+
+* 1 - Explique a definição de "Linux"
+Linux é um Kernel, que por sua vez é o núcleo de um sistema, parte essa que funciona como meio do caminho entre o hardware e o sistema operacional, traduzindo as mensagens de ação entre o sistema e o hardware. 
+
+* 2 - Dado os diretórios da primeira tabela, correlacione-os com suas funções na segunda tabela:
+
+| opção | diretório |
+|-------+-----------|
+| a     | ~/dev~      |
+| b     | ~/etc~      |
+| c     | ~/usr~      |
+| d     | ~/opt~      |
+
+| opção | função                                                                                               |
+|-------+------------------------------------------------------------------------------------------------------|
+|   c   | Localização de arquivos, programas e bibliotecas do escopo de usário ficam; não são dados essenciais |
+|   a   | Diretório destino das mapeações de cada hardware                                                     |
+|   d   | Aqui são encontrados softwares adicionais e proprietários                                            |
+|   b   | Local onde as configurações do sistema ficam disponíveis de forma global                             |
+
+* 3 - Escolha 3 (três) diretórios Linux a partir da raiz (~/~) e explique sua respectiva função.
+Regras:
+- Não vale repetir os diretórios da questão anterior ☺
+
+- ~/bin~: É um link simbólico para o diretório "usr/bin" e abriga todos os programas que podem ser utilizados no terminal através de comandos. É similar a "C:\Arquivo de programas" no Windows.
+- ~/home~: Pasta onde ficam as pastas com o nome de cada usuário do sistema, cada uma possuindo configurações específicas que não podem ser acessadas por outros usuários. Dentro delas existem pastas genéricas como "Imagens", "Desktop", etc. Além disso também guarda o cache da sessão atual. 
+- ~/media~: Guarda arquivos de mídias externas como HD's externos, pendrives, unidades de rede que geralmente são montados automaticamente. 
+
+* 4 - Qual a finalidade de existirem grupos em sistemas operacionais baseados no Linux?
+Organizar e controlar os acessos ao sistema operacional. Usuários pertencentes a determinado grupo herdam suas permissões, dessa forma todos os membros de um grupo possuem as mesma permissões (desconsiderando permissões individuais de usuário, é claro).
+
+* 5 - Descreva cada permissão:
+- Exemplo:
+=.rw-rw-rw-= -> ~.~ significa xxx, yyy tem permissões de nnn e mmm, etc...
+
+| permissão  | descrição |
+|------------+-----------|
+| =.rw-rw-rw-= |     É um arquivo onde o dono do mesmo, o grupo ao qual ele pertence, e todos os demais usuário possuem permissões de leitura e escrita      |
+| =lr-x---rwx= |     É um link simbólico cujo dono tem permissões de leitura e execução e os demais usuários tem permissões de leitura, escrita e execução |
+| =drwxr-xr-x= |     É uma pasta cujo dono tem permissões de leitura, escrita e execução e tanto o grupo ao qual pertence, quanto os demais usuário possuem permissões de leitura e execução      |
+| =.rw-r--r--=  |     É um arquivo cujo dono tem permissões de leitura e escrita e tanto o grupo ao qual pertence quanto os demais usuário possuem permissão de leitura      |
+| =drwxrwxrwx= |     É uma pasta cujos dono, grupo pertencente e demais usuários possuem todas as permissões, leitura, escrita e execução      |
+
+* 6 - Defina ~STDIN~, ~STDOUT~ e ~STDERR~
+
+- ~STDIN~: Significa entrada padrão (standard input). Os programas e comandos possuem vários tipos de entrada para receber dados. Ex: O comando "cd" recebe como entrada uma pasta;
+- ~STDOUT~: Significa saída padrão (standard output). Essa saída pode significar efeitos colaterais no sistema como deletar, criar ou modificar arquivos ou então produzir um conteúdo em texto. Além da saída padrão também é retornado um código indicando se houve erro de execução ou não (0 corretamente ou 1 erro).
+- ~STDERR~: É uma saíada especial que guarda as mensagens de erro geradas pelo programa/comando.
+
+* 7 - Diferencie uma ~CLI~ de uma ~GUI~, apontando suas vantagens e desvantagens
+- CLI: Permite acesso global ao sistema de forma simples através de entrada de texto. Utiliza pouca memória ram, tem alto desempenho e só requer a utilização de teclado, porém pode ser assustador para leigos visto que requer o conhecimento dos comandos existentes, além de não possuir tanta interatividade e não apresentar dados e informações da melhor maneira possível, dificultando a execução de multitarefas. 
+
+- GUI: Estabelece acesso ao sistema através de interfaces gráficas. Possui uma curva de aprendizagem pequena, é altamente customizável e flexível, além de dispor dados e informações de forma mais agradável e facilitar a execução de multitarefa. Porém, tem o desempenho afetado pela renderização da interface, consumindo bastante memória, além de dificultar a realização de atividades mais complexas. 
