@@ -1,0 +1,14 @@
+#+title: Implementação Computacional 2
+
+* Siga esses tutoriais:
+1. [[https://docs.github.com/pt/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent][Criando uma chave SSH]]
+2. [[https://docs.github.com/pt/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account][Adicionando uma chave SSH ao Github]]
+
+** Observações
+- Como você está usando com contêiner, siga as intruções para ~Linux~
+
+* Crie um ~gist~ em ~.txt~ explicando o que foi feito e se houve algum erro no processo
+
+-----------------------------------------------------
+https://gist.github.com/dbs-97/f2cc5df2d5c07c93bc9601acd8a0a267
+

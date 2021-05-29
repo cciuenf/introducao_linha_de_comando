@@ -1,0 +1,10 @@
+#+title: Lista de exercícios 1 - docker
+#+author: José Arthur de Mello Mulatinho
+
+* 1 - Resumidamente, o que significa a palavra contêiner?
+* 2 - Cite algumas vantagens de dockerizar um programa/aplicação
+* 3 - Execute =docker run --rm chuanwen/cowsay= e descreva o resultado! Pode repetir a execução se quiser.
+
+* 1. Contêiner é um ambiente isolado contido em um servidor que divide um único host. Ele "empacota" aplicações de forma que possa ser virtualizada.
+* 2. São diversas vantagens, algumas delas são: portabilizar a utilização de um programa, utilizar muito menos recursos computacionais se comparado a VM's, as aplicações estão todas isoladas em containers, redução de tempo de deploy, entre outras.
+* 3. Ao executar o código, uma imagem é baixada e executada. Com isso, uma vaca super sensata aparece falando frases bem reflexivas.

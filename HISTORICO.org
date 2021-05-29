@@ -37,23 +37,24 @@ Todas as listas e ICs desta edição podem ser consultadas [[./primeira_edicao/l
 | [[./primeira_edicao/listas_exercicios][Matheus de Souza Pessanha]]               | [[./primeira_edicao/Plano_Estudo.org][Annabell Del Real Tamariz]]               |
 
 *** Alunos
-|   |   |   |   |
-|---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
 
-|   |   |   |   |
+| [[https://github.com/pedrohb88.png?size=60]]   | [[https://github.com/dianasgs.png?size=60]]   | [[https://github.com/AugustoAmaral.png?size=60]]  | [[https://github.com/LuisPeixoto.png?size=60]]  |
 |---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
+| [[./primeira_edicao/trabalhos_alunos/pedro_leal][Pedro Henrique Bonfim Leal]]  | [[./primeira_edicao/trabalhos_alunos/diana_silva][Diana de Sales Glória Silva]]   | [[./primeira_edicao/trabalhos_alunos/augusto_amaral][Augusto Amaral Pereira]] | [[./primeira_edicao/trabalhos_alunos/luisFernando_cabral][Luis Fernando Peixoto Cabral]]  |
+| [[https://github.com/yurigc77.png?size=60]]  | [[https://github.com/nandolinhares.png?size=60]]  | [[https://github.com/Kayo-V.png?size=60]]  |  [[https://github.com/Javiercuba.png?size=60]]  |
+| [[./primeira_edicao/trabalhos_alunos/YuriGarcia][Yuri Garcia Campos]]  | [[./primeira_edicao/trabalhos_alunos/fernando_linhares][Fernando Viana Linhares]]  | [[./primeira_edicao/trabalhos_alunos/kayo_veloso][Kayo Dos Santos Veloso]]  | [[./primeira_edicao/trabalhos_alunos/javier_ernesto][Javier Ernesto]]  |
 
-|   |   |   |   |
+| [[https://github.com/ThiagoRSP.png?size=60]]  | [[https://github.com/ARRETdaniel.png?size=60]] | [[https://github.com/Leonardondm.png?size=60]]  | [[https://github.com/guilhermeomt.png?size=60]]  |
 |---+---+---+---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
+| [[./primeira_edicao/listas_exercicios/thiago_pessanha][Thiago Rodrigues de Souza Pessanha]]  | [[./primeira_edicao/trabalhos_alunos/daniel_terra_gomes][DANIEL TERRA GOMES]]  | [[./primeira_edicao/trabalhos_alunos/leonardo_machado][Leonardo Nascimento Dias Machado]]  | [[./primeira_edicao/trabalhos_alunos/guilherme_tavares][Guilherme Oliveira Mussa Tavares]]  |
+| [[https://github.com/mlstellet.png?size=60]]  | [[https://github.com/yromanhaes.png?size=60]]  | [[https://github.com/JeanVassalo.png?size=60]]  | [[https://github.com/danielferreira2.png?size=60]]  |
+| [[./primeira_edicao/trabalhos_alunos/maria_stellet][Maria Luiza de Souza Stellet]] | [[./primeira_edicao/trabalhos_alunos/yro_manhaes][Yro Manhães]]  | [[./primeira_edicao/trabalhos_alunos/jean_ferreira][Jean Matheus Vassalo Ferreira]]  | [[./primeira_edicao/trabalhos_alunos/Daniel_Ferreira][Daniel de Faria Ferreira]]  |
+
+| [[https://github.com/ilzd.png?size=60]]  | [[https://github.com/Brunopalm.png?size=60]]  | [[https://github.com/Zehlu.png?size=60]]  | [[https://github.com/larisard.png?size=60]]  |
+|---+---+---+---|
+| [[./primeira_edicao/trabalhos_alunos/ian_louzada][Ian Pontes Louzada]]  | [[./primeira_edicao/listas_exercicios/bruno_oliveira][Bruno Palmeira de Oliveira]]  |  [[./primeira_edicao/trabalhos_alunos/jose_azevedo][José Lucio Azevedo]] | [[./primeira_edicao/trabalhos_alunos/larissa_sardinha/][Larissa Ribeiro Sardinha]]  |
+| [[https://github.com/dbs-97.png?size=60]]  | [[https://github.com/MateusSchulz.png?size=60]]  | [[https://github.com/jamm2k.png?size=60]]  | [[https://github.com/cossettijhonatan.png?size=60]]  |
+| [[./primeira_edicao/trabalhos_alunos/Daniel_Brito/][Daniel Brito dos Santos]] | [[./primeira_edicao/trabalhos_alunos/mateus_moraes/][Mateus Nunes Schulz Moraes]]  | [[./primeira_edicao/trabalhos_alunos/josé_mulatinho][José Arthur de Mello Mulatinho]]  | [[./primeira_edicao/trabalhos_alunos/Jhonatan_Cossetti][Jhonatan ALves Cossetti]]  |
 
 | [[https://github.com/jvfd3.png?size=60]]  |
 |------|

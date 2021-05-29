@@ -1,0 +1,36 @@
+#+title: Lista de exercícios 1 - docker
+#+author: Bruno Palmeira de Oliveira
+
+1) Resumidamente, o que significa a palavra contêiner?
+
+Um único pacote de software, que agrupa o código de um aplicativo e os respectivos arquivos de configuração e bibliotecas necessários para a execução do aplicativo. Assim, os desenvolvedores e os profissionais de TI podem implantar aplicativos diretamente nos ambientes.
+
+
+
+2)Cite algumas vantagens de dockerizar um programa/aplicação
+
+   -> Modularidade
+   -> Uma imagem Docker é a junção de diversas camadas
+   -> Cada comando como “COPY” cria uma camada nova
+   -> As camadas são reutilizadas, caso não haja alteração
+   -> Camadas são reversíveis
+   -> Rápida implantação
+
+
+
+
+3) Execute =docker run --rm chuanwen/cowsay= e descreva o resultado! Pode repetir a execução se quiser.
+
+O resultado foi um animal que diz uma frase.
+
+________________________________________
+/ Do what thou wilt shall be the whole of \
+| the Law.                                |
+|                                         |
+\ -- Aleister Crowley  /
+ ----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
