@@ -1,0 +1,7 @@
+Questão 1
+
+R.: Criei o dockerfile na pasta respostas e dei build
+
+Questão 2
+
+R.: Criei o arquivo bash na pasta respostas
