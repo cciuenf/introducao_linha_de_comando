@@ -1,0 +1,11 @@
+Comandos utilizados: 
+
+Questão 1)
+
+Primeiro eu criei o Docker file
+
+executei o comando "docker build -t imgp ." para criar a imagem imgp. 
+
+Depois "docker run --name contp1 -it imgp" para criar o contêiner contp1
+
+
