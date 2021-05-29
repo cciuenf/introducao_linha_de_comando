@@ -8,7 +8,3 @@
 - Como você está usando com contêiner, siga as intruções para ~Linux~
 
 * Crie um ~gist~ em ~.txt~ explicando o que foi feito e se houve algum erro no processo
-
------------------------------------------------------
-https://gist.github.com/dbs-97/f2cc5df2d5c07c93bc9601acd8a0a267
-
