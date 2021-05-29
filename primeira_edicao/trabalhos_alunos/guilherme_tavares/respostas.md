@@ -4,7 +4,7 @@
 
 ## Questão 1.
 
-Primeiramente, [implementei o Dockerfile](https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/trabalho_alunos/guilherme_tavares/Dockerfile), utilizando como base uma imagem da distribuição Alpine. Em seguida, entrei na mesma pasta do Dockerfile pelo terminal e executei o seguinte comando para criar a imagem:
+Primeiramente, [implementei o Dockerfile](https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/trabalhos_alunos/guilherme_tavares/scripts/Dockerfile), utilizando como base uma imagem da distribuição Alpine. Em seguida, entrei na mesma pasta do Dockerfile pelo terminal e executei o seguinte comando para criar a imagem:
 
 ```docker build -t imagem-exemplo .```
 
@@ -20,7 +20,7 @@ Wed May 26 18:35:41 UTC 2021
 
 ## Questão 2.
 
-O script desenvolvido foi um jogo de advinhação, o qual o usuário deve tentar acertar o número que foi gerado aleatoriamente que varia de 1 até 100. [Clique aqui para visualizar o código do shell script.](https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/trabalho_alunos/guilherme_tavares/guess-game.sh)
+O script desenvolvido foi um jogo de advinhação, o qual o usuário deve tentar acertar o número que foi gerado aleatoriamente que varia de 1 até 100. [Clique aqui para visualizar o código do shell script.](https://github.com/cciuenf/introducao_linha_de_comando/blob/main/primeira_edicao/trabalhos_alunos/guilherme_tavares/scripts/guess-game.sh)
 
 
 Exemplo de execução:
