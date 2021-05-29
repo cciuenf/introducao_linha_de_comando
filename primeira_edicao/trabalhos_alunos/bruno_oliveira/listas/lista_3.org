@@ -1,0 +1,69 @@
+#+title: Lista de exercícios 3 - shell
+#+author: Bruno Palmeira de Oliveira
+
+1) Com suas palavras, explique o que é um shell?
+
+É o interpretador de comandos do S.O. O shell analisa sintaticamente a linha de comando depois que ela é lida. Existem vários shells para o Linux, onde cada shell tem seus próprios recursos, capacidades e limitações.
+
+2)Quero executar esta sequência de comandos: ~cat xx.txt, ls, sort~ e guardar num arquivo ~.txt~. Cite ao menos uma forma de fazer isso, de maneira que o arquivo final tenha o conteúdo do ~ls~ e do ~cat~, não importando a ordem dos comandos.
+
+cat > xx.txt
+ls > arq2.txt
+sort xx.txt arq2.txt > arqfinal.txt
+
+3)Qual a utilidade de usar a técnica de ~shebang~?
+Essa técnica permite que o sispema operacional entenda qual programa usar para executar o script/arquivo, sem precisar usar explicitamente o comando.
+
+
+4)Abaixo, serão listadas várias ações. Execute uma por vez no terminal e escreva o comando que usou logo em seguida.
+- Estrutura de diretórios sugerida
+#+begin_src bash
+./ccuenf
+./exercicios
+#+end_src
+
+
+| ação                                                                                                          | comando |
+|---------------------------------------------------------------------------------------------------------------+---------|
+| Verifique em qual diretório você está                                                                         | pwd                                       |
+| Crie a estrutura de diretórios sugerida logo acima na ~home~ do usuário                                       | cd ..; mkdir ./ccuenf ./exercicios        |
+| Crie um arquivo "numeros.txt" com o ~cat~, não importa a quantidade de números                                | cat > numeros.txt                         |
+| Duplique "numeros.txt" para "numeros1.txt" e "numeros2.txt"                                                   | cp numeros.txt numeros1.txt / cp numeros.txt numeros2.txt |
+| Copie todos os arquivos com extensão ~.txt~ para a pasta "exercicios"                                         | cp numeros.txt numeros1.txt numeros2.txt exercicios       |
+| Exiba os arquivos da pasta "exercicios" com seus detalhes (permissões, tamanho e etc) sem sair da pasta atual | ls exercicios -l |
+| Apague a pasta "ccuenf" e "exercicios"                                                                        | rm exercicios ccuenf -r|
+
+
+5)Liste todos os arquivos da pasta ~/bin~, inverta a ordem (de Z para A) e depois salve num arquivo. Quais foram os comandos utilizados? Não é obrigatório executar a sequência em apenas uma linha.
+ls /bin 
+tac > text.txt
+
+6)Crie um arquivo ~.txt~ com o centeúdo da execução de ~man <comando>~ - onde "comando" é qualquer comando linux conhecido e que possua um manual - e inverta a ordem das linhas, procure pela palavra "the" e conte o número de ocorrências. Coloque aqui seu resultado e qual comando usou para pegar o manual.
+
+man rm > arq1.txt
+tac arq1.txt > arquivo.txt
+grep the arquivo.txt
+
+7)Escolha um ou mais programas da lista e tente instalá-lo, execute-o e descreva o resultado.
+
+| programas |
+|-----------|
+| sl        |  Aparece na tela uma locomotiva a vapor passando pela mesma |
+| cmatrix   |  Entra no "mundo da matrix" com vários caracteres aparecendo na tela |
+| rig       |  Exibir um nome aleatório (masculino ou feminino) e endereço |
+| nyancat   |  Um gato passa e deixando um rastro de arco-íris |
+
+- Após terminar o exercício, remova o programa
+
+
+8) Qual o resultado das seguintes expressões?
+- Já que as colunas da tabela são formadas por ~|~, não posso escrever o pipe dentro da tabela.
+  Tem como escapar com o ~\vert~, porém ele só é renderizado no ~org-mode~ do ~emacs~ :/
+- ~\vert~ == ~|~
+
+| expressão                     | resultado |
+|-------------------------------+-----------|
+| =false && echo foo \vert\vert echo bar= |     bar      |
+| =true && echo foo \vert\vert echo bar=  |     foo      |
+| =true \vert\vert echo foo && echo bar=  |     bar      |
+| =false \vert\vert echo foo && echo bar= |     foo bar  |

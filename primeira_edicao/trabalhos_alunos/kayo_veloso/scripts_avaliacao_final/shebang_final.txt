@@ -1,0 +1,7 @@
+#!/bin/fish
+
+# Um programa simples para monitorar o uso da RAM
+# e do armazenamento do computador
+
+# a cada 1 segundo os comandos 'date', 'free' e 'df' são executados (echo's apenas para separar os comandos)
+watch -t -n 1 'date ; echo ; free ; echo ; df /'
