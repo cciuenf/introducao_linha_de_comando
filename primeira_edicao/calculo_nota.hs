@@ -10,7 +10,7 @@ resumo = unlines
   , "Atividades (atv)    2         5       1.0 (p1)"
   , "ICs (ics)           2        10       4.0 (p2)"
   , "Avaliação (av)      1        10       5.0 (p3)\n"
-  , "      nota = (p1 * atv) + (p2 * ics) * (p3 * av)"
+  , "      nota = (p1 * atv) + (p2 * ics) + (p3 * av)"
   , "             ―――――――――――――――――――――――――――――――――――"
   , "                        (p1 + p2 + p3)\n"
   , "      Aprovação == nota >= 6.0\n\n"
