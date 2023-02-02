@@ -1,6 +1,6 @@
 # Introdução a Linha de Comando
 <!---
-author: Matheus de Souza Pessanha
+author: Zoey de Souza Pessanha
 email: 00119110328@pq.uenf.br 
 --->
 
