@@ -21,4 +21,4 @@ Este repositório sestá divido em /edições/. Cada edição possui seu diretó
 - [Primeira Edição](./primeira_edicao)
 
 ## Licença
-Todo o conteúdo deste repositório, assim como as imagens estão licensiados pela [[./LICENSE][GLPv3]].
+Todo o conteúdo deste repositório, assim como as imagens estão licenciados pela [[./LICENSE][GLPv3]].
